@@ -23,7 +23,7 @@
    &kp ESC    &kp Q       &kp W      &kp E        &kp R      &kp T       &kp Y     &kp U    &kp I           &kp O     &kp P     &kp DEL
    &kp TAB    &kp A       &kp S      &kp D        &kp F      &kp G       &kp H     &kp J    &kp K           &kp L     &kp DOT   &kp RET
    &kp LSHFT  &kp Z       &kp X      &kp C        &kp V      &kp B       &kp N     &kp M    &kp COMMA       &kp DOT   &kp SEMI  &kp LGUI
-                                     &kp LCTRL    &mo 1      &kp SPACE   &kp BSPC  &tog 2   &kp RALT
+                                     &kp LCTRL    &mo 1      &kp SPACE   &kp BSPC  &mo 2   &kp RALT
                         >;
                 };
                 lower_layer {
@@ -36,7 +36,7 @@
    &kp TAB    &kp Z      &kp N7     &kp N8       &kp N9     &kp BSPC    &trans     &trans    &kp UP       &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
    &kp A      &kp V      &kp N4     &kp N5	 &kp N6     &trans      &trans     &kp LEFT  &kp DOWN     &kp RIGHT       &trans          &bt BT_CLR
    &kp LSHFT  &kp N0     &kp N1     &kp N2       &kp N3     &kp RET     &trans     &kp SQT   &kp SEMI     &kp LBKT        &kp EQUAL       &kp PLUS       
-                                    &kp LCTRL    &trans     &kp SPACE   &kp BSPC   &trans    &kp RALT
+                                    &kp LCTRL    &trans     &kp SPACE   &kp BSPC   &tog 2    &kp RALT
                         >;
                 };
 
@@ -49,8 +49,8 @@
                         bindings = <
    &kp ESC    &kp M      &kp Q      &kp W      &kp E      &kp R       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET       &kp RIGHT_BRACKET    &kp LEFT_BRACKET    &kp RIGHT_BRACKET    
    &kp TAB    &trans     &kp A      &kp S      &kp D      &kp G       &kp MINUS             &kp BSLH               &kp AT_SIGN            &kp RBKT             &kp ASTERISK        &kp EQUAL     
-   &kp LSHFT  &kp AT     &kp CARET  &kp HASH   &kp DLLR   &kp PRCNT   &kp UNDER             &kp EXCL               &kp UNDERSCORE         &kp MINUS            &kp SLASH           &kp BACKSLASH     
-                         	    &kp LCTRL  &kp L      &kp SPACE   &kp BSPC              &tog 2                 &kp RALT
+   &kp LA(F4) &kp AT     &kp CARET  &kp HASH   &kp DLLR   &kp PRCNT   &kp UNDER             &kp EXCL               &kp UNDERSCORE         &kp MINUS            &kp SLASH           &kp BACKSLASH     
+                         	    &kp LSHFT  &kp LCTRL  &kp SPACE   &kp BSPC              &tog 2                 &kp RALT
                         >;
                 };
 
