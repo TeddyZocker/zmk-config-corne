@@ -49,7 +49,7 @@
                         bindings = <
    &kp ESC    &kp M      &kp Q      &kp W      &kp E      &kp R       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET       &kp RIGHT_BRACKET    &kp LEFT_BRACKET    &kp RIGHT_BRACKET    
    &kp TAB    &trans     &kp A      &kp S      &kp D      &kp G       &kp MINUS             &kp BSLH               &kp AT_SIGN            &kp RBKT             &kp ASTERISK        &kp EQUAL     
-   &kp LA(F4) &kp AT     &kp CARET  &kp HASH   &kp DLLR   &kp PRCNT   &kp UNDER             &kp EXCL               &kp UNDERSCORE         &kp MINUS            &kp SLASH           &kp BACKSLASH     
+   &kp LA(F4) &kp LSHFT  &kp CARET  &kp HASH   &kp DLLR   &kp PRCNT   &kp UNDER             &kp EXCL               &kp UNDERSCORE         &kp MINUS            &kp SLASH           &kp BACKSLASH     
                          	    &kp LSHFT  &kp LCTRL  &kp SPACE   &kp BSPC              &tog 2                 &kp RALT
                         >;
                 };
