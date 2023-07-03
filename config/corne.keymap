@@ -34,8 +34,8 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp LC(A)  &kp LC(LS(G))  &kp N7     &kp N8       &kp N9     &kp BSPC    &LC(Z)     &trans    &kp UP       &trans          &bt BT_SEL 0    &bt BT_SEL 1
-   &trans     &kp LC(LS(H))  &kp N4     &kp N5	     &kp N6     &kp TAB     &LC(Y)     &kp LEFT  &kp DOWN     &kp RIGHT       &trans          &bt BT_CLR
+   &kp LC(A)  &kp LC(LS(G))  &kp N7     &kp N8       &kp N9     &kp BSPC    &kp LC(Z)  &trans    &kp UP       &trans          &bt BT_SEL 0    &bt BT_SEL 1
+   &trans     &kp LC(LS(H))  &kp N4     &kp N5	     &kp N6     &kp TAB     &kp LC(Y)  &kp LEFT  &kp DOWN     &kp RIGHT       &trans          &bt BT_CLR
    &kp LCTRL  &kp N0         &kp N1     &kp N2       &kp N3     &kp RET     &kp LC(T)  &kp SQT   &kp SEMI     &kp LBKT        &kp EQUAL       &kp PLUS       
                                         &trans       &trans     &kp SPACE   &kp BSPC   &tog 2    &kp LSHFT
                         >;
