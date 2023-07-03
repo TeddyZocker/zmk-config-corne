@@ -34,8 +34,8 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp LC(A)  &kp LC(LS(G))  &kp N7     &kp N8       &kp N9     &kp BSPC    &kp LC(Z)  &trans    &kp UP       &trans          &bt BT_SEL 0    &bt BT_SEL 1
-   &trans     &kp LC(LS(H))  &kp N4     &kp N5	     &kp N6     &kp TAB     &kp LC(Y)  &kp LEFT  &kp DOWN     &kp RIGHT       &trans          &bt BT_CLR
+   &kp LC(A)  &trans         &kp N7     &kp N8       &kp N9     &kp BSPC    &kp LC(Z)  &trans    &kp UP       &trans          &bt BT_SEL 0    &bt BT_SEL 1
+   &trans     &trans         &kp N4     &kp N5	     &kp N6     &kp TAB     &kp LC(Y)  &kp LEFT  &kp DOWN     &kp RIGHT       &trans          &bt BT_CLR
    &kp LCTRL  &kp N0         &kp N1     &kp N2       &kp N3     &kp RET     &kp LC(T)  &kp SQT   &kp SEMI     &kp LBKT        &kp EQUAL       &kp PLUS       
                                         &trans       &trans     &kp SPACE   &kp BSPC   &tog 2    &kp LSHFT
                         >;
@@ -49,7 +49,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp ESC    &kp M      &kp Q      &kp W      &kp E      &kp R       &kp LEFT_PARENTHESIS  &kp LS(N9)             &kp RA(N7)             &kp RA(N8)            &kp RA(N9)            &kp RA(N0)       
-   &kp TAB    &kp U      &kp A      &kp S      &kp D      &kp G       &kp MINUS             &kp BSLH               &kp RG(Q)              &kp RBKT              &kp LS(RBKT)          &kp LS(N0)       
+   &kp TAB    &kp U      &kp A      &kp S      &kp D      &kp G       &kp MINUS             &kp BSLH               &kp RA(Q)              &kp RBKT              &kp LS(RBKT)          &kp LS(N0)       
    &kp LALT   &kp RSHFT  &kp N9     &kp N8     &kp N7     &kp PRCNT   &kp UNDER             &kp EXCL               &kp LS(SLASH)          &kp SLASH             &kp LS(N7)            &kp RA(MINUS)    
                          	    &trans     &kp LCTRL  &kp SPACE   &kp BSPC              &tog 2                 &kp LA(F4)
                         >;
