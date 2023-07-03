@@ -21,9 +21,9 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp ESC    &kp Q       &kp W      &kp E        &kp R      &kp T       &kp Y     &kp U    &kp I           &kp O     &kp P     &kp DEL
-   &kp TAB    &kp A       &kp S      &kp D        &kp F      &kp G       &kp H     &kp J    &kp K           &kp L     &kp DOT   &kp RET
+   &kp LSHFT  &kp A       &kp S      &kp D        &kp F      &kp G       &kp H     &kp J    &kp K           &kp L     &kp DEL   &kp RET
    &kp LCTRL  &kp Z       &kp X      &kp C        &kp V      &kp B       &kp N     &kp M    &kp COMMA       &kp DOT   &kp SEMI  &kp LGUI
-                                     &kp RALT     &mo 1      &kp SPACE   &kp BSPC  &mo 2    &kp LSHFT
+                                     &kp LALT     &mo 1      &kp SPACE   &kp BSPC  &mo 2    &kp LG(D)
                         >;
                 };
                 lower_layer {
@@ -33,10 +33,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp Z      &kp N7     &kp N8       &kp N9     &kp BSPC    &trans     &trans    &kp UP       &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
+   &kp TAB    &kp Y      &kp N7     &kp N8       &kp N9     &kp BSPC    &trans     &trans    &kp UP       &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
    &kp A      &kp V      &kp N4     &kp N5	 &kp N6     &trans      &trans     &kp LEFT  &kp DOWN     &kp RIGHT       &trans          &bt BT_CLR
    &kp LCTRL  &kp N0     &kp N1     &kp N2       &kp N3     &kp RET     &trans     &kp SQT   &kp SEMI     &kp LBKT        &kp EQUAL       &kp PLUS       
-                                    &kp RALT     &trans     &kp SPACE   &kp BSPC   &tog 2    &kp LSHFT
+                                    &kp LALT     &trans     &kp SPACE   &kp BSPC   &tog 2    &kp LSHFT
                         >;
                 };
 
@@ -49,7 +49,7 @@
                         bindings = <
    &kp ESC    &kp M      &kp Q      &kp W      &kp E      &kp R       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET       &kp RIGHT_BRACKET    &kp LEFT_BRACKET    &kp RIGHT_BRACKET    
    &kp TAB    &kp U      &kp A      &kp S      &kp D      &kp G       &kp MINUS             &kp BSLH               &kp AT_SIGN            &kp RBKT             &kp ASTERISK        &kp EQUAL     
-   &kp RALT   &kp RSHFT  &kp CARET  &kp HASH   &kp DLLR   &kp PRCNT   &kp UNDER             &kp EXCL               &kp UNDERSCORE         &kp MINUS            &kp SLASH           &kp BACKSLASH     
+   &kp LALT   &kp RSHFT  &kp N9     &kp N8     &kp N7     &kp PRCNT   &kp UNDER             &kp EXCL               &kp UNDERSCORE         &kp MINUS            &kp SLASH           &kp BACKSLASH     
                          	    &kp LSHFT  &kp LCTRL  &kp SPACE   &kp BSPC              &tog 2                 &kp LA(F4)
                         >;
                 };
