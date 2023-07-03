@@ -21,9 +21,9 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp ESC    &kp Q       &kp W      &kp E        &kp R      &kp T       &kp Y     &kp U    &kp I           &kp O     &kp P     &kp DEL
-   &kp LSHFT  &kp A       &kp S      &kp D        &kp F      &kp G       &kp H     &kp J    &kp K           &kp L     &kp DEL   &kp RET
+   &kp LALT   &kp A       &kp S      &kp D        &kp F      &kp G       &kp H     &kp J    &kp K           &kp L     &kp DEL   &kp RET
    &kp LCTRL  &kp Z       &kp X      &kp C        &kp V      &kp B       &kp N     &kp M    &kp COMMA       &kp DOT   &kp SEMI  &kp LGUI
-                                     &kp LALT     &mo 1      &kp SPACE   &kp BSPC  &mo 2    &LG(D)
+                                     &kp LSHFT    &mo 1      &kp SPACE   &kp BSPC  &mo 2    &LG(D)
                         >;
                 };
 
@@ -34,10 +34,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp LC(A)  &kp Y      &kp N7     &kp N8       &kp N9     &kp BSPC    &trans     &trans    &kp UP       &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
-   &trans     &kp V      &kp N4     &kp N5	 &kp N6     &kp TAB     &trans     &kp LEFT  &kp DOWN     &kp RIGHT       &trans          &bt BT_CLR
-   &kp LCTRL  &kp N0     &kp N1     &kp N2       &kp N3     &kp RET     &trans     &kp SQT   &kp SEMI     &kp LBKT        &kp EQUAL       &kp PLUS       
-                                    &kp LALT     &trans     &kp SPACE   &kp BSPC   &tog 2    &kp LSHFT
+   &kp LC(A)  &kp LC(LS(G))  &kp N7     &kp N8       &kp N9     &kp BSPC    &LC(Z)     &trans    &kp UP       &trans          &bt BT_SEL 0    &bt BT_SEL 1
+   &trans     &kp LC(LS(H))  &kp N4     &kp N5	     &kp N6     &kp TAB     &LC(Y)     &kp LEFT  &kp DOWN     &kp RIGHT       &trans          &bt BT_CLR
+   &kp LCTRL  &kp N0         &kp N1     &kp N2       &kp N3     &kp RET     &kp LC(T)  &kp SQT   &kp SEMI     &kp LBKT        &kp EQUAL       &kp PLUS       
+                                        &trans       &trans     &kp SPACE   &kp BSPC   &tog 2    &kp LSHFT
                         >;
                 };
 
@@ -48,10 +48,10 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp ESC    &kp M      &kp Q      &kp W      &kp E      &kp R       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET       &kp RIGHT_BRACKET    &kp LEFT_BRACKET    &kp RIGHT_BRACKET    
-   &kp TAB    &kp U      &kp A      &kp S      &kp D      &kp G       &kp MINUS             &kp BSLH               &kp AT_SIGN            &kp RBKT             &kp ASTERISK        &kp EQUAL     
-   &kp LALT   &kp RSHFT  &kp N9     &kp N8     &kp N7     &kp PRCNT   &kp UNDER             &kp EXCL               &kp UNDERSCORE         &kp MINUS            &kp SLASH           &kp BACKSLASH     
-                         	    &kp LSHFT  &kp LCTRL  &kp SPACE   &kp BSPC              &tog 2                 &kp LA(F4)
+   &kp ESC    &kp M      &kp Q      &kp W      &kp E      &kp R       &kp LEFT_PARENTHESIS  &kp LS(N9)             &kp RA(N7)             &kp RA(N8)            &kp RA(N9)            &kp RA(N0)       
+   &kp TAB    &kp U      &kp A      &kp S      &kp D      &kp G       &kp MINUS             &kp BSLH               &kp RG(Q)              &kp RBKT              &kp LS(RBKT)          &kp LS(N0)       
+   &kp LALT   &kp RSHFT  &kp N9     &kp N8     &kp N7     &kp PRCNT   &kp UNDER             &kp EXCL               &kp LS(SLASH)          &kp SLASH             &kp LS(N7)            &kp RA(MINUS)    
+                         	    &trans     &kp LCTRL  &kp SPACE   &kp BSPC              &tog 2                 &kp LA(F4)
                         >;
                 };
 
