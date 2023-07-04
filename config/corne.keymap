@@ -23,7 +23,7 @@
    &kp ESC    &kp Q       &kp W      &kp E        &kp R      &kp T       &kp Y     &kp U    &kp I           &kp O     &kp P     &kp DEL
    &kp LALT   &kp A       &kp S      &kp D        &kp F      &kp G       &kp H     &kp J    &kp K           &kp L     &kp DEL   &kp RET
    &kp LCTRL  &kp Z       &kp X      &kp C        &kp V      &kp B       &kp N     &kp M    &kp COMMA       &kp DOT   &kp SEMI  &kp LGUI
-                                     &kp LSHFT    &mo 1      &kp SPACE   &kp BSPC  &mo 2    &kp LG(D)
+                                     &kp RSHFT    &mo 1      &kp SPACE   &kp BSPC  &mo 2    &kp LG(D)
                         >;
                 };
 
@@ -34,7 +34,7 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp LC(A)  &trans         &kp N7     &kp N8       &kp N9     &kp BSPC    &kp LC(Y)  &trans    &kp UP       &trans          &bt BT_SEL 0    &bt BT_SEL 1
+   &kp LC(A)  &kp LC(LS(G))      &kp N7     &kp N8       &kp N9     &kp BSPC    &kp LC(Y)  &trans    &kp UP       &trans          &bt BT_SEL 0    &bt BT_SEL 1
    &trans     &trans         &kp N4     &kp N5	     &kp N6     &kp TAB     &kp LC(Z)  &kp LEFT  &kp DOWN     &kp RIGHT       &trans          &bt BT_CLR
    &kp LCTRL  &kp N0         &kp N1     &kp N2       &kp N3     &kp RET     &kp LC(T)  &kp SQT   &kp SEMI     &kp LBKT        &kp EQUAL       &kp PLUS       
                                         &trans       &trans     &kp SPACE   &trans     &tog 2    &trans
