@@ -1,13 +1,24 @@
+#define default_layer 	0
+#define lower_layer 	1 
+#define raise_layer 	2
+#define games_layer 	3 
+
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
-
+#define default_layer 	0
+#define lower_layer 	1 
+#define raise_layer 	2
+#define games_layer 	3 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#define games_layer 4 
+#define default_layer 	0
+#define lower_layer 	1 
+#define raise_layer 	2
+#define games_layer 	3 
 
 / {
         keymap {
@@ -51,7 +62,7 @@
    &kp ESC    &kp M      &kp Q      &kp W      &kp E      &kp R       &kp LS(N8)            &kp LEFT_PARENTHESIS   &kp RA(N8)             &kp RA(N9)            &kp RA(N7)            &kp RA(N0)       
    &kp TAB    &kp U      &kp A      &kp S      &kp D      &kp G       &kp MINUS             &kp BSLH               &kp RA(Q)              &kp RBKT              &kp LS(RBKT)          &kp LS(N0)       
    &kp LALT   &kp RSHFT  &kp N9     &kp N8     &kp N7     &kp PRCNT   &kp UNDER             &kp EXCL               &kp LS(SLASH)          &kp SLASH             &kp LS(N7)            &kp RA(MINUS)    
-                         	    &kp LSHFT  &kp LCTRL  &kp SPACE   &kp BSPC              &tog 2                 &kp LA(F4)
+                         	    &kp LSHFT  &kp LCTRL  &kp SPACE   &kp BSPC              &tog 3                 &kp LA(F4)
                         >;
                 };
 
@@ -65,7 +76,7 @@
    &kp Q       &kp Q       &kp Q       &kp W      &kp Q       &kp Q       &kp Q       &kp Q       &kp Q       &kp Q       &kp Q       &kp Q       
    &kp Q       &kp Q       &kp A       &kp S      &kp D       &kp Q       &kp Q       &kp Q       &kp Q       &kp Q       &kp Q       &kp Q       
    &kp Q       &kp Q       &kp Q       &kp Q      &kp Q       &kp Q       &kp Q       &kp Q       &kp Q       &kp Q       &kp Q       &kp Q       
-                         	       &kp LCTRL  &trans      &kp SPACE   &kp BSPC    &tog games_layer       &kp RALT
+                         	       &kp LCTRL  &trans      &kp SPACE   &kp BSPC    &tog 3      &kp RALT
                         >;
                 };
         };
