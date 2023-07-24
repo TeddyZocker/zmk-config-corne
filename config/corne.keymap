@@ -60,10 +60,10 @@
 // |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
                         bindings = <
-   &kp ESC      &none        &none        &none        &kp LESS_THAN  &kp GREATER_THAN  &kp LS(N8)            &kp LEFT_PARENTHESIS   &kp RA(N8)             &kp RA(N9)            &kp RA(N7)            &kp RA(N0)       
-   &kp TAB      &none        &kp LS(N2)   &kp LS(BSLH) &kp COMMA      &kp DOT           &kp MINUS             &kp BSLH               &kp RA(Q)              &kp RBKT              &kp LS(RBKT)          &kp LS(N0)       
-   &kp LCTRL    &kp PIPE2    &kp TILDE2   &none        &kp LS(N7)     &kp LA(N0)        &kp UNDER             &kp EXCL               &kp LS(SLASH)          &kp SLASH             &kp LS(N7)            &kp RA(MINUS) 
-                                          &kp LSHFT    &kp LCTRL      &kp SPACE         &kp BSPC              &to 4                  &none      
+   &kp ESC      &none        &none        &none          &kp PIPE          &kp PIPE2         &kp LS(N8)            &kp LEFT_PARENTHESIS   &kp RA(N8)             &kp RA(N9)            &kp RA(N7)            &kp RA(N0)       
+   &kp TAB      &none        &kp LS(N2)   &kp LS(BSLH)   &kp COMMA         &kp DOT           &kp MINUS             &kp BSLH               &kp RA(Q)              &kp RBKT              &kp LS(RBKT)          &kp LS(N0)       
+   &kp LCTRL    &kp PIPE2    &none        &none          &kp LESS_THAN     &kp GREATER_THAN  &kp UNDER             &kp EXCL               &kp LS(SLASH)          &kp SLASH             &kp LS(N7)            &kp RA(MINUS) 
+                                          &kp LSHFT      &kp LCTRL         &kp SPACE         &kp BSPC              &to 4                  &none      
                         >;
                 };
 // ---------------------------------------------------------------------------------------------------
@@ -83,6 +83,17 @@
                         >;
                 };
 // ---------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 
