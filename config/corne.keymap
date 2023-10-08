@@ -1,13 +1,13 @@
-#define default_layer		0
+ewx#define default_layer	0
 #define lower_layer		1
 #define raise_layer		2
 #define commands_layer		3
 #define games_layer		4
 #define games_support_layer	5
-#define games_keyboard_layer	6
-#define games_lower_layer	7
-#define games_raise_layer	8
-#define games_commands_layer	9
+#define ---	6
+#define ---	7
+#define ---	8
+#define ---	9
 
 
 /*
@@ -32,10 +32,10 @@
 // |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
                         bindings = <
-   &kp ESC		&kp Q		&kp W		&kp E		&kp R		&kp T			&kp Y		&kp U			&kp I			&kp O			&kp P			&kp DEL
-   &kp LALT		&kp A		&kp S		&kp D		&kp F		&kp G			&kp H		&kp J			&kp K			&kp L			&none			&kp RET
-   &kp LCTRL		&kp Z		&kp X		&kp C		&kp V		&kp B			&kp N		&kp M			&kp SQT			&kp SEMI		&kp LBKT		&kp LGUI
-							&kp LSHFT	&mo 1		&kp SPACE		&kp BSPC	&mo 2			&mo 3
+   &kp ESC		&kp Q			&kp W			&kp E			&kp R			&kp T				&kp Y			&kp U			&kp I			&kp O			&kp P			&kp DEL
+   &kp LALT		&kp A			&kp S			&kp D			&kp F			&kp G				&kp H			&kp J			&kp K			&kp L			&none			&kp RET
+   &kp LCTRL		&kp Z			&kp X			&kp C			&kp V			&kp B				&kp N			&kp M			&kp SQT			&kp SEMI		&kp LBKT		&kp LGUI
+									&kp LSHFT		&mo 1			&kp SPACE			&kp BSPC		&mo 2			&none
                         >;
                 };
 // ---------------------------------------------------------------------------------------------------
@@ -48,10 +48,10 @@
 // |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
                         bindings = <
-   &kp LC(A)		&kp DOT		&kp N7		&kp N8		&kp N9		&kp BSPC		&none		&none			&kp UP			&none			&none			&kp LG(N1)       
-   &kp LC(LS(G))	&kp COMMA	&kp N4		&kp N5		&kp N6		&kp TAB			&none		&kp LEFT		&kp DOWN		&kp RIGHT		&kp RET			&kp LG(N2)        
-   &kp LC(LS(H))	&kp N0		&kp N1		&kp N2		&kp N3		&kp RET			&none		&none			&none			&none			&none			&kp LG(N3)        
-                                       			&to 3		&none		&trans			&trans		&kp LALT		&kp LCTRL
+   &none		&kp DOT			&kp N7			&kp N8			&kp N9			&kp BSPC			&none			&none			&kp UP			&none			&none			&trans      
+   &none		&kp COMMA		&kp N4			&kp N5			&kp N6			&kp TAB				&none			&kp LEFT		&kp DOWN		&kp RIGHT		&kp CARET		&trans        
+   &lt 3		&kp N0			&kp N1			&kp N2			&kp N3			&kp RET				&kp RBKT		&kp SLASH		&kp LS(RBKT)		&kp LS(N7)		&kp LS(N0)		&trans        
+                                       					&none			&none			&trans				&trans			&kp LALT		&kp LCTRL
                         >;	
                 };
 // ---------------------------------------------------------------------------------------------------
@@ -64,10 +64,10 @@
 // |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
                         bindings = <
-   &kp LG(D)		&kp LG(LS(S))	&none        	&none          	&kp PIPE	&kp PIPE2         	&kp LS(N8)	&kp LEFT_PARENTHESIS	&kp RA(N8)             	&kp RA(N9)            	&kp RA(N7)            	&kp RA(N0)       
-   &kp LA(F4)		&none      	&kp LS(N2)   	&kp LS(BSLH)   	&kp COMMA	&kp DOT           	&kp MINUS	&kp BSLH		&kp RA(Q)              	&kp RBKT             	&kp LS(RBKT)          	&kp LS(N0)       
-   &none		&kp PIPE2  	&none        	&none          	&kp LESS_THAN	&kp GREATER_THAN 	&kp UNDER	&kp EXCL		&kp LS(SLASH)          	&kp SLASH             	&kp LS(N7)            	&kp RA(MINUS) 
- 						     	&kp LC(Y)	&kp LC(Z)	&kp SPACE		&kp BSPC	&none			&to 4      
+   &kp LG(LS(S))	&none			&none        		&none          		&kp LESS_THAN		&kp PIPE2         		&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)             	&kp RA(N9)            	&kp RA(N7)            	&kp RA(N0)       
+   &kp LG(D)		&none      		&none			&kp LS(BSLH)   		&kp COMMA		&kp DOT           		&kp MINUS		&kp BSLH		&kp RA(Q)              	&kp AMPERSAND		&kp DOLLAR     		&kp NUBS
+   &kp LA(F4)		&none			&kp TILDE      		&kp LS(N2)          	&kp LESS_THAN		&kp GREATER_THAN 		&kp UNDER		&kp EXCL		&kp LS(SLASH)          	&none	             	&kp LA(E)      		&kp RA(MINUS) 
+ 						     			&none			&none			&none				&kp BSPC		&none			&to 4      
                         >;
                 };
 // ---------------------------------------------------------------------------------------------------
@@ -80,18 +80,18 @@
 // |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
                         bindings = <
-   &kp LC(W)		&tog 3		&kp DEL		&kp UP		&kp RET		&kp C_MUTE		&kp INS		&kp HOME		&kp F1			&kp F4			&kp F7			&kp F12
-   &kp LC(T)		&none		&kp LEFT	&kp DOWN	&kp RIGHT	&kp C_VOLUME_UP		&kp PAGE_DOWN	&kp PAGE_UP		&kp F2			&kp F5			&kp F8			&kp F11
-   &kp LC(LS(T))	&none		&none		&none		&none		&kp C_VOLUME_DOWN	&kp DEL		&kp END			&kp F3			&kp F6			&kp F9			&kp F12
-                                                	&kp C_PREV	&kp C_NEXT	&kp C_PLAY_PAUSE	&sk LGUI	&sk LALT		&sk LCTRL        
+   &kp LC(W)		&kp C_PLAY_PAUSE	&kp DEL			&kp UP			&kp RET			&kp C_MUTE			&kp INS			&kp HOME		&kp F1			&kp F4			&kp F7			&kp F12
+   &kp LC(T)		&kp C_NEXT		&kp LEFT		&kp DOWN		&kp RIGHT		&kp C_VOLUME_UP			&kp PAGE_DOWN		&kp PAGE_UP		&kp F2			&kp F5			&kp F8			&kp F11
+   &kp LC(LS(T))	&kp C_PREV		&none			&none			&none			&kp C_VOLUME_DOWN		&kp DEL			&kp END			&kp F3			&kp F6			&kp F9			&kp F12
+                                                			&kp LC(Y)		&kp LC(Z)		&sk LCTRL       		&none			&none			&none
                         >;
                 };
-// ---------------------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
                  games_layer {
@@ -101,10 +101,10 @@
 // |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
                         bindings = <
-   &kp ESC		&kp M		&kp Q		&kp W		&kp E		&kp R			&none		&none			&kp UP			&none			&none			&to 6
-   &kp TAB		&mo 5		&kp A		&kp S		&kp D		&kp G			&none		&kp LEFT		&kp DOWN		&kp RIGHT		&none			&kp BSPC 
-   &kp LALT		&kp RSHFT	&kp Y		&kp X		&kp C		&kp V			&none		&none			&none			&none			&none			&kp LGUI
-							&kp LCTRL	&kp LSHFT	&kp SPACE		&none		&tog 4			&none
+   &kp ESC		&kp M			&kp Q			&kp W			&kp E			&kp R				&none			&none			&kp UP			&none			&none			&to 6
+   &kp TAB		&mo 5			&kp A			&kp S			&kp D			&kp G				&none			&kp LEFT		&kp DOWN		&kp RIGHT		&none			&kp BSPC 
+   &kp LALT		&kp RSHFT		&kp Y			&kp X			&kp C			&kp V				&none			&none			&none			&none			&none			&kp LGUI
+									&kp LCTRL		&kp LSHFT		&kp SPACE			&none			&tog 4			&none
                         >;
                 };
 // ---------------------------------------------------------------------------------------------------
@@ -117,74 +117,14 @@
 // |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
                         bindings = <
-   &none		&none		&kp N7		&kp N8		&kp N9		&kp C_MUTE		&none		&none			&none			&none			&none			&kp LA(F4)
-   &none		&none		&kp N4		&kp N5		&kp N6		&kp C_VOLUME_UP		&bt BT_SEL 0	&bt BT_SEL 1		&bt BT_SEL 2		&bt BT_SEL 3		&bt BT_SEL 4		&none
-   &none		&none		&kp N1		&kp N2		&kp N3		&kp C_VOLUME_DOWN	&none		&bt BT_CLR		&none			&none			&none			&none
-					&kp H 		&kp J		&kp K		&kp C_PREV		&kp C_NEXT	&kp C_PLAY_PAUSE       
+   &none		&none			&kp N7			&kp N8			&kp N9			&kp C_MUTE			&none			&none			&none			&none			&none			&kp LA(F4)
+   &none		&none			&kp N4			&kp N5			&kp N6			&kp C_VOLUME_UP			&bt BT_SEL 0		&bt BT_SEL 1		&bt BT_SEL 2		&bt BT_SEL 3		&bt BT_SEL 4		&none
+   &none		&none			&kp N1			&kp N2			&kp N3			&kp C_VOLUME_DOWN		&none			&bt BT_CLR		&none			&none			&none			&none
+									&kp H 			&kp J			&kp K			&kp C_PREV			&kp C_NEXT		&kp C_PLAY_PAUSE       
                         >;
                 };
 // ---------------------------------------------------------------------------------------------------
 
-
-                 games_keyboard_layer {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
-                        bindings = <
-   &kp ESC		&kp Q		&kp W		&kp E		&kp R		&kp T			&kp Y		&kp U			&kp I			&kp O			&kp P			&to 4
-   &kp LALT		&kp A		&kp S		&kp D		&kp F		&kp G			&kp H		&kp J			&kp K			&kp L			&none			&kp RET
-   &kp LCTRL		&kp Z		&kp X		&kp C		&kp V		&kp B			&kp N		&kp M			&kp SQT			&kp SEMI		&kp LBKT		&kp LGUI
-							&kp RSHFT	&mo 7		&kp SPACE		&kp BSPC	&mo 8			&mo 9
-                        >;
-                };
-// ---------------------------------------------------------------------------------------------------
-
-
-                games_lower_layer {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
-                        bindings = <
-   &kp ESC		&to 3		&kp N7		&kp N8		&kp N9		&kp BSPC		&kp LG(D)	&none			&kp UP			&none			&none			&kp LG(N1)       
-   &kp RSHFT		&none		&kp N4		&kp N5		&kp N6		&kp TAB			&kp LA(F4)	&kp LEFT		&kp DOWN		&kp RIGHT		&none			&kp LG(N2)        
-   &kp LCTRL		&kp N0		&kp N1		&kp N2		&kp N9		&kp RET			&none		&none			&none			&none			&none			&kp LG(N3)        
-							&trans		&none		&trans			&trans		&none			&none
-                        >;	
-                };
-// ---------------------------------------------------------------------------------------------------
-
-
-                games_raise_layer {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
-                        bindings = <
-   &kp ESC		&none		&none		&none		&kp PIPE	&kp PIPE2		&kp LS(N8)	&kp LEFT_PARENTHESIS	&kp RA(N8)		&kp RA(N9)		&kp RA(N7)		&kp RA(N0)       
-   &kp TAB		&none		&kp LS(N2)	&kp LS(BSLH)	&kp COMMA	&kp DOT			&kp MINUS	&kp BSLH		&kp RA(Q)		&kp RBKT		&kp LS(RBKT)		&kp LS(N0)       
-   &kp LCTRL		&kp PIPE2	&none		&none		&kp LESS_THAN	&kp GREATER_THAN	&kp UNDER	&kp EXCL		&kp LS(SLASH)		&kp SLASH		&kp LS(N7)		&kp RA(MINUS) 
- 							&kp LSHFT	&kp LCTRL	&kp SPACE		&kp BSPC	&none			&none      
-                        >;
-                };
-// ---------------------------------------------------------------------------------------------------
-
-
-                games_commands_layer {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
-                        bindings = <
-   &to 4		&kp LC(LS(G))	&kp DEL		&kp UP		&kp RET		&kp C_MUTE		&kp INS		&kp HOME		&kp F1			&kp F4			&kp F7			&kp F12
-   &kp LC(A)		&kp LC(LS(H))	&kp LEFT	&kp DOWN	&kp RIGHT	&kp C_VOLUME_UP		&kp PAGE_DOWN	&kp PAGE_UP		&kp F2			&kp F5			&kp F8			&kp F11
-   &kp LC(W)		&kp LC(T)	&kp LC(LS(T))	&kp LC(Y)	&kp LC(Z)	&kp C_VOLUME_DOWN	&kp DEL		&kp END			&kp F3			&kp F6			&kp F9			&kp F12
-							&kp C_PREV	&kp C_NEXT	&kp C_PLAY_PAUSE	&sk LGUI	&sk LALT		&sk LCTRL        
                         >;
                 };
         };
