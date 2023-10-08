@@ -65,7 +65,7 @@ ewx#define default_layer	0
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
                         bindings = <
    &kp LG(LS(S))	&none			&none        		&none          		&kp LESS_THAN		&kp PIPE2         		&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)             	&kp RA(N9)            	&kp RA(N7)            	&kp RA(N0)       
-   &kp LG(D)		&none      		&none			&kp LS(BSLH)   		&kp COMMA		&kp DOT           		&kp MINUS		&kp BSLH		&kp RA(Q)              	&kp AMPERSAND		&kp DOLLAR     		&kp NUBS
+   &kp LG(D)		&none      		&none			&kp LS(BSLH)   		&kp COMMA		&kp DOT           		&kp MINUS		&kp BSLH		&kp RA(Q)              	&kp AMPERSAND		&kp DOLLAR     		&kp NON_US_BACKSLASH
    &kp LA(F4)		&none			&kp TILDE      		&kp LS(N2)          	&kp LESS_THAN		&kp GREATER_THAN 		&kp UNDER		&kp EXCL		&kp LS(SLASH)          	&none	             	&kp LA(E)      		&kp RA(MINUS) 
  						     			&none			&none			&none				&kp BSPC		&none			&to 4      
                         >;
