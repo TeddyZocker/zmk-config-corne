@@ -4,10 +4,7 @@ ewx#define default_layer	0
 #define commands_layer		3
 #define games_layer		4
 #define games_support_layer	5
-#define ---1	6
-#define ---2	7
-#define ---3	8
-#define ---4	9
+
 
 
 /*
