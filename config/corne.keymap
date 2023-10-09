@@ -45,8 +45,8 @@
 // |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
                         bindings = <
-   &none		&kp DOT			&kp N7			&kp N8			&kp N9			&kp BSPC			&none			&kp DEL			&kp UP			&kp RET			&none			&none      
-   &none		&kp COMMA		&kp N4			&kp N5			&kp N6			&kp TAB				&none			&kp LEFT		&kp DOWN		&kp RIGHT		&none			&none        
+   &trans		&kp DOT			&kp N7			&kp N8			&kp N9			&kp BSPC			&none			&kp DEL			&kp UP			&kp RET			&none			&none      
+   &trans		&kp COMMA		&kp N4			&kp N5			&kp N6			&kp TAB				&none			&kp LEFT		&kp DOWN		&kp RIGHT		&none			&none        
    &mo 3		&kp N0			&kp N1			&kp N2			&kp N3			&kp RET				&kp RBKT		&kp SLASH		&kp LS(RBKT)		&kp LS(N7)		&kp LS(N0)		&none        
 									&none			&none			&trans				&trans			&kp LALT		&kp LCTRL
                         >;	
@@ -63,7 +63,7 @@
                         bindings = <
    &kp LG(LS(S))	&none			&none			&none			&kp LS(COMMA)		&kp PIPE2			&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)		&kp RA(N9)		&kp RA(N7)		&kp RA(N0)       
    &kp LG(D)		&none      		&none			&kp LS(N2)		&kp COMMA		&kp DOT				&kp MINUS		&kp BSLH		&kp RA(Q)		&kp LS(N6)		&kp LS(N4)		&kp LS(BSLH)
-   &kp LA(F4)		&none			&kp TILDE		&kp LS(BSLH)		&kp LESS_THAN		&kp GREATER_THAN		&kp UNDER		&kp EXCL		&kp LS(SLASH)		&none			&kp RA(E)		&kp RA(MINUS) 
+   &kp LA(F4)		&none			&kp TILDE		&kp LS(BSLH)		&kp LESS_THAN		&kp GREATER_THAN		&kp UNDER		&kp EXCL		&kp LS(SLASH)		&kp LS(			&kp RA(E)		&kp RA(MINUS) 
 									&none			&none			&none				&kp BSPC		&none			&to 4
                         >;
                 };
