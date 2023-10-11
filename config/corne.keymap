@@ -100,7 +100,7 @@
                         bindings = <
    &none		&kp LC(E)		&none			&kp LC(E)		&none			&kp LC(LS(T))			&none			&none			&none			&none			&none			&none
    &none		&none			&none			&kp LC(BSLH)		&kp LC(F)		&kp LC(T)			&none			&none			&none			&none			&none			&none
-   &none		&none			&none			&none			&none			&kp LC(W)			&none			&none			&none			&none			&none			&none
+   &kp LCTRL		&none			&none			&none			&none			&kp LC(W)			&none			&none			&none			&none			&none			&none
 									&kp LC(Y)		&kp LC(Z)		&mo 3				&none			&none			&none
                         >;
                 };
