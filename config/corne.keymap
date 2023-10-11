@@ -4,8 +4,9 @@
 #define commands_layer		3
 #define games_layer		4
 #define games_support_layer	5
-
-
+#define lctrl_layer		6
+#define lgui_layer		7
+#define lalt_layer		8
 
 /*
  * Copyright (c) 2020 The ZMK Contributors
@@ -31,7 +32,7 @@
                         bindings = <
    &kp ESC		&kp Q			&kp W			&kp E			&kp R			&kp T				&kp Y			&kp U			&kp I			&kp O			&kp P			&kp DEL
    &kp LALT		&kp A			&kp S			&kp D			&kp F			&kp G				&kp H			&kp J			&kp K			&kp L			&none			&kp RET
-   &kp LCTRL		&kp Z			&kp X			&kp C			&kp V			&kp B				&kp N			&kp M			&kp SQT			&kp SEMI		&kp LBKT		&kp LGUI
+   &mo 6		&kp Z			&kp X			&kp C			&kp V			&kp B				&kp N			&kp M			&kp SQT			&kp SEMI		&kp LBKT		&kp LGUI
 									&kp LSHFT		&mo 1			&kp SPACE			&kp BSPC		&mo 2			&none
                         >;
                 };
@@ -118,6 +119,54 @@
    &none		&none			&kp A			&kp S			&kp D			&kp C_VOLUME_UP			&bt BT_SEL 0		&bt BT_SEL 1		&bt BT_SEL 2		&bt BT_SEL 3		&bt BT_SEL 4		&none
    &none		&none			&kp N1			&kp N2			&kp N3			&kp C_VOLUME_DOWN		&none			&bt BT_CLR		&none			&none			&none			&none
 									&kp H 			&kp J			&kp K				&kp C_PLAY_PAUSE	&kp C_PREV		&kp C_NEXT
+                        >;
+                };
+// ---------------------------------------------------------------------------------------------------
+
+
+                 lctrl_layer		{
+// ---------------------------------------------------------------------------------------------------
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
+                        bindings = <
+   &none		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
+   &none		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
+   &none		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
+									&none 			&none			&none				&none			&none			&none
+                        >;
+                };
+// ---------------------------------------------------------------------------------------------------
+
+
+                 lgui_layer{
+// ---------------------------------------------------------------------------------------------------
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
+                        bindings = <
+   &none		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
+   &none		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
+   &none		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
+									&none 			&none			&none				&none			&none			&none
+                        >;
+                };
+// ---------------------------------------------------------------------------------------------------
+
+
+                 lalt_layer{
+// ---------------------------------------------------------------------------------------------------
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
+                        bindings = <
+   &none		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
+   &none		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
+   &none		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
+									&none 			&none			&none				&none			&none			&none
                         >;
                 };
 // ---------------------------------------------------------------------------------------------------
