@@ -24,20 +24,20 @@
     release-after-ms = <500>;
 };
 
-
 / {
-	#tap_dance_befehl
-    	behaviors {
-      	  td0: tap_dance_0 {
-     	       compatible = "zmk,behavior-tap-dance";
-    	        label = "TAP_DANCE_0";
-    	        #binding-cells = <0>;
-    	        tapping-term-ms = <200>;
-    	        bindings = <&kp N1>, <&kp N2>, <&kp N3>;
-   	    		 };
-  		  };
-
-
+    macros {
+        zed_em_kay: zed_em_kay {
+            label = "ZM_zed_em_kay";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
+                ;
+     				};
+   		};
+   };
 
         keymap {
                 compatible = "zmk,keymap";  
@@ -209,3 +209,8 @@
 
         };
 };
+
+
+
+
+
