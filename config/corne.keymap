@@ -25,17 +25,6 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <500>;
-            key-positions = <36 36>;
-            bindings = <&kp CAPSLOCK>;
-        };
-    };
-};
-
-/ {
         keymap {
                 compatible = "zmk,keymap";  
 
