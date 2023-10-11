@@ -29,7 +29,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <500>;
-            key-positions = <37 37>;
+            key-positions = <36 36>;
             bindings = <&kp CAPSLOCK>;
         };
     };
