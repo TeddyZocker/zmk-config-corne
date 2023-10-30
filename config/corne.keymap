@@ -192,9 +192,9 @@
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
-   &kp ESC		&kp M			&kp Q			&kp W			&kp E			&kp R				&none			&none			&kp UP			&none			&none			&none
-   &kp TAB		&mo 9			&kp A			&kp S			&kp D			&kp G				&none			&kp LEFT		&kp DOWN		&kp RIGHT		&none			&kp BSPC 
-   &kp LALT		&kp RSHFT		&kp Y			&kp X			&kp C			&kp V				&none			&none			&none			&none			&none			&kp LGUI
+   &kp ESC		&kp M			&kp Q			&kp W			&kp E			&kp R				&kp C_PLAY_PAUSE 	&kp RET			&kp UP			&kp BPSC		&kp C_MUTE		&none
+   &kp TAB		&mo 9			&kp A			&kp S			&kp D			&kp G				&kp C_PREV 		&kp LEFT		&kp DOWN		&kp RIGHT		&kp C_VOLUME_UP		&kp BSPC 
+   &kp LALT		&kp RSHFT		&kp Y			&kp X			&kp C			&kp V				&kp C_NEXT 		&none			&none			&none			&kp C_VOLUME_DOWN	&kp LGUI
 									&kp LCTRL		&kp LSHFT		&kp SPACE			&none			&tog 8			&none
                         >;
                 };
@@ -209,10 +209,10 @@
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
-   &none		&none			&kp N4			&kp W			&kp N5			&kp C_MUTE			&none			&none			&none			&none			&none			&kp LA(F4)
-   &none		&none			&kp A			&kp S			&kp D			&kp C_VOLUME_UP			&bt BT_SEL 0		&bt BT_SEL 1		&bt BT_SEL 2		&bt BT_SEL 3		&bt BT_SEL 4		&none
-   &none		&none			&kp N1			&kp N2			&kp N3			&kp C_VOLUME_DOWN		&none			&bt BT_CLR		&none			&none			&none			&none
-									&kp H 			&kp J			&kp K				&kp C_PLAY_PAUSE	&kp C_PREV		&kp C_NEXT
+   &Kp ESC		&none			&kp N4			&kp W			&kp N5			&kp N6				&none			&none			&none			&none			&none			&kp LA(F4)
+   &kp I		&none			&kp A			&kp S			&kp D			&kp N7				&bt BT_SEL 0		&bt BT_SEL 1		&bt BT_SEL 2		&bt BT_SEL 3		&bt BT_SEL 4		&none
+   &none		&none			&kp N1			&kp N2			&kp N3			&kp N8				&none			&bt BT_CLR		&none			&none			&none			&none
+									&kp H 			&kp J			&kp K				&none			&none 			&none
                         >;
                 };
 
