@@ -192,7 +192,7 @@
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
-   &kp ESC		&kp M			&kp Q			&kp W			&kp E			&kp R				&kp C_PLAY_PAUSE 	&kp RET			&kp UP			&kp BPSC		&kp C_MUTE		&none
+   &kp ESC		&kp M			&kp Q			&kp W			&kp E			&kp R				&kp C_PLAY_PAUSE 	&kp RET			&kp UP			&kp BSPC		&kp C_MUTE		&none
    &kp TAB		&mo 9			&kp A			&kp S			&kp D			&kp G				&kp C_PREV 		&kp LEFT		&kp DOWN		&kp RIGHT		&kp C_VOLUME_UP		&kp BSPC 
    &kp LALT		&kp RSHFT		&kp Y			&kp X			&kp C			&kp V				&kp C_NEXT 		&none			&none			&none			&kp C_VOLUME_DOWN	&kp LGUI
 									&kp LCTRL		&kp LSHFT		&kp SPACE			&none			&tog 8			&none
