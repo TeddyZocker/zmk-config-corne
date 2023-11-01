@@ -211,7 +211,7 @@
                         bindings = <
    &kp Z		&kp U			&kp N4			&kp W			&kp N5			&kp N6				&none			&none			&none			&none			&none			&kp LA(F4)
    &kp I		&none			&kp A			&kp S			&kp D			&kp N7				&bt BT_SEL 0		&bt BT_SEL 1		&bt BT_SEL 2		&bt BT_SEL 3		&bt BT_SEL 4		&none
-   &kp T		&kp L			&kp N1			&kp N2			&kp N3			&kp N8				&none			&bt BT_CLR		&none			&none			&none			&none
+   &kp T		&kp L			&kp N1			&kp N2			&kp N3			&kp N8				&none			&bt BT_CLR		&none			&none			&kp LBKT		&none 
 									&kp H 			&kp J			&kp K				&none			&none 			&none
                         >;
                 };
