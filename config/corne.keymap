@@ -66,15 +66,15 @@
 //                   	   |LSHFT| MO 1 |trans |   	| trans| LALT | LCTRL|
 
                         bindings = <
-   &trans		&kp DOT			&kp N7			&kp N8			&kp N9			&kp BSPC			&none			&kp RET			&kp UP			&kp BSPC		&none			&trans      
-   &none		&kp COMMA		&kp N4			&kp N5			&kp N6			&kp TAB				&none			&kp LEFT		&kp DOWN		&kp RIGHT		&kp LS(N0)		&trans       
-   &kp LGUI		&kp N0			&kp N1			&kp N2			&kp N3			&kp RET				&kp RBKT		&kp SLASH		&kp LS(RBKT)		&kp LS(N7)		&none			&trans       
+   &kp RBKT		&kp DOT			&kp N7			&kp N8			&kp N9			&kp BSPC			&kp C_MUTE		&kp RET			&kp UP			&kp BSPC		&kp C_PLAY_PAUSE 	&kp LS(N7)      
+   &kp SLASH		&kp COMMA		&kp N4			&kp N5			&kp N6			&kp TAB				&kp C_VOLUME_UP		&kp LEFT		&kp DOWN		&kp RIGHT		&kp C_PREV		&kp LS(RBKT)    
+   &kp CARET		&kp N0			&kp N1			&kp N2			&kp N3			&kp RET				&kp C_VOLUME_DOWN 	&none			&none			&none			&kp C_NEXT		&kp LS(N0)       
 									&none			&none			&trans				&trans			&kp LALT		&kp LCTRL
                         >;	
                 };
 // ---------------------------------------------------------------------------------------------------
 
-
+a
                 raise_layer {
 // ---------------------------------------------------------------------------------------------------
 // 	| --- | --- | --- | --- |  ;  |  >  |   	|  (  |  )   |  [  |  ]  |  {  |  }  |
@@ -83,7 +83,7 @@
 //                   	  | --- | --- |trans|   	|trans| LALT |LCTRL|
 
                         bindings = <
-   &none		&none			&none			&none			&kp LS(COMMA)		&kp PIPE2			&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)		&kp RA(N9)		&kp RA(N7)		&kp RA(N0)       
+   &none		&none			&none			&none			&kp LT			&kp PIPE2			&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)		&kp RA(N9)		&kp RA(N7)		&kp RA(N0)       
    &none		&none      		&kp LS(BSLH)		&kp LS(N2)		&kp COMMA		&kp DOT				&kp MINUS		&kp BSLH		&kp LS(N6)		&kp RA(Q)		&kp LS(N4)		&kp LS(N5)
    &none		&none			&kp TILDE		&kp LS(GRAVE)		&kp LESS_THAN		&kp GREATER_THAN		&kp UNDER		&kp EXCL		&kp LS(SLASH)		&kp TILDE		&kp RA(E)		&kp RA(MINUS) 
 									&none			&none			&trans				&trans			&none			&to 8
