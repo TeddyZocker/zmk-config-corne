@@ -41,11 +41,11 @@
 
 / {
     macros {
-        layer_with_gui: lwg {
+        lwg: lwg {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&sl 6 &kp LGUI>;
-            label = "LINT";
+            label = "LWG";
         };
     };
 };
