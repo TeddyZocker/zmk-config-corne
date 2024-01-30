@@ -45,8 +45,7 @@
             #binding-cells = <0>;
             bindings =  <&macro_press &kp LGUI>
     		     ,  <&macro_tap &mo 6>
-    		     ,  <&macro_release &kp LGUI>
-            label = "lwg";
+    		     ,  <&macro_release &kp LGUI>;
         };
      };
   };
