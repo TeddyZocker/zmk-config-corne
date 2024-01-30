@@ -45,7 +45,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&sl 6 &kp LGUI>;
-            label = "LWG";
+            label = "lwg";
         };
     };
 };
