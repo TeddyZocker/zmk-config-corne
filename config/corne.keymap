@@ -37,19 +37,27 @@
 
 // ---------------------------------------------------------------------------------------------------
 
-
-// bs
+	
 / {
     macros {
         lwg: lwg {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LGUI &sl 6>;
+            bindings = <&mo 6 &kp LGUI>;
             label = "lwg";
         };
-    };
-};
+     };
 
+
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lwg>, <&mo 7>;
+        };
+     };
+  };
 
 
 
@@ -66,7 +74,7 @@
 
                         bindings = <
    &kp ESC		&kp Q			&kp W			&kp E			&kp R			&kp T				&kp Y			&kp U			&kp I			&kp O			&kp P			&kp DEL
-   &lwg			&kp A			&kp S			&kp D			&kp F			&kp G				&kp H			&kp J			&kp K			&kp L			&kp TAB			&kp RET
+   &td0			&kp A			&kp S			&kp D			&kp F			&kp G				&kp H			&kp J			&kp K			&kp L			&kp TAB			&kp RET
    &sl 5		&kp Z			&kp X			&kp C			&kp V			&kp B				&kp N			&kp M			&kp SQT			&kp SEMI		&kp LBKT		&kp LGUI
 									&kp LSHFT		&mo 1			&kp SPACE			&kp BSPC		&mo 2			&kp K_CMENU
 			>;
@@ -116,9 +124,9 @@
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
-   &kp LGUI		&kp C_PLAY_PAUSE	&kp RET			&kp UP			&kp BSPC		&kp C_MUTE			&kp INS			&kp HOME		&kp F1			&kp F4			&kp F7			&kp F12
-   &kp LALT		&kp C_NEXT		&kp LEFT		&kp DOWN		&kp RIGHT		&kp C_VOLUME_UP			&kp PAGE_DOWN		&kp PAGE_UP		&kp F2			&kp F5			&kp F8			&kp F11
-   &kp LCTRL		&kp C_PREV		&kp LC(TAB)		&none			&kp TAB			&kp C_VOLUME_DOWN		&kp DEL			&kp END			&kp F3			&kp F6			&kp F9			&kp F12
+   &tog 3		&kp C_PLAY_PAUSE	&kp RET			&kp UP			&kp BSPC		&kp C_MUTE			&kp INS			&kp HOME		&kp F1			&kp F4			&kp F7			&kp F12
+   &none		&kp C_NEXT		&kp LEFT		&kp DOWN		&kp RIGHT		&kp C_VOLUME_UP			&kp PAGE_DOWN		&kp PAGE_UP		&kp F2			&kp F5			&kp F8			&kp F11
+   &none		&kp C_PREV		&kp LC(TAB)		&none			&kp TAB			&kp C_VOLUME_DOWN		&kp DEL			&kp END			&kp F3			&kp F6			&kp F9			&kp F12
                                                 			&kp LC(Y)		&kp LC(Z)		&kp LC(S)	       		&kp LCTRL		&kp LALT		&kp LGUI
                         >;
                 };
@@ -133,7 +141,7 @@
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
-   &none		&kp C_PLAY_PAUSE	&kp RET			&none			&kp BSPC		&kp C_MUTE			&kp INS			&kp HOME		&kp F1			&kp F4			&kp F7			&kp F12
+   &tog 4		&kp C_PLAY_PAUSE	&kp RET			&none			&kp BSPC		&kp C_MUTE			&kp INS			&kp HOME		&kp F1			&kp F4			&kp F7			&kp F12
    &none		&kp C_NEXT		&none			&none			&none			&kp C_VOLUME_UP			&kp PAGE_DOWN		&kp PAGE_UP		&kp F2			&kp F5			&kp F8			&kp F11
    &none		&kp C_PREV		&none	 		&none	 		&none	 		&kp C_VOLUME_DOWN		&kp DEL			&kp END			&kp F3			&kp F6			&kp F9			&kp F12
                                                 			&none			&none			&none		       		&kp LCTRL		&kp LALT		&kp LGUI
@@ -170,9 +178,9 @@
 
                         bindings = <
    &none		&none			&kp N7			&kp N8			&kp N9			&kp LC(T)			&none			&none			&none			&none			&none			&none
-   &sl 7		&none			&kp N4			&kp N5			&kp N6			&kp LC(LS(T))			&kp LG(D)		&none			&none			&none			&none			&none
+   &none		&none			&kp N4			&kp N5			&kp N6			&kp LC(LS(T))			&kp LG(D)		&none			&none			&none			&none			&none
    &none		&none			&kp N1			&kp N2			&kp N3			&kp LC(W)			&kp LA(F4)		&none			&none			&none			&none			&none
-									&none			&kp LGUI		&kp LA(RET)			&kp LG(LS(S))		&none			&none
+									&mo 4			&mo 3			&kp LA(RET)			&kp LG(LS(S))		&none			&none
                         >;
                 };
 // ---------------------------------------------------------------------------------------------------
