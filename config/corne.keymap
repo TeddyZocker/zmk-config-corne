@@ -43,8 +43,7 @@
         lwg: lwg {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =  <&macro_press &to 6>
-    		     ,  <&macro_tap &kp LGUI>
+            bindings =  <&macro_press &to 6 &sk LGUI>
 		     ,  <&macro_release &tog 6>;
         };
      };
