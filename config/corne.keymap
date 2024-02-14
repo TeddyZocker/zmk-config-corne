@@ -44,9 +44,9 @@
         lwg: lwg {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =    <&macro_press &mo 3 &kp LGUI &kp ESC>
+            bindings =    <&macro_press &mo 7 &kp LGUI &kp ESC>
     			, <&macro_pause_for_release>
-    			, <&macro_release &mo 3 &kp LGUI &kp ESC>;
+    			, <&macro_release &mo 7 &kp LGUI &kp ESC>;
         };
 
         gcl: gcl {
@@ -67,15 +67,15 @@
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&mo 1>, <&lwg>, <&mo 4>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 1>, <&mo 3>, <&mo 4>;
         		};
 
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 7>, <&sl 6>;
+            bindings = <&lwg>, <&sl 6>;
         		};
 
         td_b0: tap_dance_bluetooth0 {
