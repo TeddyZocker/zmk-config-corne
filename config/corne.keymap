@@ -119,10 +119,10 @@
 //   	          	     |LSHFT| MO 1 |trans |   	| trans| LALT | LCTRL|
 
                         bindings = <
-   &kp RBKT		&kp DOT			&kp N7			&kp N8			&kp N9			&kp BSPC			&kp C_MUTE		&kp RET			&kp UP			&kp BSPC		&kp C_PLAY_PAUSE 	&kp LS(RBKT)      
-   &kp SLASH		&kp COMMA		&kp N4			&kp N5			&kp N6			&kp TAB				&kp C_VOLUME_UP		&kp LEFT		&kp DOWN		&kp RIGHT		&kp C_NEXT		&kp LS(N7)
-   &kp LGUI		&kp N0			&kp N1			&kp N2			&kp N3			&kp RET				&kp C_VOLUME_DOWN 	&kp LC(LS(TAB))		&none			&kp LC(TAB)		&kp C_PREV		&kp LS(N0)       
-									&to 8			&none			&trans				&kp LCTRL		&kp LALT		&kp LGUI
+   &none		&kp DOT			&kp N7			&kp N8			&kp N9			&kp BSPC			&none			&none			&kp UP			&none			&none			&none  
+   &none		&kp COMMA		&kp N4			&kp N5			&kp N6			&kp TAB				&none			&kp LEFT		&kp DOWN		&kp RIGHT		&none			&none
+   &kp LGUI		&kp N0			&kp N1			&kp N2			&kp N3			&kp RET				&none			&kp RBKT		&kp SLASH		&kp LS(RBKT)		&kp LS(N7)		&kp LS(N0)       
+									&to 8			&none			&trans				&none			&kp LALT		&none			
                         >;	
                 };
 // ---------------------------------------------------------------------------------------------------
