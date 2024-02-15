@@ -74,7 +74,7 @@
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&lwg>, <&sl 6>;
         		  };
 
@@ -119,7 +119,7 @@
 //   	          	     |LSHFT| MO 1 |trans |   	| trans| LALT | LCTRL|
 
                         bindings = <
-   &none		&kp DOT			&kp N7			&kp N8			&kp N9			&none				&none			&none			&kp UP			&none			&none			&trans
+   &none		&kp DOT			&kp N7			&kp N8			&kp N9			&kp BSPC			&none			&none			&kp UP			&none			&none			&trans
    &none		&kp COMMA		&kp N4			&kp N5			&kp N6			&kp TAB				&none			&kp LEFT		&kp DOWN		&kp RIGHT		&none			&trans
    &kp LGUI		&kp N0			&kp N1			&kp N2			&kp N3			&kp RET				&none			&kp RBKT		&kp SLASH		&kp LS(RBKT)		&kp LS(N7)		&kp LS(N0)       
 									&to 8			&none			&trans				&kp BSPC		&kp LALT		&none			
