@@ -173,7 +173,7 @@
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
-   &none		&none			&kp BSPC		&kp UP			&kp RET			&kp DEL				&none			&none			&none			&none			&none			&kp DEL
+   &kp ESC		&none			&kp BSPC		&kp UP			&kp RET			&kp DEL				&none			&none			&none			&none			&none			&kp DEL
    &none		&none			&kp LEFT		&kp DOWN		&kp RIGHT		&none				&none			&none			&none			&none			&none			&none
    &sl 5		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
                                                 			&kp LSHFT		&kp LALT		&kp LCTRL	       		&none			&none			&none
