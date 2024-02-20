@@ -174,8 +174,8 @@
 
                         bindings = <
    &kp ESC		&none			&kp BSPC		&kp UP			&kp RET			&kp DEL				&none			&none			&none			&none			&none			&kp DEL
-   &none		&none			&kp LEFT		&kp DOWN		&kp RIGHT		&none				&none			&none			&none			&none			&none			&none
-   &sl 5		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
+   &td1			&none			&kp LEFT		&kp DOWN		&kp RIGHT		&none				&none			&none			&none			&none			&none			&none
+   &sl 5		&none			&none			&tog 4			&none			&none				&none			&none			&none			&none			&none			&none
                                                 			&kp LALT		&kp LSHFT		&kp LCTRL	       		&none			&tog 4			&none
                         
 
