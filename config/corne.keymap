@@ -61,7 +61,7 @@
     			, <&macro_release &mo 11 &kp LALT>;
         };
 
-        ls: layer_lalt_macro {
+        ls: layer_lshift_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =    <&macro_press &mo 11 &kp LSHFT>
