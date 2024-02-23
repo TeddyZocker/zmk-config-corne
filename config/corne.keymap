@@ -10,6 +10,7 @@
 #define games_layer		9
 #define games_support_layer	10
 #define games_controll_layer	11
+#define temp			12
 
 /*
  * Copyright (c) 2020 The ZMK Contributors
@@ -67,6 +68,14 @@
             bindings =    <&macro_press &mo 11 &kp LSHFT>
     			, <&macro_pause_for_release>
     			, <&macro_release &mo 11 &kp LSHFT>;
+        };
+
+        ls2: layer_lshift_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =    <&macro_press &mo 12 &kp LSHFT>
+    			, <&macro_pause_for_release>
+    			, <&macro_release &mo 12 &kp LSHFT>;
         };
      };
   };
@@ -137,7 +146,7 @@
 //                   	   |LSHFT| MO 1 | SPC |   	| BSPC | MO 2 | --- |
 
                         bindings = <
-   &td10		&kp Q			&kp W			&kp E			&kp R			&kp T				&kp Y			&kp U			&kp I			&kp O			&kp P			&kp DEL
+   &kp ESC		&kp Q			&kp W			&kp E			&kp R			&kp T				&kp Y			&kp U			&kp I			&kp O			&kp P			&kp DEL
    &td1			&kp A			&kp S			&kp D			&kp F			&kp G				&kp H			&kp J			&kp K			&kp L			&td_b0			&kp RET
    &td2			&kp Z			&kp X			&kp C			&kp V			&kp B				&kp N			&kp M			&kp SQT			&kp SEMI		&kp LBKT		&kp LGUI
 									&kp LSHFT		&td0			&kp SPACE			&kp BSPC		&mo 2			&kp K_CMENU
@@ -154,9 +163,9 @@
 //   	          	     |LSHFT| MO 1 |trans |   	| trans| LALT | LCTRL|
 
                         bindings = <
-   &none		&kp DOT			&kp N7			&kp N8			&kp N9			&kp BSPC			&none			&none			&kp UP			&none			&none			&kp DEL
+   &kp ESC		&kp DOT			&kp N7			&kp N8			&kp N9			&kp BSPC			&none			&none			&kp UP			&none			&none			&kp DEL
    &none		&kp COMMA		&kp N4			&kp N5			&kp N6			&kp TAB				&none			&kp LEFT		&kp DOWN		&kp RIGHT		&none			&kp RET
-   &none		&kp N0			&kp N1			&kp N2			&kp N3			&kp RET				&none			&kp RBKT		&kp SLASH		&kp LS(RBKT)		&kp LS(N7)		&kp LS(N0)       
+   &to 3		&kp N0			&kp N1			&kp N2			&kp N3			&kp RET				&none			&kp RBKT		&kp SLASH		&kp LS(RBKT)		&kp LS(N7)		&kp LS(N0)       
 									&to 9			&none			&trans				&kp BSPC		&kp LALT		&kp LGUI			
                         >;	
                 };
@@ -339,6 +348,22 @@
                 };
 
 // ---------------------------------------------------------------------------------------------------
+
+// 12
+                 temp {
+// ---------------------------------------------------------------------------------------------------
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
+
+                        bindings = <
+   &none		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
+   &none		&none			&none			&none	 		&none			&none				&none			&none			&none			&none			&none			&none
+   &tog 3		&none			&none			&none			&none			&none				&none			&none			&none			&none			&none			&none
+									&none			&none			&none				&none			&none			&none
+                        >;
+                };
 
         };
 };
