@@ -76,18 +76,32 @@
 
 / {
     behaviors {
-        td0: middle_button_0 {
+        td0: middle_button_td {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&mo 3>, <&to 8>;
         		  };
 
-        td1: window_switch_lalt_1 {
+        td1: window_switch_lalt_td {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&ws>, <&sl 6>;
+        		  };
+
+        td2: layer8_ESC_on_td {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp ESC>, <&to 8>;
+        		  };
+
+        td3: layer8_ESC_off_td {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp ESC>, <&tog 8>;
         		  };
 
         td_b0: swich_bluetooth0 {
@@ -116,7 +130,7 @@
 //                   	   |LSHFT| MO 1 | SPC |   	| BSPC | MO 2 | --- |
 
                         bindings = <
-   &kp ESC		&kp Q			&kp W			&kp E			&kp R			&kp T				&kp Y			&kp U			&kp I			&kp O			&kp P			&kp DEL
+   &td2			&kp Q			&kp W			&kp E			&kp R			&kp T				&kp Y			&kp U			&kp I			&kp O			&kp P			&kp DEL
    &td1			&kp A			&kp S			&kp D			&kp F			&kp G				&kp H			&kp J			&kp K			&kp L			&td_b0			&kp RET
    &sl 5		&kp Z			&kp X			&kp C			&kp V			&kp B				&kp N			&kp M			&kp SQT			&kp SEMI		&kp LBKT		&kp LGUI
 									&kp LSHFT		&td0			&kp SPACE			&kp BSPC		&mo 2			&kp K_CMENU
@@ -253,10 +267,10 @@
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
-   &kp ESC		&none			&kp BSPC		&kp UP			&kp RET			&kp DEL				&none			&none			&none			&none			&none			&kp DEL
+   &td3			&none			&kp BSPC		&kp UP			&kp RET			&kp DEL				&none			&none			&none			&none			&none			&kp DEL
    &td1			&none			&kp LEFT		&kp DOWN		&kp RIGHT		&none				&none			&none			&none			&none			&none			&none
-   &sl 5		&none			&none			&tog 4			&none			&none				&none			&none			&none			&none			&none			&none
-                                                			&kp LALT		&kp LSHFT		&kp LCTRL	       		&none			&tog 4			&none
+   &sl 5		&none			&none			&tog 8			&none			&none				&none			&none			&none			&none			&none			&none
+                                                			&kp LALT		&kp LSHFT		&kp LCTRL	       		&none			&tog 8			&none
 			>;
                 };
 
