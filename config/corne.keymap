@@ -88,14 +88,14 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&ws>, <&sl 7>;
+            bindings = <&ws>, <&mo 7>, <&kp LALT>;
         		  };
 
         td2: layer6_lctrl_td {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 6>, <&kp LCTRL>;
+            bindings = <&mo 6>, <&tog 3>, <&kp LCTRL>;
         		  };
 
         td10: layer8_ESC_on_td {
@@ -259,7 +259,7 @@
 
                         bindings = <
    &kp LGUI		&kp LC(T)		&none			&kp LG(E)		&none			&none				&none			&none			&none			&none			&none			&none
-   &kp LALT		&kp LC(LS(T))		&none			&none			&none			&kp LG(D)			&none			&none			&none			&none			&none			&none
+   &none		&kp LC(LS(T))		&none			&none			&none			&kp LG(D)			&none			&none			&none			&none			&none			&none
    &none		&kp LC(W)		&none			&none			&kp LG(V)		&kp LA(F4)			&none			&none			&none			&none			&none			&none
 									&none 			&none			&kp LG(LS(S))			&none			&none			&none
                         >;
