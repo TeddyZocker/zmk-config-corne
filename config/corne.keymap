@@ -110,7 +110,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 6>, <&tog 3>, <&kp LCTRL>;
+            bindings = <&mo 6>, <&kp LCTRL>, <&tog 3>;
         		  }; 
 
         td_b0: swich_bluetooth0 {
