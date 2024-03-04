@@ -173,7 +173,7 @@
 //                   	  | --- | --- |trans|   	|trans| LALT |LCTRL|
 
                         bindings = <
-   &none		&none			&none			&none			&kp LS(COMMA)		&kp PIPE2			&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)		&kp RA(N9)		&kp RA(N7)		&kp RA(N0)       
+   &none		&none			&none			&none			&kp <			&kp PIPE2			&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)		&kp RA(N9)		&kp RA(N7)		&kp RA(N0)       
    &none		&none      		&kp LS(BSLH)		&kp LS(N2)		&kp COMMA		&kp DOT				&kp MINUS		&kp BSLH		&kp LS(N6)		&kp RA(Q)		&kp LS(N4)		&kp LS(N5)
    &none		&none			&kp TILDE		&kp LS(GRAVE)		&kp LESS_THAN		&kp GREATER_THAN		&kp UNDER		&kp EXCL		&kp LS(SLASH)		&none			&kp RA(E)		&kp RA(MINUS) 
 									&caps_word		&none			&trans				&trans			&none			&to 9
