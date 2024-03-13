@@ -166,7 +166,7 @@
 / {
         
 	keymap {
-// 0
+# 0
                 compatible = "zmk,keymap";  
 
                 default_layer {
