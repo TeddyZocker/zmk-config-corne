@@ -154,7 +154,7 @@
             tri_layer {
                 if-layers = <1 2>;
                 then-layer = <3>;
-                behavior = "toggle";
+//              behavior = "toggle";
                     };  
         };
     };
@@ -174,14 +174,14 @@
 // 	|  ESC |  Q  |  W  |  E  |   R  |  T  |   	|  Z   |  U   |  I  |  O  |  P  | DEL  |
 // 	| SL 6 |  A  |  S  |  D  |   F  |  G  |   	|  H   |  J   |  K  |  L  | --- | RET  |
 // 	| SL 8 |  Y  |  X  |  C  |   V  |  B  |   	|  N   |  M   |  Ä  |  Ö  |  Ü  | LGUI |
-//                   	   |LSHFT| MO 1 | SPC |   	| BSPC | MO 2 | --- |
+//                     |LSHFT| MO 1 | SPC |   	| BSPC | MO 2 | --- |
 
                         bindings = <
    &kp ESC		&kp Q			        &kp W			    &kp E			        &kp R			    &kp T				&kp Y			&kp U			&kp I			&kp O			&kp P			&kp DEL
    &td1			&kp A			        &kp S			    &kp D			        &kp F			    &kp G				&kp H			&kp J			&kp K			&kp L			&none			&kp RET
    &td2			&kp Z			        &kp X			    &kp C			        &kp V			    &kp B				&kp N			&kp M			&kp SQT			&kp SEMI		&kp LBKT		&kp LGUI
 									                        &kp LSHFT		        &td0l			    &kp SPACE			&kp BSPC		&td0r			&kp K_CMENU
-			>;
+			            >;
                 };
 // ---------------------------------------------------------------------------------------------------
 
@@ -232,7 +232,7 @@
    &td1			    &none			    &kp LEFT		    &kp DOWN		    &kp RIGHT		&none				    &none			    &none			&none			&none			&none			&none
    &td2			    &none			    &none			    &none			    &none			&none				    &none			    &none			&none			&none			&none			&none
                                                 			&kp LALT		    &ls2			&kp LCTRL	       		&none			    &none			&none
-			>;
+			            >;
                 };
 // ---------------------------------------------------------------------------------------------------
 
@@ -266,7 +266,7 @@
    &kp LC(LS(T))	&kp C_NEXT		    &none			    &none			&none			    &kp C_VOLUME_UP			&kp PAGE_DOWN	    &kp PAGE_UP		&kp F2			&kp F5			&kp F8			&kp F11
    &kp LC(W)		&kp C_PREV		    &mkp LCLK		    &mkp MCLK		&mkp RCLK		    &kp C_VOLUME_DOWN		&kp DEL			    &kp END			&kp F3			&kp F6			&kp F9			&kp F12
                                                 		    &none			&none			    &none		       		&kp LCTRL		    &kp LALT		&kp LGUI
-			>;
+			            >;
                 };
 
 // ---------------------------------------------------------------------------------------------------
@@ -320,7 +320,6 @@
 									    &none			    &none			&none				&none			    &none			    &none
                         >;
                 };
-// ---------------------------------------------------------------------------------------------------
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
