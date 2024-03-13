@@ -75,7 +75,7 @@
                                 , <&macro_release &mo 4 &kp LSHFT>;
                             };
 
-    mlt:        lesser_than {
+    mlt:        mlesser_than {
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
                     bindings =    <&macro_press &kp LALT &kp KP_N6 &kp KP_N0>
