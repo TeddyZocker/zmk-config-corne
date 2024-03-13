@@ -210,7 +210,7 @@
 //                    | --- | --- |trans|   	|trans| LALT |LCTRL|
 
                         bindings = <
-   &kp ESC		&kp LA(8960)			&none			    &kp LA(94)		    &kp LA(60)		    &kp PIPE2			&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)		    &kp RA(N9)		&kp RA(N7)		&kp RA(N0)       
+   &kp ESC		&kp RA(8960)			&none			    &kp RA(94)		    &kp RA(60)		    &kp PIPE2			&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)		    &kp RA(N9)		&kp RA(N7)		&kp RA(N0)       
    &td_lara		&none              	    &kp LS(BSLH)	    &kp LS(N2)          &kp COMMA		    &kp DOT				&kp MINUS		&kp BSLH		        &kp LS(N6)		    &kp RA(Q)		&none   		&kp LS(N5)
    &td_lcrc 	&none			        &kp LS(N2)  		&kp LS(GRAVE)		&kp LESS_THAN	    &kp GREATER_THAN	&kp UNDER		&kp EXCL		        &kp LS(SLASH)		&kp TILDE		&none   		&kp RA(MINUS) 
 								                            &caps_word		    &trans			    &trans			    &trans			&trans			        &to 9
