@@ -298,7 +298,7 @@
 //                       	|  LC(Y)  |   LC(Z)   |  LC(RET)  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
-   &none		&kp LC(BSLH)		        &none			        &kp LC(E)		        &none			        &none				&none			&none			&none			&none			&none			&none
+   &none		&kp LC(BSLH)		        &none			        &kp LG(E)		        &none			        &none				&none			&none			&none			&none			&none			&none
    &none		&kp LC(A)		        &kp LC(S)		        &none	 		        &kp LC(F)		        &kp LS(TAB)   		        &none			&none			&none			&none			&none			&none
    &kp LCTRL		&none			        &kp LC(X)		        &kp LC(C)		        &kp LC(V)		        &none	 			&none			&none			&none			&none			&none			&none
 									                &kp LC(Y)		        &kp LC(Z)		        &kp LC(RET)	                &none   	        &none			&none
