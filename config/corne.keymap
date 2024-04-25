@@ -300,7 +300,7 @@
                         bindings = <
    &none		&kp LC(BSLH)		        &none			        &kp LG(E)		        &none			        &none				&none			&none			&none			&none			&none			&none
    &none		&kp LC(A)		        &kp LC(S)		        &none	 		        &kp LC(F)		        &kp LS(TAB)   		        &none			&none			&none			&none			&none			&none
-   &kp LCTRL		&none			        &kp LC(X)		        &kp LC(C)		        &kp LC(V)		        &none	 			&none			&none			&none			&none			&none			&none
+   &kp LCTRL		&none			        &kp LC(X)		        &kp LC(C)		        &kp LC(V)		        &kp LG(LS(S)) 			&none			&none			&none			&none			&none			&none
 									                &kp LC(Y)		        &kp LC(Z)		        &kp LC(RET)	                &none   	        &none			&none
                         >;
                 };
@@ -335,7 +335,7 @@
    &none		&none			    &kp N7			        &kp N8			        &kp N9			        &none				&none			&none			&none			&none			&none			&none
    &none		&none			    &kp N4			        &kp N5			        &kp N6			        &none				&none			&none			&none			&none			&none			&none
    &none		&none			    &kp N1			        &kp N2			        &kp N3			        &none				&none			&none			&none			&none			&none			&none
-									                &none			        &none			        &kp LS(S)			&none			&none			&none
+									                &none			        &none			        &none			&none			&none			&none
                         >;
                 };
 
