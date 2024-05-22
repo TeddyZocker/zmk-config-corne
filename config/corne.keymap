@@ -248,7 +248,7 @@
                         bindings = <
    &kp ESC		&none			        &kp BSPC		        &kp UP			        &kp RET			        &kp DEL				&none			&none			&none			&none			&none			&kp DEL
    &td1			&none			        &kp LEFT		        &kp DOWN		        &kp RIGHT		        &none				&none			&none			&none			&none			&none			&none
-   &td2			&none			        &none	                        &none			        &none			        &none				&none			&none			&none			&none			&none			&none
+   &td2			&none			        &none	                        &none			        &none			        &none				&none			&none			&none			&none			&none			&to 3
                                                 			                &kp LALT		        &ls2			        &kp LCTRL	       		&none			&none			&none
 			            >;
                 };
