@@ -75,19 +75,25 @@
             timeout-ms = <50>;
 	    layers = <1>;
             key-positions = <1 2>;
-            bindings = <&kp LESS_THAN>;
+            bindings = <&kp GREATER_THAN>;
         };
 
         combo_strichpunkt {
             timeout-ms = <50>;
 	    layers = <1>;
             key-positions = <13 14>;
-            bindings = <&kp GREATER_THAN>;
+            bindings = <&kp LESS_THAN>;
+        };
+
+        combo_to9 {
+            timeout-ms = <50>;
+            key-positions = <40 41>;
+            bindings = <&to 9>;
         };
 
         combo_res_layers {
             timeout-ms = <50>;
-            key-positions = <37 38>;
+            key-positions = <36 37>;
             bindings = <&to 0>;
         };
 
@@ -274,7 +280,7 @@
    &kp ESC		&dm         			&none			        &kp RA(90)   		        &mlt     		        &kp PIPE2			&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)		&kp RA(N9)		&kp RA(N7)		&kp RA(N0)       
    &td_lara		&none              	        &kp LS(BSLH)	                &kp LS(N2)                      &kp COMMA		        &kp DOT				&kp MINUS		&kp BSLH		&kp LS(N6)		&kp RA(Q)		&none   		&kp LS(N5)
    &td_lcrc 	        &none			        &kp LS(N2)  		        &kp LS(GRAVE)		        &none		                &none			        &kp UNDER		&kp EXCL		&kp LS(SLASH)		&kp TILDE		&none   		&kp RA(MINUS) 
-								                        &caps_word		        &trans			        &to 3			        &trans			&trans			&to 9
+								                        &caps_word		        &trans			        &to 3			        &trans			&trans			&trans
                         >;
                 };
 // ---------------------------------------------------------------------------------------------------
