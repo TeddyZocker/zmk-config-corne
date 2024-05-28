@@ -39,6 +39,62 @@
 
 // ---------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_plus {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <15 16>;
+            bindings = <&kp RBKT>;
+        };
+ 
+	combo_minus {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <27 28>;
+            bindings = <&kp SLASH>;
+        };
+
+        combo_mal {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <16 17>;
+            bindings = <&kp LS(RBKT)>;
+        };
+
+        combo_dividiert {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <28 29>;
+            bindings = <&kp LS(N7)>;
+        };
+
+        combo_doppelpunkt {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <28 29>;
+            bindings = <&kp LESS_THAN>;
+        };
+
+        combo_strichpunkt {
+            timeout-ms = <50>;
+	    layers = <1>;
+            key-positions = <28 29>;
+            bindings = <&kp GREATER_THAN>;
+        };
+
+        combo_res_layers {
+            timeout-ms = <50>;
+            key-positions = <37 38>;
+            bindings = <&to 0>;
+        };
+
+
+    };
+};
+
 // ---------------------------------------------------------------------------------------------------
 	
 / {
@@ -135,20 +191,6 @@
                         bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>, <&bt BT_SEL 3>;
                                 };
 
-        td_pm:      plus_minus {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp RBKT>, <&kp SLASH>;
-                                };
-
-        td_md:      mal_dividiert {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp LS(RBKT)>, <&kp LS(N7)>;
-                                };
-
         td_lara:    left_alt_right_alt {
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
@@ -213,8 +255,8 @@
 
                         bindings = <
    &kp ESC		&kp DOT			        &kp N7			        &kp N8			        &kp N9			        &kp BSPC			&none			&kp RET			&kp UP	                &kp BSPC                &none			&kp DEL
-   &td_pm		&kp COMMA		        &kp N4			        &kp N5			        &kp N6			        &kp TAB				&none			&kp LEFT		&kp DOWN		&kp RIGHT		&td_b0			&kp RET
-   &td_md		&kp N0			        &kp N1			        &kp N2			        &kp N3			        &kp RET				&none			&none   		&none   		&none   	        &none   		&kp LS(N0)       
+   &none		&kp COMMA		        &kp N4			        &kp N5			        &kp N6			        &kp TAB				&none			&kp LEFT		&kp DOWN		&kp RIGHT		&td_b0			&kp RET
+   &none		&kp N0			        &kp N1			        &kp N2			        &kp N3			        &kp RET				&none			&none   		&none   		&none   	        &none   		&kp LS(N0)       
 								                        &to 9			        &trans			        &trans			        &kp BSPC		&trans  		&kp LGUI			
                         >;	
                 };
@@ -231,7 +273,7 @@
                         bindings = <
    &kp ESC		&dm         			&none			        &kp RA(90)   		        &mlt     		        &kp PIPE2			&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)		&kp RA(N9)		&kp RA(N7)		&kp RA(N0)       
    &td_lara		&none              	        &kp LS(BSLH)	                &kp LS(N2)                      &kp COMMA		        &kp DOT				&kp MINUS		&kp BSLH		&kp LS(N6)		&kp RA(Q)		&none   		&kp LS(N5)
-   &td_lcrc 	        &none			        &kp LS(N2)  		        &kp LS(GRAVE)		        &kp LESS_THAN	                &kp GREATER_THAN	        &kp UNDER		&kp EXCL		&kp LS(SLASH)		&kp TILDE		&none   		&kp RA(MINUS) 
+   &td_lcrc 	        &none			        &kp LS(N2)  		        &kp LS(GRAVE)		        &none		                &none			        &kp UNDER		&kp EXCL		&kp LS(SLASH)		&kp TILDE		&none   		&kp RA(MINUS) 
 								                        &caps_word		        &trans			        &to 3			        &trans			&trans			&to 9
                         >;
                 };
@@ -283,7 +325,7 @@
    &kp LC(T)		&kp C_PLAY_PAUSE	        &kp KP_N7		        &kp KP_N8		        &kp KP_N9		        &kp C_MUTE			&none			&kp RET			&kp UP	                &kp BSPC                &none			&kp DEL
    &kp LC(LS(T))	&kp C_NEXT		        &kp KP_N4			&mkp MCLK		        &kp KP_N6			&kp C_VOLUME_UP			&none			&kp LEFT		&kp DOWN		&kp RIGHT		&td_b0			&kp RET
    &kp LC(W)		&kp C_PREV		        &kp KP_N1		        &kp KP_N2		        &kp KP_N3		        &kp C_VOLUME_DOWN		&none			&kp LC(LS(TAB))		&kp TAB			&kp LC(TAB)	        &none   		&none
-                                                					&mkp LCLK			&kp LCTRL			&mkp RCLK		       		&none			&none			&none
+                                                					&mkp LCLK			&kp LCTRL			&mkp RCLK		       	&none			&none			&none
 			            >;
                 };
 
@@ -355,49 +397,16 @@
 //                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
-   &kp ESC		&kp M			    &kp Q			        &kp W			        &kp E			        &kp R				&kp C_MUTE  		&kp BSPC		&kp UP			&kp RET		&kp C_PLAY_PAUSE	&kp LGUI
-   &kp TAB		&mo 10			    &kp A			        &kp S				&kp D				&kp G				&kp C_VOLUME_UP 	&kp LEFT		&kp DOWN		&kp RIGHT		&kp C_NEXT		&kp LALT
+   &kp ESC		&kp M			    &kp Q			        &kp W			        &kp E			        &kp R				&kp C_MUTE  		&kp BSPC		&kp UP			&kp RET			&kp C_PLAY_PAUSE	&kp LGUI
+   &kp TAB		&mo 11			    &kp A			        &kp S				&kp D				&kp G				&kp C_VOLUME_UP 	&kp LEFT		&kp DOWN		&kp RIGHT		&kp C_NEXT		&kp LALT
    &la			&kp RSHFT		    &kp Y			        &kp X			        &kp C			        &kp V				&kp C_VOLUME_DOWN 	&kp F3			&kp F4			&kp F5			&kp C_PREV		&kp LCTRL
-									                &kp LCTRL		        &ls			        &kp SPACE			&none			&tog 9			&none
+									                &kp LCTRL		        &ls			        &kp SPACE			&none			&to 10			&none
                         >;
                 };
+
 // ---------------------------------------------------------------------------------------------------
 
 // 10
-                 games_support_layer {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
-
-                        bindings = <
-   &kp Z		&kp U			    &kp N4			        &kp W			        &kp N5			        &kp N6				&bt BT_SEL 0		&bt BT_SEL 3	        &none			&none			&none			&kp LA(F4)
-   &kp I		&none			    &kp A			        &kp S			        &kp D			        &kp N7				&bt BT_SEL 1		&bt BT_SEL 4	        &to 12			&none			&none			&none
-   &kp T		&kp L			    &kp N1			        &kp N2			        &kp N3			        &kp N8				&bt BT_SEL 2		&bt BT_CLR		&none			&none			&none		&none 
-									                &kp H 			        &kp J			        &kp K				&none			&none 			&none
-                        >;
-                };
-// ---------------------------------------------------------------------------------------------------
-
-// 11
-                 games_controll_layer {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
-
-                        bindings = <
-   &none		&none			    &none			        &none			        &none			        &none				&none			&none			&none			&none			&none			&none
-   &none		&none			    &none			        &none	 		        &none			        &none				&none			&none			&none			&none			&none			&none
-   &none		&none			    &none			        &kp LC(C)		        &kp LC(V)		        &none				&none			&none			&none			&none			&none			&none
-									                &tog 9			        &none			        &none				&none			&none			&none
-                        >;
-                };
-// ---------------------------------------------------------------------------------------------------
-
-// 12
                  temp {
 // ---------------------------------------------------------------------------------------------------
 // |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
@@ -409,9 +418,45 @@
    &kp ESC	        &kp M			    &kp F1			        &kp UP			        &kp F2			        &kp R				&kp C_MUTE  		&kp BSPC		&kp UP			&kp RET			&kp C_PLAY_PAUSE	&kp ESC
    &kp TAB		&mo 10			    &kp LEFT			        &kp DOWN			&kp RIGHT			&kp G				&kp C_VOLUME_UP 	&kp LEFT		&kp DOWN		&kp RIGHT		&kp C_NEXT		&none
    &la			&kp RSHFT		    &kp Y			        &kp X			        &kp C			        &kp V				&kp C_VOLUME_DOWN 	&kp F3			&kp F4			&kp F5			&kp C_PREV		&kp LGUI
-									                &tog 9			        &kp LSHFT       	        &kp SPACE			&none			&tog 12		    	&none
+									                &none			        &kp LSHFT       	        &kp SPACE			&none			&tog 10		    	&none
                         >;
                 };
+
+// ---------------------------------------------------------------------------------------------------
+
+// 11
+                 games_support_layer {
+// ---------------------------------------------------------------------------------------------------
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
+
+                        bindings = <
+   &kp Z		&kp U			    &kp N4			        &kp W			        &kp N5			        &kp N6				&bt BT_SEL 0		&bt BT_SEL 3	        &none			&none			&none			&kp LA(F4)
+   &kp I		&none			    &kp A			        &kp S			        &kp D			        &kp N7				&bt BT_SEL 1		&bt BT_SEL 4	        &none			&none			&none			&none
+   &kp T		&kp L			    &kp N1			        &kp N2			        &kp N3			        &kp N8				&bt BT_SEL 2		&bt BT_CLR		&none			&none			&none		&none 
+									                &kp H 			        &kp J			        &kp K				&none			&none 			&none
+                        >;
+                };
+// ---------------------------------------------------------------------------------------------------
+
+// 12
+                 games_controll_layer {
+// ---------------------------------------------------------------------------------------------------
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
+//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
+
+                        bindings = <
+   &none		&none			    &none			        &none			        &none			        &none				&none			&none			&none			&none			&none			&none
+   &none		&none			    &none			        &none	 		        &none			        &none				&none			&none			&none			&none			&none			&none
+   &none		&none			    &none			        &kp LC(C)		        &kp LC(V)		        &none				&none			&none			&none			&none			&none			&none
+									                &none			        &none			        &none				&none			&none			&none
+                        >;
+                };
+
         };
 };
 
