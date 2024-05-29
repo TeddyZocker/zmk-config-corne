@@ -40,59 +40,67 @@
 // ---------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------
 
+timeout_combos = 100
+
 / {
     combos {
         compatible = "zmk,combos";
         combo_plus {
-            timeout-ms = <50>;
+            timeout-ms = <timeout_combos>;
 	    layers = <1>;
             key-positions = <14 15>;
             bindings = <&kp RBKT>;
         };
  
 	combo_minus {
-            timeout-ms = <50>;
+            timeout-ms = <timeout_combos>;
 	    layers = <1>;
             key-positions = <26 27>;
             bindings = <&kp SLASH>;
         };
 
         combo_mal {
-            timeout-ms = <50>;
+            timeout-ms = <timeout_combos>;
 	    layers = <1>;
             key-positions = <15 16>;
             bindings = <&kp LS(RBKT)>;
         };
 
         combo_dividiert {
-            timeout-ms = <50>;
+            timeout-ms = <timeout_combos>;
 	    layers = <1>;
             key-positions = <27 28>;
             bindings = <&kp LS(N7)>;
         };
 
         combo_doppelpunkt {
-            timeout-ms = <50>;
+            timeout-ms = <timeout_combos>;
 	    layers = <1>;
             key-positions = <1 2>;
             bindings = <&kp GREATER_THAN>;
         };
 
         combo_strichpunkt {
-            timeout-ms = <50>;
+            timeout-ms = <timeout_combos>;
 	    layers = <1>;
             key-positions = <13 14>;
             bindings = <&kp LESS_THAN>;
         };
 
+        combo_to3 {
+            timeout-ms = <timeout_combos>;
+            key-positions = <0 1>;
+            bindings = <&to 9>;
+        };
+
         combo_to9 {
-            timeout-ms = <50>;
+            timeout-ms = <timeout_combos>;
             key-positions = <40 41>;
             bindings = <&to 9>;
         };
 
         combo_res_layers {
-            timeout-ms = <50>;
+            timeout-ms = <timeout_combos>;
             key-positions = <36 37>;
             bindings = <&to 0>;
         };
@@ -262,7 +270,7 @@
                         bindings = <
    &kp ESC		&kp DOT			        &kp N7			        &kp N8			        &kp N9			        &kp BSPC			&none			&kp RET			&kp UP	                &kp BSPC                &none			&kp DEL
    &none		&kp COMMA		        &kp N4			        &kp N5			        &kp N6			        &kp TAB				&none			&kp LEFT		&kp DOWN		&kp RIGHT		&td_b0			&kp RET
-   &none		&kp N0			        &kp N1			        &kp N2			        &kp N3			        &kp RET				&none			&none   		&none   		&none   	        &none   		&kp LS(N0)       
+   &kp RA(MINUS)	&kp N0			        &kp N1			        &kp N2			        &kp N3			        &kp RET				&none			&none   		&none   		&none   	        &none   		&kp LS(N0)       
 								                        &to 9			        &trans			        &trans			        &kp BSPC		&trans  		&kp LGUI			
                         >;	
                 };
@@ -280,7 +288,7 @@
    &kp ESC		&dm         			&none			        &kp RA(90)   		        &mlt     		        &kp PIPE2			&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)		&kp RA(N9)		&kp RA(N7)		&kp RA(N0)       
    &td_lara		&none              	        &kp LS(BSLH)	                &kp LS(N2)                      &kp COMMA		        &kp DOT				&kp MINUS		&kp BSLH		&kp LS(N6)		&kp RA(Q)		&none   		&kp LS(N5)
    &td_lcrc 	        &none			        &kp LS(N2)  		        &kp LS(GRAVE)		        &none		                &none			        &kp UNDER		&kp EXCL		&kp LS(SLASH)		&kp TILDE		&none   		&kp RA(MINUS) 
-								                        &caps_word		        &trans			        &to 3			        &trans			&trans			&trans
+								                        &caps_word		        &trans			        &trans			        &trans			&trans			&trans
                         >;
                 };
 // ---------------------------------------------------------------------------------------------------
@@ -297,7 +305,7 @@
 &kp ESC  &none  &kp BSPC  &kp UP      &kp RET    &kp DEL      &none  &none   &none  &none  &none  &kp DEL
 &td1     &none  &kp LEFT  &kp DOWN    &kp RIGHT  &none        &none  &none   &none  &none  &none  &none
 &td2     &none  &none     &kp K_CMENU &none      &none        &none  &none   &none  &none  &none  &none
-                          &ls2        &kp LALT   &kp LCTRL    &none  &tog 3  &none
+                          &ls2        &kp LALT   &kp LCTRL    &none  &none   &none
 			            >;
                 };
 // ---------------------------------------------------------------------------------------------------
@@ -424,7 +432,7 @@
    &kp ESC	        &kp M			    &kp F1			        &kp UP			        &kp F2			        &kp R				&kp C_MUTE  		&kp BSPC		&kp UP			&kp RET			&kp C_PLAY_PAUSE	&kp ESC
    &kp TAB		&mo 10			    &kp LEFT			        &kp DOWN			&kp RIGHT			&kp G				&kp C_VOLUME_UP 	&kp LEFT		&kp DOWN		&kp RIGHT		&kp C_NEXT		&none
    &la			&kp RSHFT		    &kp Y			        &kp X			        &kp C			        &kp V				&kp C_VOLUME_DOWN 	&kp F3			&kp F4			&kp F5			&kp C_PREV		&kp LGUI
-									                &none			        &kp LSHFT       	        &kp SPACE			&none			&tog 10		    	&none
+									                &none			        &kp LSHFT       	        &kp SPACE			&none			&to 9		    	&none
                         >;
                 };
 
