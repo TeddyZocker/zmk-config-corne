@@ -18,9 +18,13 @@
  * SPDX-License-Identifier: MIT
  */
 
+// librarys 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/bt.h>
+
+// Self made
+#include "combos.dtsi"
 
 // Ideen
 // -----
@@ -39,121 +43,6 @@
 
 // ---------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------
-
-
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-
-// def symbols 
-        combo_plus {
-            timeout-ms = <100>;
-	        layers = <1>;
-            key-positions = <14 15>;
-            bindings = <&kp RBKT>;
-        };
- 
-	    combo_minus {
-            timeout-ms = <100>;
-	        layers = <1>;
-            key-positions = <26 27>;
-            bindings = <&kp SLASH>;
-        };
-
-        combo_mal {
-            timeout-ms = <100>;
-	        layers = <1>;
-            key-positions = <15 16>;
-            bindings = <&kp LS(RBKT)>;
-        };
-
-        combo_dividiert {
-            timeout-ms = <100>;
-	        layers = <1>;
-            key-positions = <27 28>;
-            bindings = <&kp LS(N7)>;
-        };
-
-        combo_doppelpunkt {
-            timeout-ms = <100>;
-	        layers = <1>;
-            key-positions = <1 2>;
-            bindings = <&kp GREATER_THAN>;
-        };
-
-        combo_strichpunkt {
-            timeout-ms = <100>;
-	        layers = <1>;
-            key-positions = <13 14>;
-            bindings = <&kp LESS_THAN>;
-        };
-
-// switch layers
-        combo_to3 {
-            timeout-ms = <75>;
-            key-positions = <0 1>;
-            bindings = <&to 3>;
-        };
-
-        combo_to4 {
-            timeout-ms = <75>;
-            key-positions = <14 37>;
-            bindings = <&to 4>;
-        };
-
-        combo_to5 {
-            timeout-ms = <75>;
-            key-positions = <16 37>;
-            bindings = <&to 5>;
-        };
-
-        combo_mo8 {
-            timeout-ms = <75>;
-            layers = <0>;
-            key-positions = <13 37>;
-            bindings = <&mo 8>;
-        };
-
-// res layers
-
-    // functional layers
-        combo_res_layers_tog3 {
-            timeout-ms = <100>;
-            layers = <3>;
-            key-positions = <15 37>;
-            bindings = <&tog 3>;
-        };
-        combo_res_layers_tog4 {
-            timeout-ms = <100>;
-            layers = <4>;
-            key-positions = <15 37>;
-            bindings = <&tog 4>;
-        };
-
-        combo_res_layers_tog5 {
-            timeout-ms = <100>;
-	        layers = <5>;
-            key-positions = <15 37>;
-            bindings = <&tog 5>;
-        };
-
-    // game layers
-        combo_res_layers_tog9 {
-            timeout-ms = <100>;
-            layers = <9>;
-            key-positions = <36 37>;
-            bindings = <&tog 9>;
-        };
-
-        combo_res_layers_tog10 {
-            timeout-ms = <100>;
-            layers = <10>;
-            key-positions = <36 37>;
-            bindings = <&tog 10>;
-        };
-    };
-};
 
 // ---------------------------------------------------------------------------------------------------
 	
