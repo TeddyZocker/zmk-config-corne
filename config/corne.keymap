@@ -98,20 +98,20 @@
 
         combo_to4 {
             timeout-ms = <75>;
-            key-positions = <15 37>;
+            key-positions = <14 37>;
             bindings = <&to 4>;
         };
 
         combo_to5 {
             timeout-ms = <75>;
-            key-positions = <17 37>;
+            key-positions = <16 37>;
             bindings = <&to 5>;
         };
 
         combo_mo8 {
             timeout-ms = <75>;
             layers = <0>;
-            key-positions = <14 37>;
+            key-positions = <13 37>;
             bindings = <&mo 8>;
         };
 
