@@ -99,13 +99,13 @@
         combo_to4 {
             timeout-ms = <75>;
             key-positions = <15 37>;
-            bindings = <&kp LESS_THAN>;
+            bindings = <to 4>;
         };
 
         combo_to5 {
             timeout-ms = <75>;
             key-positions = <17 37>;
-            bindings = <&kp LESS_THAN>;
+            bindings = <&to 5>;
         };
 
 // res layers
