@@ -99,7 +99,7 @@
         combo_to4 {
             timeout-ms = <75>;
             key-positions = <15 37>;
-            bindings = <to 4>;
+            bindings = <&to 4>;
         };
 
         combo_to5 {
