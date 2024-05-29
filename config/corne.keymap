@@ -112,7 +112,7 @@
         combo_res_layers {
             timeout-ms = <100>;
             key-positions = <16 37>;
-            bindings = <&to 0>;
+            bindings = <&tog>;
         };
 
         combo_res_layers_9_10 {
