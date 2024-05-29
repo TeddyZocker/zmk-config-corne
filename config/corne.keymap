@@ -44,7 +44,9 @@
 
 / {
     combos {
-	int timeout_combos = 100;
+
+	int timeout_combos = <100>;
+
         compatible = "zmk,combos";
         combo_plus {
             timeout-ms = <timeout_combos>;
