@@ -120,21 +120,23 @@
     // functional layers
         combo_res_layers_tog3 {
             timeout-ms = <100>;
-            key-positions = <16 37>;
+            layers = <3>;
+            key-positions = <15 37>;
             bindings = <&tog 3>;
         };
         combo_res_layers_tog4 {
             timeout-ms = <100>;
-            key-positions = <16 37>;
+            layers = <4>;
+            key-positions = <15 37>;
             bindings = <&tog 4>;
         };
 
         combo_res_layers_tog5 {
             timeout-ms = <100>;
-            key-positions = <16 37>;
+	        layers = <5>;
+            key-positions = <15 37>;
             bindings = <&tog 5>;
         };
-
 
     // game layers
         combo_res_layers_tog9 {
