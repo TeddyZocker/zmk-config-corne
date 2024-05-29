@@ -117,7 +117,7 @@
 
         combo_res_layers_9_10 {
             timeout-ms = <100>;
-            layers = <9, 10>
+            layers = <9 10>;
             key-positions = <36 37>;
             bindings = <&to 0>;
         };
@@ -175,9 +175,6 @@
                                     , <&macro_pause_for_release>
                                     , <&macro_release &kp LALT &kp KP_N8 &kp KP_N9 &kp KP_N6 &kp KP_N0>;
                                 };
-
-
-
         };
     };
 
