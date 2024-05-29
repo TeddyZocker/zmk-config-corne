@@ -25,148 +25,17 @@
 
 // Self made
 #include "combos.dtsi"
+#include "macro.dtsi"
+#include "behaviors.dtsi"
 
 // Ideen
 // -----
 
-
-
 // ---------------------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------------------
-
-
 
 &sl {
     release-after-ms = <200>;
 };
-
-
-// ---------------------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------------------
-
-// ---------------------------------------------------------------------------------------------------
-	
-/ {
-    macros {
-        ws:         window_swich_macro {
-                        compatible = "zmk,behavior-macro";
-                        #binding-cells = <0>;
-                        bindings =    <&macro_press &mo 8 &kp LGUI &kp ESC>
-                                    , <&macro_pause_for_release>
-                                    , <&macro_release &mo 8 &kp LGUI &kp ESC>;
-                                };
-
-        la:         layer11_lalt_macro {
-                        compatible = "zmk,behavior-macro";
-                        #binding-cells = <0>;
-                        bindings =    <&macro_press &mo 11 &kp LALT>
-                                    , <&macro_pause_for_release>
-                                    , <&macro_release &mo 11 &kp LALT>;
-                                };
-
-        ls:         layer12_lshift_macro2 {
-                        compatible = "zmk,behavior-macro";
-                        #binding-cells = <0>;
-                        bindings =    <&macro_press &mo 12 &kp LSHFT>
-                                    , <&macro_pause_for_release>
-                                    , <&macro_release &mo 12 &kp LSHFT>;
-                                };
-
-        ls2:        hockn_layer6_lshft_macro {
-                        compatible = "zmk,behavior-macro";
-                        #binding-cells = <0>;
-                        bindings =    <&macro_press &mo 4 &kp LSHFT>
-                                    , <&macro_pause_for_release>
-                                    , <&macro_release &mo 4 &kp LSHFT>;
-                                };
-
-        mlt:        mlesser_than {
-                        compatible = "zmk,behavior-macro";
-                        #binding-cells = <0>;
-                        bindings =    <&macro_press &kp LALT &kp KP_N6 &kp KP_N0>
-                                    , <&macro_pause_for_release>
-                                    , <&macro_release &kp LALT &kp KP_N6 &kp KP_N0>;
-                                };
-
-        dm:        durchmesser {
-                        compatible = "zmk,behavior-macro";
-                        #binding-cells = <0>;
-                        bindings =    <&macro_press &kp LALT &kp KP_N8 &kp KP_N9 &kp KP_N6 &kp KP_N0>
-                                    , <&macro_pause_for_release>
-                                    , <&macro_release &kp LALT &kp KP_N8 &kp KP_N9 &kp KP_N6 &kp KP_N0>;
-                                };
-        };
-    };
-
-// ---------------------------------------------------------------------------------------------------
-
-/ {
-    behaviors {
-        td0l:       middle_button_left_td {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&mo 1>, <&mo 4>;
-                                };
-
-        td0r:       middle_button__right_td {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&mo 2>, <&mo 5>;
-                                };
-
-        td1:        window_switch_lalt_td {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&ws>, <&kp LALT>, <&mo 7>;
-                                };
-
-        td2:        layer6_lctrl_td {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&mo 6>, <&kp LCTRL>;
-                                }; 
-
-        td_b0:      swich_bluetooth0 {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>, <&bt BT_SEL 3>;
-                                };
-
-        td_lara:    left_alt_right_alt {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp LALT>, <&kp RALT>;
-                                };
-            
-        td_lcrc:    left_controll_right_controll {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp LCTRL>, <&kp RCTRL>;
-                                };
-     	};
-    };
-
-// ---------------------------------------------------------------------------------------------------
-
-// / {
-//    conditional_layers {
-//            compatible = "zmk,conditional-layers";
-//                tri_layer {
-//                    if-layers = <1 2>;
-//                    then-layer = <3>;
-//                    };  
-//        };
-//    };
-
-// ---------------------------------------------------------------------------------------------------
-// ---------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------
 
 / {
@@ -176,11 +45,6 @@
             compatible = "zmk,keymap";  
 
                 default_layer {
-// ---------------------------------------------------------------------------------------------------
-// 	|  ESC |  Q  |  W  |  E  |   R  |  T  |   	|  Z   |  U   |  I  |  O  |  P  | DEL  |
-// 	| SL 6 |  A  |  S  |  D  |   F  |  G  |   	|  H   |  J   |  K  |  L  | --- | RET  |
-// 	| SL 8 |  Y  |  X  |  C  |   V  |  B  |   	|  N   |  M   |  Ä  |  Ö  |  Ü  | LGUI |
-//                     |LSHFT| MO 1 | SPC |   	| BSPC | MO 2 | --- |
 
                         bindings = <
    &kp ESC		&kp Q                           &kp W			        &kp E			        &kp R			        &kp T				&kp Y			&kp U			&kp I			&kp O			&kp P			&kp DEL
@@ -193,11 +57,6 @@
 
 // 1
                 lower_layer {
-// ---------------------------------------------------------------------------------------------------
-// 	  |  +  |   .  |  7  |  8  |   9  | BSPC |   	| Mute |  RET |  UP  | BSPC |PAUSE |  *  |
-// 	  |  -  |   ,  |  4  |  5  |   6  | TAB  |  	| VOLU | LEFT | DOWN |RIGHT | NEXT |  /  |
-// 	  |  ,  |   0  |  1  |  2  |   3  | RET  |   	| VOLD | ---- | ---- | ---- | PREV |  =  |
-//   	          	     |LSHFT| MO 1 |trans |   	| trans| LALT | LCTRL|
 
                         bindings = <
    &kp ESC		&kp DOT			        &kp N7			        &kp N8			        &kp N9			        &kp BSPC			&none			&kp RET			&kp UP	                &kp BSPC            &none			&kp DEL
@@ -210,11 +69,6 @@
 
 // 2
                 raise_layer {
-// ---------------------------------------------------------------------------------------------------
-// 	| --- | --- | --- | --- |  <  |  >  |   	|  (  |  )   |  [  |  ]  |  {  |  }  |
-// 	| --- | --- |  '  |  €  |  ,  |  .  |  	 	|  ß  |  #   |  &  |  @  | --- |  %  |
-// 	| --- | --- |  "  |  $  |  ;  |  :  |   	|  ?  |  &   |  _  |  °  | --- |  \  |
-//                    	  | --- | --- |trans|   	|trans| LALT |LCTRL|
 
                         bindings = <
    &kp ESC		&dm         			&none			        &kp RA(90)   		        &mlt     		        &kp PIPE2			&kp LS(N8)		&kp LEFT_PARENTHESIS	&kp RA(N8)		&kp RA(N9)		&kp RA(N7)		&kp RA(N0)       
@@ -227,11 +81,6 @@
 
 // 3
                 hockn {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
 &kp ESC  &none  &kp BSPC  &kp UP      &kp RET    &kp DEL      &none  &none   &none  &none  &none  &kp DEL
@@ -244,11 +93,6 @@
 
 // 4
                 arrow_layer {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
    &kp LC(T)		&kp C_PLAY_PAUSE	    &kp BSPC		        &kp UP			        &kp RET			        &kp C_MUTE			    &kp INS			&kp HOME		&kp F1			&kp F4			&kp F7			&kp F12
@@ -261,11 +105,6 @@
 
 // 5
                 mouse_layer {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
    &kp LC(T)		&kp C_PLAY_PAUSE	    &kp KP_N7		        &kp KP_N8		        &kp KP_N9		        &kp C_MUTE			&none			&kp RET			&kp UP	                &kp BSPC                &none			&kp DEL
@@ -279,11 +118,6 @@
 
 // 6
                  lctrl_layer		{
-// ---------------------------------------------------------------------------------------------------
-// |   ---  |LC(BSLH) |   ---   |  LC(E)  |    ---    |   LC(T)   |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |   ---  |  LC(A)  |  LC(S)  |   ---   |   LC(F)   | LC(LS(T)) |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  LCTRL |   ---   |  LC(X)  |  LC(C)  |   LC(V)   |   LC(W)   |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                       	|  LC(Y)  |   LC(Z)   |  LC(RET)  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
    &none		&kp LC(BSLH)		        &none			        &kp LG(E)		        &none			        &none				&none			&none			&none			&none			&none			&none
@@ -296,11 +130,6 @@
 
 // 7
                  lalt_layer{
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
    &none    	        &none		                &none			        &none   		        &none			        &none				&none			&none			&none			&none			&none			&none
@@ -313,11 +142,6 @@
 
 // 8
                  gui_switch{
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
    &none		&none			    &kp N7			        &kp N8			        &kp N9			        &none				&none			&none			&none			&none			&none			&none
@@ -336,11 +160,6 @@
 
 // 9
                  games_layer {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
    &kp ESC		&kp M			    &kp Q			        &kp W			        &kp E			        &kp R				&kp C_MUTE  		&kp BSPC		&kp UP			&kp RET			&kp C_PLAY_PAUSE	&kp LGUI
@@ -354,11 +173,6 @@
 
 // 10
                  temp {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
    &kp ESC	        &kp M			    &kp F1			        &kp UP			        &kp F2			        &kp R				&kp C_MUTE  		&kp BSPC		&kp UP			&kp RET			&kp C_PLAY_PAUSE	&kp ESC
@@ -372,11 +186,6 @@
 
 // 11
                  games_support_layer {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
    &kp Z		&kp U			    &kp N4			        &kp W			        &kp N5			        &kp N6				&bt BT_SEL 0		&bt BT_SEL 3	        &none			&none			&none			&kp LA(F4)
@@ -389,11 +198,6 @@
 
 // 12
                  games_controll_layer {
-// ---------------------------------------------------------------------------------------------------
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-// |  --- |  ---  |  ---  |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |  ---  |  ---  | --- |
-//                        |  ---  |  ---  |  ---  |   |  ---  |  ---   |  ---  |
 
                         bindings = <
    &none		&none			    &none			        &none			        &none			        &none				&none			&none			&none			&none			&none			&none

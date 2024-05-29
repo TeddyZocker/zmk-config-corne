@@ -1,0 +1,52 @@
+/ {
+    behaviors {
+        td0l:       middle_button_left_td {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&mo 1>, <&mo 4>;
+                                };
+
+        td0r:       middle_button__right_td {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&mo 2>, <&mo 5>;
+                                };
+
+        td1:        window_switch_lalt_td {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&ws>, <&kp LALT>, <&mo 7>;
+                                };
+
+        td2:        layer6_lctrl_td {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&mo 6>, <&kp LCTRL>;
+                                }; 
+
+        td_b0:      swich_bluetooth0 {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>, <&bt BT_SEL 3>;
+                                };
+
+        td_lara:    left_alt_right_alt {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&kp LALT>, <&kp RALT>;
+                                };
+            
+        td_lcrc:    left_controll_right_controll {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&kp LCTRL>, <&kp RCTRL>;
+                                };
+     	};
+    };
