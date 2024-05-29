@@ -45,67 +45,82 @@
 / {
     combos {
         compatible = "zmk,combos";
+
+// def symbols 
         combo_plus {
             timeout-ms = <100>;
-	    layers = <1>;
+	        layers = <1>;
             key-positions = <14 15>;
             bindings = <&kp RBKT>;
         };
  
-	combo_minus {
+	    combo_minus {
             timeout-ms = <100>;
-	    layers = <1>;
+	        layers = <1>;
             key-positions = <26 27>;
             bindings = <&kp SLASH>;
         };
 
         combo_mal {
             timeout-ms = <100>;
-	    layers = <1>;
+	        layers = <1>;
             key-positions = <15 16>;
             bindings = <&kp LS(RBKT)>;
         };
 
         combo_dividiert {
             timeout-ms = <100>;
-	    layers = <1>;
+	        layers = <1>;
             key-positions = <27 28>;
             bindings = <&kp LS(N7)>;
         };
 
         combo_doppelpunkt {
             timeout-ms = <100>;
-	    layers = <1>;
+	        layers = <1>;
             key-positions = <1 2>;
             bindings = <&kp GREATER_THAN>;
         };
 
         combo_strichpunkt {
             timeout-ms = <100>;
-	    layers = <1>;
+	        layers = <1>;
             key-positions = <13 14>;
             bindings = <&kp LESS_THAN>;
         };
 
+// switch layers
         combo_to3 {
-            timeout-ms = <100>;
+            timeout-ms = <75>;
             key-positions = <0 1>;
-            bindings = <&to 9>;
+            bindings = <&to 3>;
         };
 
-        combo_to9 {
-            timeout-ms = <100>;
-            key-positions = <40 41>;
-            bindings = <&to 9>;
+        combo_to4 {
+            timeout-ms = <75>;
+            key-positions = <15 37>;
+            bindings = <&kp LESS_THAN>;
         };
 
+        combo_to5 {
+            timeout-ms = <75>;
+            key-positions = <17 37>;
+            bindings = <&kp LESS_THAN>;
+        };
+
+// res layers
         combo_res_layers {
             timeout-ms = <100>;
-            key-positions = <36 37>;
+            key-positions = <16 37>;
             bindings = <&to 0>;
         };
 
-
+        combo_res_layers_9_10 {
+            timeout-ms = <100>;
+            layers = <9 10>
+            key-positions = <36 37>;
+            bindings = <&to 0>;
+        };
     };
 };
 
