@@ -101,8 +101,9 @@
             timeout-ms = <100>;
 	        layers = <5>;
             key-positions = <15 37>;
-            bindings = <&tog 5>;
+            bindings = <&to 0>;
         };
+
 
     // game layers
         combo_res_layers_tog9 {
