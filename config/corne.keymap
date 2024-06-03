@@ -104,7 +104,7 @@
 
         mouse_layer {
             bindings = <
-&kp LC(T)      &kp C_PLAY_PAUSE  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_MUTE           &none            &kp RET          &kp UP    &kp BSPC     &none   &kp DEL
+&kp LC(T)      &kp C_PLAY_PAUSE  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_MUTE           &none            &kp BSPC         &kp UP    &kp RET      &none   &kp DEL
 &kp LC(LS(T))  &kp C_NEXT        &kp KP_N4  &mkp MCLK  &kp KP_N6  &kp C_VOLUME_UP      &none            &kp LEFT         &kp DOWN  &kp RIGHT    &td_b0  &kp RET
 &kp LC(W)      &kp C_PREV        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp C_VOLUME_DOWN    &none            &kp LC(LS(TAB))  &kp TAB   &kp LC(TAB)  &none   &none
                                             &mkp LCLK  &kp LCTRL  &mkp RCLK            &kp LOCKING_NUM  &none            &none
