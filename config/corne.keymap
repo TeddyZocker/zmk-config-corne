@@ -18,15 +18,15 @@
  * SPDX-License-Identifier: MIT
  */
 // librarys 
-// Self made
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/bt.h>
 
+// Self made
 #include "combos.dtsi"
 #include "macro.dtsi"
-#include <behaviors.dtsi>
 #include "behaviors.dtsi"
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+
 
 // Ideen
 // -----
