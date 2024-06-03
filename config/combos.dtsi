@@ -85,6 +85,13 @@
             bindings = <&ws>;
         };
 
+        combo_to5 {
+            timeout-ms = <75>;
+            layers = <0 1>;
+            key-positions = <36 37>;
+            bindings = <&to 9>;
+        };
+
 // res layers
 
     // functional layers
@@ -98,16 +105,9 @@
     // game layers
         combo_res_layers_tog9 {
             timeout-ms = <75>;
-            layers = <9>;
+            layers = <9 10>;
             key-positions = <36 37>;
-            bindings = <&tog 9>;
-        };
-
-        combo_res_layers_tog10 {
-            timeout-ms = <75>;
-            layers = <10>;
-            key-positions = <36 37>;
-            bindings = <&tog 10>;
+            bindings = <&to 0>;
         };
     };
 };
