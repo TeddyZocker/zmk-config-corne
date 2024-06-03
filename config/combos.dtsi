@@ -59,25 +59,28 @@
 // switch layers
         combo_to3 {
             timeout-ms = <75>;
+            layers = <0 1>;
             key-positions = <0 1>;
-            bindings = <&tog 3>;
+            bindings = <&to 3>;
         };
 
         combo_to4 {
             timeout-ms = <75>;
+            layers = <0 1>;
             key-positions = <14 37>;
-            bindings = <&tog 4>;
+            bindings = <&to 4>;
         };
 
         combo_to5 {
             timeout-ms = <75>;
+            layers = <0 1>;
             key-positions = <16 37>;
-            bindings = <&tog 5>;
+            bindings = <&to 5>;
         };
 
         combo_mo8 {
             timeout-ms = <75>;
-            layers = <0>;
+            layers = <0 1>;
             key-positions = <13 37>;
             bindings = <&ws>;
         };
@@ -87,24 +90,10 @@
     // functional layers
         combo_res_layers_tog3 {
             timeout-ms = <75>;
-            layers = <3>;
+            layers = <3 4 5>;
             key-positions = <15 37>;
-            bindings = <&tog 3>;
+            bindings = <&to 0>;
         };
-        combo_res_layers_tog4 {
-            timeout-ms = <75>;
-            layers = <4>;
-            key-positions = <15 37>;
-            bindings = <&tog 4>;
-        };
-
-        combo_res_layers_tog5 {
-            timeout-ms = <75>;
-	        layers = <5>;
-            key-positions = <15 37>;
-            bindings = <&tog 5>;
-        };
-
 
     // game layers
         combo_res_layers_tog9 {
