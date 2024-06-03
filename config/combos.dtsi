@@ -85,7 +85,7 @@
             bindings = <&ws>;
         };
 
-        combo_to5 {
+        combo_to9 {
             timeout-ms = <75>;
             layers = <0 1>;
             key-positions = <36 37>;
