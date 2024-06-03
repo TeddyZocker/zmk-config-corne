@@ -1,4 +1,4 @@
-#define default_layer		        0
+#define default_layer		    0
 #define lower_layer		        1
 #define raise_layer		        2
 #define hockn 			        3
@@ -8,8 +8,8 @@
 #define gui_switch		        7
 #define lalt_layer		        8
 #define games_layer		        9
-#define games_support_layer	        10
-#define games_controll_layer	        11
+#define games_support_layer	    10
+#define games_controll_layer	11
 #define temp			        12
 
 /*
@@ -58,7 +58,7 @@
             bindings = <
 &kp ESC     &kp DOT    &kp N7  &kp N8  &kp N9  &kp BSPC    &none     &kp RET   &kp UP    &kp BSPC   &none   &kp DEL
 &none       &kp COMMA  &kp N4  &kp N5  &kp N6  &kp TAB     &none     &kp LEFT  &kp DOWN  &kp RIGHT  &td_b0  &kp RET
-&kp LS(N0)  &kp N0     &kp N1  &kp N2  &kp N3  &kp RET     &none     &none     &none     &none      &none   &kp LOCKING_NUM
+&kp LS(N0)  &kp N0     &kp N1  &kp N2  &kp N3  &kp RET     &none     &none     &none     &none      &none   &none
                                &to 9   &trans  &trans      &kp BSPC  &trans    &kp LGUI
             >;
         };
@@ -104,10 +104,10 @@
 
         mouse_layer {
             bindings = <
-&kp LC(T)      &kp C_PLAY_PAUSE  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_MUTE           &none  &kp RET          &kp UP    &kp BSPC     &none   &kp DEL
-&kp LC(LS(T))  &kp C_NEXT        &kp KP_N4  &mkp MCLK  &kp KP_N6  &kp C_VOLUME_UP      &none  &kp LEFT         &kp DOWN  &kp RIGHT    &td_b0  &kp RET
-&kp LC(W)      &kp C_PREV        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp C_VOLUME_DOWN    &none  &kp LC(LS(TAB))  &kp TAB   &kp LC(TAB)  &none   &none
-                                            &mkp LCLK  &kp LCTRL  &mkp RCLK            &none  &none            &none
+&kp LC(T)      &kp C_PLAY_PAUSE  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp C_MUTE           &none            &kp RET          &kp UP    &kp BSPC     &none   &kp DEL
+&kp LC(LS(T))  &kp C_NEXT        &kp KP_N4  &mkp MCLK  &kp KP_N6  &kp C_VOLUME_UP      &none            &kp LEFT         &kp DOWN  &kp RIGHT    &td_b0  &kp RET
+&kp LC(W)      &kp C_PREV        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp C_VOLUME_DOWN    &none            &kp LC(LS(TAB))  &kp TAB   &kp LC(TAB)  &none   &none
+                                            &mkp LCLK  &kp LCTRL  &mkp RCLK            &kp LOCKING_NUM  &none            &none
             >;
         };
 
