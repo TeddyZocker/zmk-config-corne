@@ -111,7 +111,7 @@
             timeout-ms = <75>;
             layers = <9>;
             key-positions = <36 37>;
-            bindings = <&tog 9>;55dd
+            bindings = <&tog 9>;
         };
 
         combo_res_layers_tog10 {
