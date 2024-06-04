@@ -106,7 +106,7 @@
         combo_res_layers_tog9 {
             timeout-ms = <75>;
             layers = <9 10>;
-            key-positions = <36 37>;
+            key-positions = <37 38>;
             bindings = <&to 0>;
         };
     };
