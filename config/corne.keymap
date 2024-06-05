@@ -159,7 +159,7 @@
 &kp ESC  &kp M      &kp Q  &kp W      &kp E     &kp R        &kp C_MUTE         &kp BSPC  &kp UP    &kp RET    &kp C_PLAY_PAUSE  &kp LGUI
 &kp TAB  &mo 11     &kp A  &kp S      &kp D     &kp G        &kp C_VOLUME_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_NEXT        &kp LALT
 &la      &kp RSHFT  &kp Y  &kp X      &kp C     &kp V        &kp C_VOLUME_DOWN  &kp F3    &kp F4    &kp F5     &kp C_PREV        &kp LCTRL
-                           &kp LCTRL  &kp LSHFT &kp SPACE    &none              &to 10    &none
+                           &kp LCTRL  &kp LSHFT &kp SPACE    &none              &none    &none
             >;
         };
 
@@ -171,7 +171,7 @@
 &kp ESC  &kp M      &kp F1    &kp UP    &kp F2     &kp R        &kp C_MUTE         &kp BSPC  &kp UP    &kp RET    &kp C_PLAY_PAUSE  &kp ESC
 &kp TAB  &none      &kp LEFT  &kp DOWN  &kp RIGHT  &kp G        &kp C_VOLUME_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_NEXT        &none
 &la      &kp RSHFT  &kp Y     &kp X     &kp C      &kp V        &kp C_VOLUME_DOWN  &kp F3    &kp F4    &kp F5     &kp C_PREV        &kp LGUI
-                              &none     &kp LSHFT  &kp SPACE    &none              &to 9     &none
+                              &none     &kp LSHFT  &kp SPACE    &none              &none     &none
             >;
         };
 

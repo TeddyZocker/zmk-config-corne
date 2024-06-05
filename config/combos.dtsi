@@ -85,18 +85,25 @@
             bindings = <&ws>;
         };
 
-        combo_lto9 {
+        combo_l_to9 {
             timeout-ms = <75>;
-            layers = <0 1>;
+            layers = <0 1 10>;
             key-positions = <36 37>;
             bindings = <&to 9>;
         };
 
-        combo_rto9 {
+        combo_r_to9 {
             timeout-ms = <75>;
-            layers = <0 1>;
+            layers = <0 2 10>;
             key-positions = <40 41>;
             bindings = <&to 9>;
+        };
+
+        combo_r_to10 {
+            timeout-ms = <75>;
+            layers = <9>;
+            key-positions = <37 38>;
+            bindings = <&to 10>;
         };
 
 // res layers
@@ -110,14 +117,14 @@
         };
 
     // game layers
-        combo_res_layers_ltog9_10 {
+        combo_res_layers_l_to0 {
             timeout-ms = <75>;
             layers = <9 10>;
             key-positions = <36 37>;
             bindings = <&to 0>;
         };
 
-        combo_res_layers_rtog9_10 {
+        combo_res_layers_r_to0 {
             timeout-ms = <75>;
             layers = <9 10>;
             key-positions = <40 41>;
