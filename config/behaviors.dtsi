@@ -18,7 +18,7 @@
                         compatible = "zmk,behavior-tap-dance";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&ws>, <&kp LALT>, <&mo 7>;
+                        bindings = <&kp LALT>, <&mo 7>;
                                 };
 
         td2:        layer6_lctrl_td {
