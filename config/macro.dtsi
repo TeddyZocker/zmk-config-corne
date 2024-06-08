@@ -31,10 +31,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 12 &kp LSHFT>,
+                <&mo 13 &kp LSHFT>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 12 &kp LSHFT>;
+                <&mo 13 &kp LSHFT>;
         };
 
         ls2: hockn_layer6_lshft_macro {
