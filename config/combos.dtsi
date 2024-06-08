@@ -162,14 +162,6 @@
             bindings = <&to 0>;
         };
 
-    // game layers
-        combo_res_layers_l_to0 {
-            timeout-ms = <50>;
-            layers = <9 10>;
-            key-positions = <36 37>;
-            bindings = <&to 0>;
-        };
-
         combo_res_layers_r_to0 {
             timeout-ms = <50>;
             layers = <9 10>;
