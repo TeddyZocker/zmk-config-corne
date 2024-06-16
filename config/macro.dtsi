@@ -49,7 +49,7 @@
                 <&mo 4 &kp LSHFT>;
         };
 
-        lsp: layer12_lshift_macro2 {
+        lsp: layer11_shiftspace_macro {
             compatible = "zmk,behavior-macro";
             label = "lsp";
             #binding-cells = <0>;
