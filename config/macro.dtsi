@@ -34,7 +34,7 @@
                 <&mo 13 &kp LSHFT>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp LSHFT &kp SPACE>;
+                <&mo 13 &kp LSHFT>;
         };
 
         ls2: hockn_layer6_lshft_macro {
@@ -47,6 +47,18 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 4 &kp LSHFT>;
+        };
+
+        lsp: layer12_lshift_macro2 {
+            compatible = "zmk,behavior-macro";
+            label = "ls";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 13 &kp LSHFT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LSHFT &kp SPACE>;
         };
 
         mlt: mlesser_than {
