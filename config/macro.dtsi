@@ -34,7 +34,7 @@
                 <&mo 13 &kp LSHFT>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 13 &kp LSHFT>;
+                <&kp LSHFT &kp SPACE>;
         };
 
         ls2: hockn_layer6_lshft_macro {
