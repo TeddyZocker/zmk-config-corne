@@ -80,10 +80,10 @@
 
         hockn {
             bindings = <
-&kp ESC  &none  &kp BSPC  &kp UP       &kp RET    &kp DEL      &none  &none  &none  &none  &none  &kp DEL
-&td1     &none  &kp LEFT  &kp DOWN     &kp RIGHT  &none        &none  &none  &none  &none  &none  &none
-&td2     &none  &none     &kp K_CMENU  &none      &none        &none  &none  &none  &none  &none  &none
-                          &ls2         &kp LALT   &kp LCTRL    &none  &none  &none
+&kp ESC  &none  &kp BSPC  &kp UP       &kp RET    &kp DEL      &none         &kp LC(LS(TAB))  &kp TAB      &kp LC(TAB)  &none  &none      
+&td1     &none  &kp LEFT  &kp DOWN     &kp RIGHT  &none        &kp PG_UP     &kp BSPC         &kp UP       &kp RET      &none  &none      
+&td2     &none  &none     &kp K_CMENU  &none      &none        &kp PG_DOWN   &kp LEFT         &kp DOWN     &kp RIGHT    &none  &none      
+                          &ls2         &kp LALT   &kp LCTRL    &mkp LCLK     &kp LCTRL        &mkp RCLK
             >;
         };
 
