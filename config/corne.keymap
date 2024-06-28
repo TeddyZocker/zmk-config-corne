@@ -73,7 +73,7 @@
 &td_lcrc  &none  &none         &none          &none         &kp            &kp UNDER   &kp EXCL              &kp LS(SLASH)  &kp TILDE   &none       &kp RA(MINUS)
                                &caps_word     &trans        &trans         &trans      &trans                &trans
             >;
-        };><
+        };
 
         // ---------------------------------------------------------------------------------------------------
         // 3
