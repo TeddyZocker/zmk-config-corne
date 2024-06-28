@@ -90,12 +90,12 @@
         // ---------------------------------------------------------------------------------------------------
         // 4 nicht aktiv
 
-        new_keymap {
+        new_keymap_homerow_mods {
             bindings = <
-&kp ESC  &kp X  &kp V  &kp L      &kp C  &kp W        &kp K     &kp H  &kp G        &kp F     &kp Q     &kp DEL
-&td1     &kp U  &kp I  &kp A      &kp E  &kp O        &kp S     &kp N  &kp R        &kp T     &kp D     &kp RET
-&td2     &none  &kp Y  &kp J      &kp P  &kp Z        &kp B     &kp M  &kp SQT      &kp SEMI  &kp LBKT  &kp LGUI
-                       &kp LSHFT  &mo 1  &kp SPACE    &kp BSPC  &mo 2  &kp K_CMENU
+&kp ESC   &kp X      &kp V  &kp L         &kp C         &kp W        &kp K     &kp H         &kp G          &kp F     &kp Q     &kp DEL
+&none     &kp U      &kp I  &mt LCTRL A   &mt LSHIFT E  &kp O        &kp S     &mt LSHIFT N  &mt LCTRL R    &kp T     &kp D     &kp RET
+&none     &none      &kp Y  &kp J         &kp P         &kp Z        &kp B     &kp M         &kp SQT        &kp SEMI  &kp LBKT  &kp LGUI
+                            &kp DEL       &mo 1         &kp SPACE    &kp BSPC  &mo 2         &kp K_CMENU
             >;
         };
 
