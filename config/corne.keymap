@@ -26,7 +26,6 @@
 #include "combos.dtsi"
 #include "macro.dtsi"
 #include "behaviors.dtsi"
-#include "homerow_mods.dtsi"
 
 
 // Ideen
@@ -97,10 +96,10 @@
 
         new_keymap_homerow_mods {
             bindings = <
-&kp ESC   &kp X      &kp V  &kp L         &kp C          &kp W        &kp K     &kp H          &kp G          &kp F     &kp Q     &kp DEL
-&none     &kp U      &kp I  &L_LCTRL      &L_LSHFT       &kp O        &kp S     &R_LSHFT       &R_LCTRL       &kp T     &kp D     &kp RET
-&none     &none      &kp Y  &kp J         &kp P          &kp Z        &kp B     &kp M          &kp SQT        &kp SEMI  &kp LBKT  &kp LGUI
-                            &kp BSPC      &mo 1          &kp SPACE    &kp BSPC  &mo 2          &kp K_CMENU
+&kp ESC   &kp X      &kp V  &kp L               &kp C           &kp W        &kp K     &kp H            &kp G             &kp F     &kp Q     &kp DEL
+&none     &kp U      &kp I  &lhrm LCTRL A       &lhrm LSHFT E   &kp O        &kp S     &rhrm LSHFT N    &rhrm LCTRL R     &kp T     &kp D     &kp RET
+&none     &none      &kp Y  &kp J               &kp P           &kp Z        &kp B     &kp M            &kp SQT           &kp SEMI  &kp LBKT  &kp LGUI
+                            &kp BSPC            &mo 1           &kp SPACE    &kp BSPC  &mo 2            &kp K_CMENU
             >;
         };
 
