@@ -26,6 +26,7 @@
 #include "combos.dtsi"
 #include "macro.dtsi"
 #include "behaviors.dtsi"
+#include "behaviors_1.dtsi"
 
 
 // Ideen
