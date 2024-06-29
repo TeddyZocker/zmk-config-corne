@@ -8,9 +8,6 @@
       hold-trigger-on-release; \
       )
 
-MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
-MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand
-
 // Base Layer home row mods
 // #define L_LGUI     &hml LGUI A
 // #define L_LALT     &hml LALT R
