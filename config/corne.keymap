@@ -26,7 +26,6 @@
 #include "combos.dtsi"
 #include "macro.dtsi"
 #include "behaviors.dtsi"
-#include "behaviors_1.dtsi"
 
 
 // Ideen
@@ -61,10 +60,10 @@
 
         lower_layer {
             bindings = <
-&kp ESC     &kp DOT       &kp KP_N7  &kp KP_N8       &kp KP_N9     &kp BSPC    &none           &kp RET    &kp UP         &kp BSPC      &none       &kp DEL
-&none       &kp COMMA     &kp KP_N4  &kp KP_N5       &kp KP_N6     &kp TAB     &kp PAGE_UP     &kp LEFT   &kp DOWN       &kp RIGHT     &td_b0      &kp RET
-&kp LS(N0)  &kp KP_N0     &kp KP_N1  &kp KP_N2       &kp KP_N3     &kp RET     &kp PAGE_DOWN   &mkp LCLK  &kp MCLK       &mkp RCLK     &kp LSHFT   &kp LCTRL
-                                     &kp KP_NUMLOCK  &trans        &trans      &kp BSPC        &trans     &kp LGUI
+&kp ESC     &kp DOT       &kp N7  &kp N8       &kp N9     &kp BSPC    &none           &kp RET    &kp UP         &kp BSPC      &none       &kp DEL
+&none       &kp COMMA     &kp N4  &kp N5       &kp N6     &kp TAB     &kp PAGE_UP     &kp LEFT   &kp DOWN       &kp RIGHT     &td_b0      &kp RET
+&kp LS(N0)  &kp N0     &kp N1  &kp N2       &kp N3     &kp RET     &kp PAGE_DOWN   &mkp LCLK  &kp MCLK       &mkp RCLK     &kp LSHFT   &kp LCTRL
+                                     &none  &trans        &trans      &kp BSPC        &trans     &kp LGUI
             >;
         };
 
