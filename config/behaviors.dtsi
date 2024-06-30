@@ -50,14 +50,44 @@
                                 };
 
 
-	hm: 	    homerow_mods {
+	hm_a: 	    homerow_mod_a {
             		compatible = "zmk,behavior-hold-tap";
             	        label = "HOMEROW_MODS";
             		#binding-cells = <2>;
             		tapping-term-ms = <200>;
             		quick_tap_ms = <0>;
            		flavor = "tap-preferred";
-            	        bindings = <&kp>, <&kp>;
+            	        bindings = <&kp N>, <&kp LCTRL>;
+        		        };
+
+        hm_e: 	    homerow_mod_e {
+            		compatible = "zmk,behavior-hold-tap";
+            	        label = "HOMEROW_MODS";
+            		#binding-cells = <2>;
+            		tapping-term-ms = <200>;
+            		quick_tap_ms = <0>;
+           		flavor = "tap-preferred";
+            	        bindings = <&kp E>, <&kp LSHFT>;
+        		        };
+
+        hm_n: 	    homerow_mod_n {
+            		compatible = "zmk,behavior-hold-tap";
+            	        label = "HOMEROW_MODS";
+            		#binding-cells = <2>;
+            		tapping-term-ms = <200>;
+            		quick_tap_ms = <0>;
+           		flavor = "tap-preferred";
+            	        bindings = <&kp N>, <&kp LSHFT>;
+        		        };
+
+	hm_r: 	    homerow_mod_r {
+            		compatible = "zmk,behavior-hold-tap";
+            	        label = "HOMEROW_MODS";
+            		#binding-cells = <2>;
+            		tapping-term-ms = <200>;
+            		quick_tap_ms = <0>;
+           		flavor = "tap-preferred";
+            	        bindings = <&kp R>, <&kp LCTRL>;
         		        };
 
 /*
