@@ -50,46 +50,15 @@
                                 };
 
 
-	hm_a: 	    homerow_mod_a {
+	hrm_c: 	    homerow_mod_custom {
             		compatible = "zmk,behavior-hold-tap";
             	        label = "HOMEROW_MODS";
             		#binding-cells = <2>;
             		tapping-term-ms = <200>;
             		quick_tap_ms = <0>;
            		flavor = "tap-preferred";
-            	        bindings = <&kp LCTRL>, <&kp A>;
+            	        bindings = <&kp>, <&kp>;
         		        };
-
-        hm_e: 	    homerow_mod_e {
-            		compatible = "zmk,behavior-hold-tap";
-            	        label = "HOMEROW_MODS";
-            		#binding-cells = <2>;
-            		tapping-term-ms = <200>;
-            		quick_tap_ms = <0>;
-           		flavor = "tap-preferred";
-            	        bindings = <&kp LSHFT>, <&kp E>;
-        		        };
-
-        hm_n: 	    homerow_mod_n {
-            		compatible = "zmk,behavior-hold-tap";
-            	        label = "HOMEROW_MODS";
-            		#binding-cells = <2>;
-            		tapping-term-ms = <200>;
-            		quick_tap_ms = <0>;
-           		flavor = "tap-preferred";
-            	        bindings = <&kp LSHFT>, <&kp N>;
-        		        };
-
-	hm_r: 	    homerow_mod_r {
-            		compatible = "zmk,behavior-hold-tap";
-            	        label = "HOMEROW_MODS";
-            		#binding-cells = <2>;
-            		tapping-term-ms = <200>;
-            		quick_tap_ms = <0>;
-           		flavor = "tap-preferred";
-            	        bindings = <&kp LCTRL>, <&kp R>;
-        		        };
-
 /*
 ╭───────────────────┬───────────────────╮
 │ 0  1  2  3  4  5  │ 6  7  8  9  10 11 │
