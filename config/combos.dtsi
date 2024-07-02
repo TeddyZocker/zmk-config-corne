@@ -102,11 +102,11 @@
 
 // switch layers
 
-        combo_to2 {
+        combo_to1 {
             timeout-ms = <25>;
             layers = <0 1>;
-            key-positions = <24 37>;
-            bindings = <&to 2>;
+            key-positions = <12 37>;
+            bindings = <&to 1>;
         };
 
         combo_to4 {
