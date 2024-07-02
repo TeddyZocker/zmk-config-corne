@@ -90,14 +90,20 @@
         // ---------------------------------------------------------------------------------------------------
         // 4
 
-        arrow_layer {
+        new_keymap_homerow_mods {
             bindings = <
-&kp LC(T)      &none             &kp BSPC         &kp UP    &kp RET      &none         &kp INS        &kp HOME     &kp F1    &kp F4  &kp F7  &kp F12
-&kp LC(LS(T))  &none             &kp LEFT         &kp DOWN  &kp RIGHT    &kp PAGE_UP   &kp PAGE_DOWN  &kp PAGE_UP  &kp F2    &kp F5  &kp F8  &kp F11
-&kp LC(W)      &none             &kp LC(LS(TAB))  &kp TAB   &kp LC(TAB)  &kp PAGE_DOWN &kp DEL        &kp END      &kp F3    &kp F6  &kp F9  &kp F12
-                                                  &none     &none        &none         &kp LCTRL      &kp LALT     &kp LGUI
+&kp ESC   &kp X      &kp V  &kp L               &kp C           &kp W        &kp K     &kp H            &kp G             &kp F     &kp Q     &kp DEL
+&none     &kp U      &kp I  &kp A               &kp E           &kp O        &kp S     &kp N            &kp R             &kp T     &kp D     &kp RET
+&none     &none      &kp Y  &kp J               &kp P           &kp Z        &kp B     &kp M            &kp SQT           &kp SEMI  &kp LBKT  &kp LGUI
+                            &kp BSPC            &mo 1           &kp SPACE    &kp BSPC  &mo 2            &kp K_CMENU
             >;
         };
+
+        // &hrm_c LCTRL A
+        // &hrm_c LCTRL R
+
+        // &hrm_c LSHFT E
+        // &hrm_c LSHFT N
 
         // ---------------------------------------------------------------------------------------------------
         // 5
