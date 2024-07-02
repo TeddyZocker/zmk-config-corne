@@ -2,7 +2,7 @@
 #define lower_layer		        1
 #define raise_layer		        2
 #define hockn 			        3
-#define new_keymap_homerow_mods 4
+#define arrow_layer		        4
 #define mouse_layer		        5
 #define lctrl_layer		        6
 #define gui_switch		        7
@@ -36,10 +36,6 @@
 
 // ---------------------------------------------------------------------------------------------------
 
-&mt { tapping-term-ms = <200>; };
-
-// ---------------------------------------------------------------------------------------------------
-
 / {
     keymap {
         // 0  
@@ -60,22 +56,22 @@
 
         lower_layer {
             bindings = <
-&kp ESC     &kp DOT       &kp N7  &kp N8       &kp N9     &kp BSPC    &none           &kp RET    &kp UP         &kp BSPC      &none       &kp DEL
-&none       &kp COMMA     &kp N4  &kp N5       &kp N6     &kp TAB     &kp PAGE_UP     &kp LEFT   &kp DOWN       &kp RIGHT     &td_b0      &kp RET
-&kp LS(N0)  &kp N0        &kp N1  &kp N2       &kp N3     &kp RET     &kp PAGE_DOWN   &mkp LCLK  &kp MCLK       &mkp RCLK     &kp LSHFT   &kp LCTRL
-                                     &none  &trans        &trans      &kp BSPC        &trans     &kp LGUI
+&kp ESC     &kp DOT    &kp N7  &kp N8  &kp N9  &kp BSPC    &none           &kp RET    &kp UP         &kp BSPC      &none       &kp DEL
+&none       &kp COMMA  &kp N4  &kp N5  &kp N6  &kp TAB     &kp PAGE_UP     &kp LEFT   &kp DOWN       &kp RIGHT     &td_b0      &kp RET
+&kp LS(N0)  &kp N0     &kp N1  &kp N2  &kp N3  &kp RET     &kp PAGE_DOWN   &mkp LCLK  &kp MCLK       &mkp RCLK     &kp LSHFT   &kp LCTRL
+                               &trans  &trans  &trans      &kp BSPC        &trans     &kp LGUI
             >;
         };
 
         // ---------------------------------------------------------------------------------------------------
-        // 2 d
+        // 2
 
         raise_layer {
             bindings = <
-&kp ESC   &dm    &none         &none          &mlt          &kp PIPE2      &kp LS(N8)  &kp LEFT_PARENTHESIS  &kp RA(N8)     &kp RA(N9)  &kp RA(N7)  &kp RA(N0)
-&td_lara  &none  &none         &kp LS(N2)     &kp LS(BSLH)  &kp LS(GRAVE)  &kp MINUS   &kp BSLH              &kp LS(N6)     &kp RA(Q)   &none       &kp LS(N5)
-&td_lcrc  &none  &none         &none          &none         &kp            &kp UNDER   &kp EXCL              &kp LS(SLASH)  &kp TILDE   &none       &kp RA(MINUS)
-                               &caps_word     &trans        &trans         &trans      &trans                &trans
+&kp ESC   &dm    &none         &kp RA(90)     &mlt       &kp PIPE2    &kp LS(N8)  &kp LEFT_PARENTHESIS  &kp RA(N8)     &kp RA(N9)  &kp RA(N7)  &kp RA(N0)
+&td_lara  &none  &kp LS(BSLH)  &kp LS(N2)     &none      &none        &kp MINUS   &kp BSLH              &kp LS(N6)     &kp RA(Q)   &none       &kp LS(N5)
+&td_lcrc  &none  &kp LS(N2)    &kp LS(GRAVE)  &none      &none        &kp UNDER   &kp EXCL              &kp LS(SLASH)  &kp TILDE   &none       &kp RA(MINUS)
+                               &caps_word     &trans     &trans       &trans      &trans                &trans
             >;
         };
 
@@ -92,25 +88,19 @@
         };
 
         // ---------------------------------------------------------------------------------------------------
-        // 4 nicht aktiv
+        // 4
 
-        new_keymap_homerow_mods {
+        arrow_layer {
             bindings = <
-&kp ESC   &kp X      &kp V  &kp L               &kp C           &kp W        &kp K     &kp H            &kp G             &kp F     &kp Q     &kp DEL
-&none     &kp U      &kp I  &kp A               &kp E           &kp O        &kp S     &kp N            &kp R             &kp T     &kp D     &kp RET
-&none     &none      &kp Y  &kp J               &kp P           &kp Z        &kp B     &kp M            &kp SQT           &kp SEMI  &kp LBKT  &kp LGUI
-                            &kp BSPC            &mo 1           &kp SPACE    &kp BSPC  &mo 2            &kp K_CMENU
+&kp LC(T)      &none             &kp BSPC         &kp UP    &kp RET      &none         &kp INS        &kp HOME     &kp F1    &kp F4  &kp F7  &kp F12
+&kp LC(LS(T))  &none             &kp LEFT         &kp DOWN  &kp RIGHT    &kp PAGE_UP   &kp PAGE_DOWN  &kp PAGE_UP  &kp F2    &kp F5  &kp F8  &kp F11
+&kp LC(W)      &none             &kp LC(LS(TAB))  &kp TAB   &kp LC(TAB)  &kp PAGE_DOWN &kp DEL        &kp END      &kp F3    &kp F6  &kp F9  &kp F12
+                                                  &none     &none        &none         &kp LCTRL      &kp LALT     &kp LGUI
             >;
         };
 
-        // &hrm_c LCTRL A
-        // &hrm_c LCTRL R
-
-        // &hrm_c LSHFT E
-        // &hrm_c LSHFT N
-
         // ---------------------------------------------------------------------------------------------------
-        // 5 nicht aktiv
+        // 5
 
         mouse_layer {
             bindings = <
