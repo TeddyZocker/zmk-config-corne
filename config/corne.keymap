@@ -103,11 +103,11 @@
             >;
         };
 
-        &hrm_c LCTRL A
-        &hrm_c LCTRL R
+        // &hrm_c LCTRL A
+        // &hrm_c LCTRL R
 
-        &hrm_c LSHFT E
-        &hrm_c LSHFT N
+        // &hrm_c LSHFT E
+        // &hrm_c LSHFT N
 
         // ---------------------------------------------------------------------------------------------------
         // 5 nicht aktiv
