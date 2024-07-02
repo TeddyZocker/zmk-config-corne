@@ -37,6 +37,12 @@
 
 // ---------------------------------------------------------------------------------------------------
 
+&lt {
+    tapping-term-ms = <200>;
+};
+
+// ---------------------------------------------------------------------------------------------------
+
 / {
     keymap {
         // 0  
@@ -96,7 +102,7 @@
 &kp ESC   &kp X      &kp V  &kp L               &kp C           &kp W           &kp K     &kp H            &kp G             &kp F     &kp Q     &kp DEL
 &none     &kp U      &kp I  &hrm_c LCTRL A      &hrm_c LSHFT E  &kp O           &kp S     &hrm_c LSHFT N   &hrm_c LCTRL R    &kp T     &kp D     &kp RET
 &none     &none      &kp Y  &kp J               &kp P           &kp Z           &kp B     &kp M            &kp SQT           &kp SEMI  &kp LBKT  &kp LGUI
-                            &kp BSPC            &mo 1           &tm_c 5 SPACE   &kp BSPC  &mo 2            &kp K_CMENU
+                            &kp BSPC            &mo 1           &lt 5 SPACE     &kp BSPC  &mo 2            &kp K_CMENU
             >;
         };
 

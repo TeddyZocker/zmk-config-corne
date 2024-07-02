@@ -146,17 +146,9 @@
 // res layers
 
     // functional layers
-        combo_res_layers_tog3 {
+        combo_res_layers {
             timeout-ms = <50>;
-            layers = <3>;
-            key-positions = <0 2>;
-            bindings = <&to 0>;
-        };
-
-        combo_res_layers_r_to0 {
-            timeout-ms = <50>;
-            layers = <9>;
-            key-positions = <40 41>;
+            key-positions = <24 37>;
             bindings = <&to 0>;
         };
     };
