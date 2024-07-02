@@ -57,7 +57,7 @@
             		tapping-term-ms = <200>;
             		quick_tap_ms = <0>;
            		flavor = "tap-preferred";
-            	        bindings = <&kp N>, <&kp LCTRL>;
+            	        bindings = <&kp LCTRL>, <&kp A>;
         		        };
 
         hm_e: 	    homerow_mod_e {
@@ -67,7 +67,7 @@
             		tapping-term-ms = <200>;
             		quick_tap_ms = <0>;
            		flavor = "tap-preferred";
-            	        bindings = <&kp E>, <&kp LSHFT>;
+            	        bindings = <&kp LSHFT>, <&kp E>;
         		        };
 
         hm_n: 	    homerow_mod_n {
@@ -77,7 +77,7 @@
             		tapping-term-ms = <200>;
             		quick_tap_ms = <0>;
            		flavor = "tap-preferred";
-            	        bindings = <&kp N>, <&kp LSHFT>;
+            	        bindings = <&kp LSHFT>, <&kp N>;
         		        };
 
 	hm_r: 	    homerow_mod_r {
@@ -87,7 +87,7 @@
             		tapping-term-ms = <200>;
             		quick_tap_ms = <0>;
            		flavor = "tap-preferred";
-            	        bindings = <&kp R>, <&kp LCTRL>;
+            	        bindings = <&kp LCTRL>, <&kp R>;
         		        };
 
 /*
