@@ -1,16 +1,17 @@
-#define default_layer		    0
-#define lower_layer		        1
-#define raise_layer		        2
-#define hockn 			        3
-#define arrow_layer		        4
-#define mouse_layer		        5
-#define lctrl_layer		        6
-#define gui_switch		        7
-#define lalt_layer		        8
-#define games_layer		        9
-#define games_support_layer	    10
-#define games_controll_layer	11
-#define temp			        12
+#define def_l		    0       // default_layer
+#define low_l		    1       // lower_layer
+#define rai_l		    2       // raise_layer
+#define hoc 			3       // hockn
+#define new_k		    4       // arrow_layer
+#define arr_l		    5       // mouse_layer
+#define lctrl_l		    6       // lctrl_layer
+#define gui_l		    7       // gui_switch
+#define lalt_l		    8       // lalt_layer
+#define games_l		    9       // games_layer
+#define games_a_l       10      // games_arrow_layer
+#define games_s_l	    11      // games_support_layer
+#define games_c_l   	12      // games_controll_layer
+#define games_r_l		13      // temp
 
 /*
  * Copyright (c) 2020 The ZMK Contributors
@@ -42,7 +43,7 @@
 
         compatible = "zmk,keymap";
 
-        default_layer {
+        def_l {
             bindings = <
 &kp ESC  &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y     &kp U  &kp I        &kp O     &kp P     &kp DEL
 &td1     &kp A  &kp S  &kp D      &kp F  &kp G        &kp H     &kp J  &kp K        &kp L     &none     &kp RET
@@ -54,7 +55,7 @@
         // ---------------------------------------------------------------------------------------------------
         // 1
 
-        lower_layer {
+        low_l {
             bindings = <
 &kp ESC     &kp DOT    &kp N7  &kp N8  &kp N9  &kp BSPC    &none           &kp RET    &kp UP         &kp BSPC      &none       &kp DEL
 &none       &kp COMMA  &kp N4  &kp N5  &kp N6  &kp TAB     &kp PAGE_UP     &kp LEFT   &kp DOWN       &kp RIGHT     &td_b0      &kp RET
@@ -66,7 +67,7 @@
         // ---------------------------------------------------------------------------------------------------
         // 2
 
-        raise_layer {
+        rai_l {
             bindings = <
 &kp ESC   &dm    &none         &kp RA(90)     &mlt       &kp PIPE2    &kp LS(N8)  &kp LEFT_PARENTHESIS  &kp RA(N8)     &kp RA(N9)  &kp RA(N7)  &kp RA(N0)
 &td_lara  &none  &kp LS(BSLH)  &kp LS(N2)     &none      &none        &kp MINUS   &kp BSLH              &kp LS(N6)     &kp RA(Q)   &none       &kp LS(N5)
@@ -78,7 +79,7 @@
         // ---------------------------------------------------------------------------------------------------
         // 3
 
-        hockn {
+        hoc {
             bindings = <
 &kp ESC  &none  &kp BSPC  &kp UP       &kp RET    &kp DEL      &none           &kp LC(LS(TAB))  &kp TAB      &kp LC(TAB)  &none  &none      
 &td1     &none  &kp LEFT  &kp DOWN     &kp RIGHT  &none        &kp PAGE_UP     &kp BSPC         &kp UP       &kp RET      &none  &none      
@@ -90,12 +91,12 @@
         // ---------------------------------------------------------------------------------------------------
         // 4
 
-        new_keymap_homerow_mods {
+        new_k {
             bindings = <
-&kp ESC   &kp X      &kp V  &kp L               &kp C           &kp W        &kp K     &kp H            &kp G             &kp F     &kp Q     &kp DEL
-&none     &kp U      &kp I  &hrm_c LCTRL A      &hrm_c LSHFT E  &kp O        &kp S     &hrm_c LSHFT N   &hrm_c LCTRL R    &kp T     &kp D     &kp RET
-&none     &none      &kp Y  &kp J               &kp P           &kp Z        &kp B     &kp M            &kp SQT           &kp SEMI  &kp LBKT  &kp LGUI
-                            &kp BSPC            &mo 1           &kp SPACE    &kp BSPC  &mo 2            &kp K_CMENU
+&kp ESC   &kp X      &kp V  &kp L               &kp C           &kp W           &kp K     &kp H            &kp G             &kp F     &kp Q     &kp DEL
+&none     &kp U      &kp I  &hrm_c LCTRL A      &hrm_c LSHFT E  &kp O           &kp S     &hrm_c LSHFT N   &hrm_c LCTRL R    &kp T     &kp D     &kp RET
+&none     &none      &kp Y  &kp J               &kp P           &kp Z           &kp B     &kp M            &kp SQT           &kp SEMI  &kp LBKT  &kp LGUI
+                            &kp BSPC            &mo 1           &tm_c 5 SPACE   &kp BSPC  &mo 2            &kp K_CMENU
             >;
         };
 
@@ -108,19 +109,19 @@
         // ---------------------------------------------------------------------------------------------------
         // 5
 
-        mouse_layer {
+        arr_layer {
             bindings = <
-&kp LC(T)      &none  &kp KP_N7  &kp KP_N8  &kp KP_N9  &none      &none            &kp BSPC         &kp UP    &kp RET      &none   &kp DEL
-&kp LC(LS(T))  &none  &kp KP_N4  &mkp MCLK  &kp KP_N6  &none      &none            &kp LEFT         &kp DOWN  &kp RIGHT    &none   &kp RET
-&kp LC(W)      &none  &kp KP_N1  &kp KP_N2  &kp KP_N3  &none      &none            &kp LC(LS(TAB))  &kp TAB   &kp LC(TAB)  &none   &none
-                                 &mkp LCLK  &kp LCTRL  &mkp RCLK  &kp LOCKING_NUM  &none            &none
+&kp LC(T)      &none    &kp BSPC        &kp UP    &kp RET      &none         &kp INS        &kp HOME     &kp F1    &kp F4  &kp F7  &kp F12
+&kp LC(LS(T))  &none    &kp LEFT        &kp DOWN  &kp RIGHT    &kp PAGE_UP   &kp PAGE_DOWN  &kp PAGE_UP  &kp F2    &kp F5  &kp F8  &kp F11
+&kp LC(W)      &none    &kp LC(LS(TAB)) &kp TAB   &kp LC(TAB)  &kp PAGE_DOWN &kp DEL        &kp END      &kp F3    &kp F6  &kp F9  &kp F12
+                                        &none     &none        &none         &kp LCTRL      &kp LALT     &kp LGUI
             >;
         };
 
         // ---------------------------------------------------------------------------------------------------
         // 6
 
-        lctrl_layer {
+        lctrl_l {
             bindings = <
 &none      &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &none  &none  &none  &none  &none  &none
 &none      &kp LC(A)     &kp LC(S)  &none      &kp LC(F)  &kp LS(TAB)      &none  &none  &none  &none  &none  &none
@@ -132,7 +133,7 @@
         // ---------------------------------------------------------------------------------------------------
         // 7
 
-        lalt_layer {
+        lalt_l {
             bindings = <
 &none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &kp LG(D)     &none  &none  &none  &none  &none  &none
@@ -144,7 +145,7 @@
         // ---------------------------------------------------------------------------------------------------
         // 8
 
-        gui_switch {
+        gui_s {
             bindings = <
 &none  &none  &kp N7  &kp N8  &kp N9  &none    &none  &none  &none  &none  &none  &none
 &none  &none  &kp N4  &kp N5  &kp N6  &none    &none  &none  &none  &none  &none  &none
@@ -160,7 +161,7 @@
         // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         // 9
 
-        games_layer {
+        games_l {
             bindings = <
 &kp ESC  &kp M      &kp Q  &kp W      &kp E     &kp R        &kp C_MUTE         &kp BSPC  &kp UP    &kp RET    &kp C_PLAY_PAUSE  &kp LGUI
 &kp TAB  &mo 11     &kp A  &kp S      &kp D     &kp G        &kp C_VOLUME_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_NEXT        &kp LALT
@@ -172,7 +173,7 @@
         // ---------------------------------------------------------------------------------------------------
         // 10
 
-        games_arrow_keys  {
+        games_a_l  {
             bindings = <
 &kp ESC  &kp M      &kp F1    &kp UP    &kp F2     &kp R        &kp C_MUTE         &kp BSPC  &kp UP    &kp RET    &kp C_PLAY_PAUSE  &kp ESC
 &kp TAB  &none      &kp LEFT  &kp DOWN  &kp RIGHT  &kp G        &kp C_VOLUME_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_NEXT        &none
@@ -184,7 +185,7 @@
         // ---------------------------------------------------------------------------------------------------
         // 11
 
-        games_support_layer {
+        games_s_l {
             bindings = <
 &kp Z  &kp U  &kp N4  &kp W   &kp N5  &kp N6  &bt BT_SEL 0  &bt BT_SEL 3  &none  &none  &none  &kp LA(F4)
 &kp I  &none  &kp A   &kp S   &kp D   &kp N7  &bt BT_SEL 1  &bt BT_SEL 4  &none  &none  &none  &none
@@ -196,7 +197,7 @@
         // ---------------------------------------------------------------------------------------------------
         // 12
 
-        games_controll_layer {
+        games_c_l {
             bindings = <
 &none  &none  &none  &none      &none      &none    &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none      &none      &none    &none  &none  &none  &none  &none  &none
@@ -205,7 +206,10 @@
             >;
         };
 
-        games_return_layer {
+        // ---------------------------------------------------------------------------------------------------
+        // 13
+
+        games_r_l {
             bindings = <
 &kp ESC  &kp M      &kp Q  &kp W      &kp E     &kp R        &kp C_MUTE         &kp BSPC  &kp UP    &kp RET    &kp C_PLAY_PAUSE  &kp LGUI
 &kp TAB  &mo 11     &kp A  &kp S      &kp D     &kp G        &kp C_VOLUME_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_NEXT        &kp LALT
