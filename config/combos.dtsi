@@ -123,6 +123,13 @@
             bindings = <&ws>;
         };
 
+        combo_l_Fkeys {
+            timeout-ms = <50>;
+            layers = <0>;
+            key-positions = <13 38>;
+            bindings = <&to 7>;
+        };
+
         combo_l_to9 {
             timeout-ms = <50>;
             layers = <0 2>;
