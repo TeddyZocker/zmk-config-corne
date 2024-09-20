@@ -102,6 +102,7 @@
 
 // switch layers
 
+    // functional layers
         combo_to1 {
             timeout-ms = <25>;
             layers = <0 2>;
@@ -123,12 +124,7 @@
             bindings = <&ws>;
         };
 
-        combo_l_Fkeys {
-            timeout-ms = <50>;
-            layers = <0>;
-            key-positions = <13 38>;
-            bindings = <&to 7>;
-        };
+    // gaming layers
 
         combo_l_to9 {
             timeout-ms = <50>;
@@ -157,6 +153,15 @@
         combo_res_layers {
             timeout-ms = <50>;
             key-positions = <24 37>;
+            bindings = <&to 0>;
+        };
+
+    // gaming layers
+
+        combo_res_l0 {
+            timeout-ms = <50>;
+            layers = <4 5 6 7 8 9>;
+            key-positions = <36 37>;
             bindings = <&to 0>;
         };
     };

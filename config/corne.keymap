@@ -204,13 +204,8 @@
             bindings = <
 &kp ESC  &kp M      &kp Q  &kp W      &kp E     &kp R        &kp C_MUTE         &kp BSPC  &kp UP    &kp RET    &kp C_PLAY_PAUSE  &kp LGUI
 &kp TAB  &mo 11     &kp A  &kp S      &kp D     &kp G        &kp C_VOLUME_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_NEXT        &kp LALT
-<<<<<<< HEAD
 &la      &kp RSHFT  &kp Y  &kp X      &kp C     &kp V        &kp C_VOLUME_DOWN  &kp F3    &kp F4    &kp F5     &kp C_PREV        &kp LCTRL
-                           &none      &none     &kp SPACE    &none              &none    &none
-=======
-&la      &kp RSHFT  &kp Y  &kp X      &kp C     &kp F        &kp C_VOLUME_DOWN  &kp F3    &kp F4    &kp F5     &kp C_PREV        &kp LCTRL
-                           &to 0      &none     &kp SPACE    &none              &none    &none
->>>>>>> 23c86fb3a031e6d460b58a78beac56b9e9617b79
+                           &kp A      &none     &kp SPACE    &none              &none    &none
             >;
         };
     };
