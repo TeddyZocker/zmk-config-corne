@@ -115,7 +115,7 @@
         lctrl_l {
             bindings = <
 &none      &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &none  &none  &kp F1  &kp F4  &kp F7  &kp F10
-&none      &kp LC(A)     &kp LC(S)  &none      &kp LC(F)  &kp LS(TAB)      &none  &none  &kp F2  &kp F5  &kp F8  &kp F11
+&none      &kp LC(A)     &kp LC(S)  &none      &kp LC(F)  &kp LS(TAB)      &none  &none  &kp F2  &kp F5  &kp F8  &kp F11        // bt controlls?
 &none      &none         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(LS(S))    &none  &none  &kp F3  &kp F6  &kp F9  &kp F12
                                     &kp LC(Y)  &kp LC(Z)  &kp LC(RET)      &none  &none  &none
             >;
@@ -126,10 +126,10 @@
 
         lalt_l {
             bindings = <
-&none  &kp LG(D)    &kp F1  &kp F4  &kp F7  &kp F10    &none  &none  &none  &none  &none  &none
-&none  &kp LA(F4)   &kp F2  &kp F5  &kp F8  &kp F11    &none  &none  &none  &none  &none  &none
-&none  &none        &kp F3  &kp F6  &kp F9  &kp F12    &none  &none  &none  &none  &none  &none
-                            &none   &none   &none      &none  &none  &none
+&none  &kp LG(D)   &kp F1  &kp F4  &kp F7  &kp F10    &none  &none  &none  &none  &none  &none
+&none  &kp LA(F4)  &kp F2  &kp F5  &kp F8  &kp F11    &none  &none  &none  &none  &none  &none
+&none  &none       &kp F3  &kp F6  &kp F9  &kp F12    &none  &none  &none  &none  &none  &none
+                           &none   &none   &none      &none  &none  &none
             >;
         };
 
@@ -154,10 +154,10 @@
 
         games_l {
             bindings = <
-&kp ESC  &kp M      &kp Q  &kp W      &kp E     &kp R        &kp C_MUTE         &kp BSPC  &kp UP    &kp RET    &kp C_PLAY_PAUSE  &kp LGUI
-&kp TAB  &mo 11     &kp A  &kp S      &kp D     &kp G        &kp C_VOLUME_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_NEXT        &kp LALT
-&la      &kp RSHFT  &kp Y  &kp X      &kp C     &kp F        &kp C_VOLUME_DOWN  &kp F3    &kp F4    &kp F5     &kp C_PREV        &kp LCTRL
-                           &kp LCTRL  &ls       &kp SPACE    &none              &none    &none
+&kp ESC  &kp M      &kp Q  &kp W      &kp E     &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Z      &kp LGUI
+&kp TAB  &mo 11     &kp A  &kp S      &kp D     &kp G        &kp H    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET
+&la      &kp RSHFT  &kp Y  &kp X      &kp C     &kp F        &kp K    &kp N     &kp O     &kp P      &kp U      &kp I
+                           &kp LCTRL  &ls       &kp SPACE    &none    &none     &none
             >;
         };
 
@@ -166,10 +166,10 @@
 
         games_ak_l  {
             bindings = <
-&kp ESC  &kp M      &kp F1    &kp UP    &kp F2     &kp R        &kp C_MUTE         &kp BSPC  &kp UP    &kp RET    &kp C_PLAY_PAUSE  &kp ESC
-&kp TAB  &none      &kp LEFT  &kp DOWN  &kp RIGHT  &kp G        &kp C_VOLUME_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_NEXT        &none
-&la      &kp RSHFT  &kp Y     &kp X     &kp C      &kp F        &kp C_VOLUME_DOWN  &kp F3    &kp F4    &kp F5     &kp C_PREV        &kp LGUI
-                              &none     &ls        &kp SPACE    &none              &none     &none
+&kp ESC  &kp M      &kp F1    &kp UP    &kp F2     &kp R        &kp F1    &kp BSPC  &kp UP    &kp RET    &kp F7   &none
+&kp TAB  &none      &kp LEFT  &kp DOWN  &kp RIGHT  &kp G        &kp F2    &kp LEFT  &kp DOWN  &kp RIGHT  &kp F8   &none         //fehler hier sollte es eigentlich gleich wie 9 sein
+&la      &kp RSHFT  &kp Y     &kp X     &kp C      &kp F        &kp F3    &kp F4    &kp F5    &kp F6     &kp F9   &kp LGUI
+                              &none     &ls        &kp SPACE    &none     &none     &none
             >;
         };
 
@@ -179,7 +179,7 @@
         games_s_l {
             bindings = <
 &kp Z  &kp U  &kp N4  &kp W   &kp N5  &kp N6  &bt BT_SEL 0  &bt BT_SEL 3  &none  &none  &none  &kp LA(F4)
-&kp I  &none  &kp A   &kp S   &kp D   &kp N7  &bt BT_SEL 1  &bt BT_SEL 4  &none  &none  &none  &none
+&kp I  &none  &kp A   &kp S   &kp D   &kp N7  &bt BT_SEL 1  &bt BT_SEL 4  &none  &none  &none  &none                            //hier sollte 10 rechts rein
 &kp T  &kp L  &kp N1  &kp N2  &kp N3  &kp N8  &bt BT_SEL 2  &bt BT_CLR    &none  &none  &none  &none
                       &kp H   &kp J   &lsp    &none         &none         &none
             >;
