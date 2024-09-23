@@ -152,7 +152,7 @@
     // functional layers
         combo_res_layers {
             timeout-ms = <50>;
-            layers = <2>
+            layers = <2>;
             key-positions = <24 37>;
             bindings = <&to 0>;
         };
