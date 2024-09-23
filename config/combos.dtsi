@@ -82,14 +82,14 @@
         combo_vol_up {
             timeout-ms = <25>;
 	        layers = <2>;
-            key-positions = <3 16>;
+            key-positions = <15 16>;
             bindings = <&kp C_VOLUME_UP>;
         };
 
         combo_vol_down {
             timeout-ms = <25>;
 	        layers = <2>;
-            key-positions = <3 14>;
+            key-positions = <14 15>;
             bindings = <&kp C_VOLUME_DOWN>;
         };
 
@@ -97,6 +97,50 @@
             timeout-ms = <25>;
 	        layers = <2>;
             key-positions = <14 15 16>;
+            bindings = <&kp C_MUTE>;
+        };
+
+    //games
+
+        combo_skip {
+            timeout-ms = <25>;
+	        layers = <9 10 11 12>;
+            key-positions = <8 9>;
+            bindings = <&kp C_NEXT>;
+        };
+
+        combo_back {
+            timeout-ms = <25>;
+	        layers = <9 10 11 12>;
+            key-positions = <7 8>;
+            bindings = <&kp C_PREV>;
+        };
+
+        combo_pause {
+            timeout-ms = <25>;
+	        layers = <9 10 11 12>;
+            key-positions = <7 8 9>;
+            bindings = <&kp C_PLAY_PAUSE>;
+        };
+
+        combo_vol_up {
+            timeout-ms = <25>;
+	        layers = <9 10 11 12>;
+            key-positions = <20 21>;
+            bindings = <&kp C_VOLUME_UP>;
+        };
+
+        combo_vol_down {
+            timeout-ms = <25>;
+	        layers = <9 10 11 12>;
+            key-positions = <19 20>;
+            bindings = <&kp C_VOLUME_DOWN>;
+        };
+
+        combo_mute {
+            timeout-ms = <25>;
+	        layers = <9 10 11 12>;
+            key-positions = <19 20 21>;
             bindings = <&kp C_MUTE>;
         };
 
