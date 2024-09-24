@@ -153,7 +153,7 @@
         combo_to1 {
             timeout-ms = <25>;
             layers = <0 2>;
-            key-positions = <12 37>;
+            key-positions = <24 37>;
             bindings = <&to 1>;
         };
 
@@ -173,6 +173,7 @@
 
     // gaming layers
 
+        //switch to gaming
         combo_l_to9 {
             timeout-ms = <50>;
             layers = <0 2>;
@@ -182,15 +183,23 @@
 
         combo_r_to9 {
             timeout-ms = <50>;
-            layers = <0 2 10>;
-            key-positions = <40 41>;
+            layers = <0 2>;
+            key-positions = <12 37>;
             bindings = <&to 9>;
         };
 
-        combo_r_to10 {
+        // switch in gaming
+        combo_to9 {
+            timeout-ms = <50>;
+            layers = <10>;
+            key-positions = <12 37>;
+            bindings = <&to 10>;
+        };
+
+        combo_to10 {
             timeout-ms = <50>;
             layers = <9>;
-            key-positions = <39 40>;
+            key-positions = <0 37>;
             bindings = <&to 10>;
         };
 
@@ -199,17 +208,24 @@
     // functional layers
         combo_res_layers {
             timeout-ms = <50>;
-            layers = <2>;
-            key-positions = <24 37>;
+            layers = <1 2 3 4 5 6 7 8>;
+            key-positions = <36 37>;
             bindings = <&to 0>;
         };
 
     // gaming layers
 
-        combo_res_l0 {
+        combo_res_l_to0 {
             timeout-ms = <50>;
-            layers = <4 5 6 7 8 9>;
+            layers = <9>;
             key-positions = <36 37>;
+            bindings = <&to 0>;
+        };
+
+        combo_res_r_to0 {
+            timeout-ms = <50>;
+            layers = <9>;
+            key-positions = <40 41>;
             bindings = <&to 0>;
         };
     };

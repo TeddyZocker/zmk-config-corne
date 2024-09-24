@@ -154,10 +154,10 @@
 
         games_l {
             bindings = <
-&kp ESC  &kp M      &kp Q  &kp W      &kp E     &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Z      &kp LGUI
-&kp TAB  &mo 11     &kp A  &kp S      &kp D     &kp G        &kp H    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET
-&la      &kp RSHFT  &kp Y  &kp X      &kp C     &kp F        &kp K    &kp N     &kp O     &kp P      &kp U      &kp I
-                           &kp LCTRL  &ls       &kp SPACE    &none    &none     &none
+&kp ESC  &kp M      &kp Q  &kp W      &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Z      &kp LGUI
+&kp TAB  &mo 11     &kp A  &kp S      &kp D      &kp G        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET
+&la      &kp RSHFT  &kp Y  &kp X      &kp C      &kp F        &kp N    &kp O     &kp P     &kp U      &kp T      &kp I
+                           &kp LCTRL  &kp LSHFT  &kp SPACE    &none    &mkp MB1  &mkp MB2
             >;
         };
 
@@ -166,10 +166,10 @@
 
         games_ak_l  {
             bindings = <
-&kp ESC  &kp M      &kp F1    &kp UP    &kp F2     &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Z   &none
-&kp TAB  &none      &kp LEFT  &kp DOWN  &kp RIGHT  &kp G        &kp H    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V   &none      
-&la      &kp RSHFT  &kp Y     &kp X     &kp C      &kp F        &kp K    &kp N     &kp O     &kp P      &kp U   &kp LGUI
-                              &none     &ls        &kp SPACE    &none    &none     &none
+&kp ESC  &kp M      &kp Q     &kp UP    &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Z      &kp LGUI
+&kp TAB  &none      &kp LEFT  &kp DOWN  &kp RIGHT  &kp G        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET   
+&la      &kp RSHFT  &kp Y     &kp X     &kp C      &kp F        &kp N    &kp O     &kp P     &kp U      &kp T      &kp I
+                              &kp LCTRL &kp LSHFT  &kp SPACE    &kp DOT  &mkp MB1  &mkp MB2
             >;
         };
 
@@ -198,15 +198,5 @@
         };
 
         // ---------------------------------------------------------------------------------------------------
-        // 13
-
-        games_r_l {
-            bindings = <
-&kp ESC  &kp M      &kp Q  &kp W      &kp E     &kp R        &kp C_MUTE         &kp BSPC  &kp UP    &kp RET    &kp C_PLAY_PAUSE  &kp LGUI
-&kp TAB  &mo 11     &kp A  &kp S      &kp D     &kp G        &kp C_VOLUME_UP    &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_NEXT        &kp LALT
-&la      &kp RSHFT  &kp Y  &kp X      &kp C     &kp V        &kp C_VOLUME_DOWN  &kp F3    &kp F4    &kp F5     &kp C_PREV        &kp LCTRL
-                           &kp A      &none     &kp SPACE    &none              &none    &none
-            >;
-        };
     };
 };
