@@ -173,39 +173,55 @@
 
     // gaming layers
 
-        //switch to gaming
-        combo_l_to9 {
-            timeout-ms = <50>;
-            layers = <0 2>;
-            key-positions = <36 37>;
-            bindings = <&to 9>;
-        };
-
-        combo_r_to9 {
-            timeout-ms = <50>;
-            layers = <0 2>;
-            key-positions = <12 37>;
-            bindings = <&to 9>;
-        };
-
-        // switch in gaming
-        combo_to9 {
-            timeout-ms = <50>;
-            layers = <10>;
-            key-positions = <12 37>;
-            bindings = <&to 10>;
-        };
-
-        combo_to10 {
-            timeout-ms = <50>;
+        combo_mo0 {
+            timeout-ms = <25>;
             layers = <9>;
-            key-positions = <0 37>;
-            bindings = <&to 10>;
+            key-positions = <37 40>;
+            bindings = <&mo 0>;
         };
+
+        combo_mo2 {
+            timeout-ms = <25>;
+            layers = <9>;
+            key-positions = <37 41>;
+            bindings = <&mo 2>;
+        };
+
+        //switch to gaming
+
+            combo_l_to9 {
+                timeout-ms = <50>;
+                layers = <0 2>;
+                key-positions = <36 37>;
+                bindings = <&to 9>;
+            };
+
+            combo_r_to9 {
+                timeout-ms = <50>;
+                layers = <0 2>;
+                key-positions = <12 37>;
+                bindings = <&to 9>;
+            };
+
+            // switch in gaming
+            combo_to9 {
+                timeout-ms = <50>;
+                layers = <10>;
+                key-positions = <12 37>;
+                bindings = <&to 10>;
+            };
+
+            combo_to10 {
+                timeout-ms = <50>;
+                layers = <9>;
+                key-positions = <0 37>;
+                bindings = <&to 10>;
+            };
 
 // res layers
 
     // functional layers
+
         combo_res_layers {
             timeout-ms = <50>;
             layers = <1 2 3 4 5 6 7 8>;
@@ -214,7 +230,7 @@
         };
 
     // gaming layers
-
+    
         combo_res_l_to0 {
             timeout-ms = <50>;
             layers = <9>;
