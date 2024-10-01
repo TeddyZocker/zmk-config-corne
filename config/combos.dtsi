@@ -60,45 +60,87 @@
 
     // functional layers
     
-        combo_skip {
+        combo_l_skip {
             timeout-ms = <25>;
-	        layers = <2>;
+	        layers = <5>;
             key-positions = <3 4>;
             bindings = <&kp C_NEXT>;
         };
 
-        combo_back {
+        combo_l_back {
             timeout-ms = <25>;
-	        layers = <2>;
+	        layers = <5>;
             key-positions = <2 3>;
             bindings = <&kp C_PREV>;
         };
 
-        combo_pause {
+        combo_l_pause {
             timeout-ms = <25>;
-	        layers = <2>;
+	        layers = <5>;
             key-positions = <2 3 4>;
             bindings = <&kp C_PLAY_PAUSE>;
         };
 
-        combo_vol_up {
+        combo_l_vol_up {
             timeout-ms = <25>;
-	        layers = <2>;
+	        layers = <5>;
             key-positions = <15 16>;
             bindings = <&kp C_VOLUME_UP>;
         };
 
-        combo_vol_down {
+        combo_l_vol_down {
             timeout-ms = <25>;
-	        layers = <2>;
+	        layers = <5>;
             key-positions = <14 15>;
             bindings = <&kp C_VOLUME_DOWN>;
         };
 
-        combo_mute {
+        combo_l_mute {
             timeout-ms = <25>;
-	        layers = <2>;
+	        layers = <5>;
             key-positions = <14 15 16>;
+            bindings = <&kp C_MUTE>;
+        };
+
+        combo_r_skip {
+            timeout-ms = <25>;
+	        layers = <5>;
+            key-positions = <8 9>;
+            bindings = <&kp C_NEXT>;
+        };
+
+        combo_r_back {
+            timeout-ms = <25>;
+	        layers = <5>;
+            key-positions = <7 8>;
+            bindings = <&kp C_PREV>;
+        };
+
+        combo_r_pause {
+            timeout-ms = <25>;
+	        layers = <5>;
+            key-positions = <7 8 9>;
+            bindings = <&kp C_PLAY_PAUSE>;
+        };
+
+        combo_r_vol_up {
+            timeout-ms = <25>;
+	        layers = <5>;
+            key-positions = <20 21>;
+            bindings = <&kp C_VOLUME_UP>;
+        };
+
+        combo_r_vol_down {
+            timeout-ms = <25>;
+	        layers = <5>;
+            key-positions = <19 20>;
+            bindings = <&kp C_VOLUME_DOWN>;
+        };
+
+        combo_r_mute {
+            timeout-ms = <25>;
+	        layers = <5>;
+            key-positions = <19 20 21>;
             bindings = <&kp C_MUTE>;
         };
 
