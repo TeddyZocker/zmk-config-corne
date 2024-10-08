@@ -215,14 +215,14 @@
 
     // gaming layers
 
-        combo_mo0 {
+        combo_g_mo0 {
             timeout-ms = <25>;
             layers = <9>;
             key-positions = <37 40>;
             bindings = <&mo 0>;
         };
 
-        combo_mo2 {
+        combo_g_mo2 {
             timeout-ms = <25>;
             layers = <9>;
             key-positions = <37 41>;
@@ -245,18 +245,18 @@
                 bindings = <&to 9>;
             };
 
-            // switch in gaming
+        // switch in gaming
             combo_to9 {
                 timeout-ms = <50>;
                 layers = <10>;
-                key-positions = <12 37>;
-                bindings = <&to 10>;
+                key-positions = <24 37>;
+                bindings = <&to 9>;
             };
 
             combo_to10 {
                 timeout-ms = <50>;
                 layers = <9>;
-                key-positions = <0 37>;
+                key-positions = <24 37>;
                 bindings = <&to 10>;
             };
 

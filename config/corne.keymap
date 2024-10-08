@@ -24,8 +24,8 @@
 #define alt_l		        7
 #define gui_l		        8
 #define games_l		        9
-#define games_a_l		    10
-#define games_s_l		    11
+#define games_ar_l		    10
+#define games_ad_l		    11
 #define games_c_l	        12
 
 // Ideen
@@ -170,7 +170,7 @@
         // 9
 
         games_l {
-            display-name = "G L";
+            display-name = "GAMES";
             bindings = <
 &kp ESC  &kp M      &kp Q  &kp W      &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Z      &kp LGUI
 &kp TAB  &mo 11     &kp A  &kp S      &kp D      &kp G        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET
@@ -182,8 +182,8 @@
         // ---------------------------------------------------------------------------------------------------
         // 10
 
-        games_ak_l  {
-            display-name = "G AR L";
+        games_ar_l  {
+            display-name = "GAMES AR";
             bindings = <
 &kp ESC  &kp M      &kp Q     &kp UP    &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Z      &kp LGUI
 &kp TAB  &none      &kp LEFT  &kp DOWN  &kp RIGHT  &kp G        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET   
@@ -195,8 +195,8 @@
         // ---------------------------------------------------------------------------------------------------
         // 11
 
-        games_s_l {
-            display-name = "G AS L";
+        games_ad_l {
+            display-name = "GAMES AD";
             bindings = <
 &kp Z  &kp U  &kp N4  &kp W   &kp N5  &kp N6  &kp F1    &kp BSPC  &kp UP    &kp RET    &kp F7  &kp LA(F4)
 &kp I  &none  &kp A   &kp S   &kp D   &kp N7  &kp F2    &kp LEFT  &kp DOWN  &kp RIGHT  &kp F8  &none                         
@@ -209,7 +209,7 @@
         // 12
 
         games_c_l {
-            display-name = "G CTRL L";
+            display-name = "GAMES CTRL";
             bindings = <
 &none  &none  &none  &none      &none      &none    &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none      &none      &none    &none  &none  &none  &none  &none  &none
