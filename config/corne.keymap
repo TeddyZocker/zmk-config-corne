@@ -129,9 +129,9 @@
         ctrl_l {
             display-name = "CTRL L";
             bindings = <
-&none      &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &bt BT_SEL 0  &bt BT_SEL 3  &kp F1  &kp F4  &kp F7  &kp F10
+&none      &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &td_bcl0      &bt BT_SEL 3  &kp F1  &kp F4  &kp F7  &kp F10
 &none      &kp LC(A)     &kp LC(S)  &none      &kp LC(F)  &kp LS(TAB)      &bt BT_SEL 1  &bt BT_SEL 4  &kp F2  &kp F5  &kp F8  &kp F11
-&none      &none         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(LS(S))    &bt BT_SEL 2  &bt BT_CLR    &kp F3  &kp F6  &kp F9  &kp F12
+&none      &none         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(LS(S))    &bt BT_SEL 2  &none         &kp F3  &kp F6  &kp F9  &kp F12
                                     &kp LC(Y)  &kp LC(Z)  &kp LC(RET)      &none         &none  &none
             >;
         };
