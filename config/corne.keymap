@@ -90,9 +90,9 @@
         symbols {
             display-name = "SYMBOLS";
             bindings = <
-&kp ESC   &dm    &none         &kp RA(90)     &mlt       &kp PIPE2    &kp LS(N8)  &kp LEFT_PARENTHESIS  &kp RA(N8)     &kp RA(N9)  &kp RA(N7)  &kp RA(N0)
-&td_lara  &none  &kp LS(BSLH)  &kp LS(N2)     &none      &none        &kp MINUS   &kp BSLH              &kp LS(N6)     &kp RA(Q)   &none       &kp LS(N5)
-&td_lcrc  &none  &kp LS(N2)    &kp LS(GRAVE)  &none      &kp TILDE2   &kp UNDER   &kp EXCL              &kp LS(SLASH)  &kp TILDE   &none       &kp RA(MINUS)
+&kp ESC   &dm    &none         &kp RA(90)     &mlt       &kp PIPE2    &kp LS(N8)  &kp LEFT_PARENTHESIS  &kp RA(N8)     &kp RA(N9)  &kp RA(N7)      &kp RA(N0)
+&td_lara  &none  &kp LS(BSLH)  &kp LS(N2)     &none      &none        &kp MINUS   &kp BSLH              &kp LS(N6)     &kp RA(Q)   &kp DLLR        &kp LS(N5)
+&td_lcrc  &none  &kp LS(N2)    &kp LS(GRAVE)  &none      &kp TILDE2   &kp UNDER   &kp EXCL              &kp LS(SLASH)  &kp TILDE   &kp RA(Q)       &kp RA(MINUS)
                                &caps_word     &trans     &trans       &trans      &trans                &trans
             >;
         };
