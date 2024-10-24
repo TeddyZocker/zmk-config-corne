@@ -117,10 +117,10 @@
         arr_layer {
             display-name = "ARROW L";
             bindings = <
-&kp LC(T)      &kp LCTRL   &kp BSPC        &kp UP    &kp RET      &none         &none          &kp BSPC        &kp UP    &kp RET        &kp LCTRL     &kp LC(T)
-&kp LC(LS(T))  &kp LGUI    &kp LEFT        &kp DOWN  &kp RIGHT    &kp PAGE_UP   &kp PAGE_UP    &kp LEFT        &kp DOWN  &kp RIGHT      &kp LGUI      &kp LC(LS(T))
-&kp LC(W)      &kp LALT    &kp LC(LS(TAB)) &kp TAB   &kp LC(TAB)  &kp PAGE_DOWN &kp PAGE_DOWN  &kp LC(LS(TAB)) &kp TAB   &kp LC(TAB)    &kp LALT      &kp LC(W)
-                                           &none     &none        &none         &none          &none           &kp LGUI 
+&kp LC(T)      &kp LCTRL   &kp BSPC        &kp UP    &kp RET      &kp PAGE_UP       &kp PAGE_UP     &kp BSPC        &kp UP    &kp RET        &kp LCTRL     &kp LC(T)
+&kp LC(LS(T))  &kp LGUI    &kp LEFT        &kp DOWN  &kp RIGHT    &kp PAGE_DOWN     &kp PAGE_DOWN   &kp LEFT        &kp DOWN  &kp RIGHT      &kp LGUI      &kp LC(LS(T))
+&kp LC(W)      &kp LALT    &kp LC(LS(TAB)) &kp TAB   &kp LC(TAB)  &none             &none           &kp LC(LS(TAB)) &kp TAB   &kp LC(TAB)    &kp LALT      &kp LC(W)
+                                           &none     &none        &none             &none           &none           none
             >;
         };
 
