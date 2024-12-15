@@ -176,7 +176,7 @@
 &kp ESC  &kp M      &kp Q  &kp W      &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Z      &kp LGUI
 &kp TAB  &mo 11     &kp A  &kp S      &kp D      &kp G        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET
 &la      &kp RSHFT  &kp Y  &kp X      &kp C      &kp F        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
-                           &kp LCTRL  &kp LSHFT  &kp SPACE    &none    &mkp MB1  &mkp MB2
+                           &kp LCTRL  &kp LSHFT  &kp SPACE    &kp ESC  &mkp MB1  &mkp MB2
             >;
         };
 
@@ -189,7 +189,7 @@
 &kp ESC  &kp M      &kp Q     &kp UP    &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Z      &kp LGUI
 &kp TAB  &none      &kp LEFT  &kp DOWN  &kp RIGHT  &kp G        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET   
 &la      &kp RSHFT  &kp Y     &kp X     &kp C      &kp F        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
-                              &kp LCTRL &kp LSHFT  &kp SPACE    &kp DOT  &mkp MB1  &mkp MB2
+                              &kp LCTRL &kp LSHFT  &kp SPACE    &kp ESC  &mkp MB1  &mkp MB2
             >;
         };
 
