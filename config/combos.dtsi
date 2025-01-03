@@ -234,7 +234,7 @@
             combo_l_to9 {
                 timeout-ms = <50>;
                 layers = <0 2>;
-                key-positions = <36 37>;
+                key-positions = <40 41>;
                 bindings = <&to 9>;
             };
 
@@ -276,14 +276,14 @@
         combo_res_l_to0 {
             timeout-ms = <50>;
             layers = <9>;
-            key-positions = <36 37>;
+            key-positions = <40 41>;
             bindings = <&to 0>;
         };
 
         combo_res_r_to0 {
             timeout-ms = <50>;
             layers = <9>;
-            key-positions = <40 41>;
+            key-positions = <36 37>;
             bindings = <&to 0>;
         };
     };
