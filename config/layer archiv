@@ -1,0 +1,10 @@
+    // 4
+        work {
+            display-name = "WORK";
+            bindings = <
+&kp ESC  &none  &kp BSPC  &kp UP       &kp RET    &kp DEL      &none           &kp LC(LS(TAB))  &kp TAB      &kp LC(TAB)  &none  &none      
+&td1     &none  &kp LEFT  &kp DOWN     &kp RIGHT  &none        &kp PAGE_UP     &kp BSPC         &kp UP       &kp RET      &none  &none      
+&td2     &none  &none     &kp K_CMENU  &none      &none        &kp PAGE_DOWN   &kp LEFT         &kp DOWN     &kp RIGHT    &none  &none      
+                          &ls2         &kp LALT   &kp LCTRL    &mkp LCLK       &kp LCTRL        &mkp RCLK
+            >;
+        };
