@@ -57,9 +57,7 @@
         };
 
 // media
-
     // functional layers
-    
         combo_l_skip {
             timeout-ms = <25>;
 	        layers = <5>;
@@ -145,7 +143,6 @@
         };
 
     //games
-
         combo_g_skip {
             timeout-ms = <25>;
 	        layers = <9 10 11 12>;
@@ -189,21 +186,12 @@
         };
 
 // switch layers
-
     // functional layers
-
         combo_to1 {
             timeout-ms = <25>;
             layers = <0 2>;
             key-positions = <24 37>;
             bindings = <&to 1>;
-        };
-
-        combo_to4 {
-            timeout-ms = <25>;
-            layers = <0>;
-            key-positions = <0 1>;
-            bindings = <&to 4>;
         };
 
         combo_mo8 {
@@ -214,14 +202,6 @@
         };
 
     // gaming layers
-
-        combo_g_mo0 {
-            timeout-ms = <25>;
-            layers = <9>;
-            key-positions = <37 40>;
-            bindings = <&mo 0>;
-        };
-
         combo_g_mo2 {
             timeout-ms = <25>;
             layers = <9>;
@@ -230,7 +210,6 @@
         };
 
         //switch to gaming
-
             combo_l_to9 {
                 timeout-ms = <50>;
                 layers = <0 2>;
@@ -261,9 +240,7 @@
             };
 
 // res layers
-
     // functional layers
-
         combo_res_layers {
             timeout-ms = <50>;
             layers = <1 2 3 4 5 6 7 8>;
@@ -272,7 +249,6 @@
         };
 
     // gaming layers
-    
         combo_res_l_to0 {
             timeout-ms = <50>;
             layers = <9>;
