@@ -63,7 +63,7 @@
 
         mgt: mgreater_than {
             compatible = "zmk,behavior-macro";
-            label = "mlt";
+            label = "mgt";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
