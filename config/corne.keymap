@@ -53,8 +53,8 @@
             display-name = "QWERTY";
             bindings = <
 &kp ESC  &kp Q      &kp W           &kp E            &kp R           &kp T          &kp Y        &kp U             &kp I               &kp O           &kp P     &kp DEL
-&td1     &kp A      &hrm_c LALT S   &hrm_c LCTRL D   &hrm_c LSHFT F  &kp G          &kp H        &hrm_c LSHFT J    &hrm_c LCTRL K      &hrm_c LALT L   &none     &kp RET
-&td2     &kp Z      &kp X           &kp C            &kp V           &kp B          &kp N        &kp M             &kp SQT             &kp SEMI        &kp LBKT  &kp LGUI
+&mo 7    &kp A      &hrm_c LALT S   &hrm_c LCTRL D   &hrm_c LSHFT F  &kp G          &kp H        &hrm_c LSHFT J    &hrm_c LCTRL K      &hrm_c LALT L   &none     &kp RET
+&mo 6    &kp Z      &kp X           &kp C            &kp V           &kp B          &kp N        &kp M             &kp SQT             &kp SEMI        &kp LBKT  &kp LGUI
                                     &kp BSPC         &mo 2           &lt 5 SPACE    &lt 5 BSPC   &mo 3             &kp K_CMENU
             >;
         };
@@ -78,10 +78,10 @@
         numb_pad {
             display-name = "NUMB PAD";
             bindings = <
-&kp ESC             &kp LS(N0)  &kp N7  &kp N8  &kp N9  &kp DEL    &none             &kp RET    &kp UP         &kp BSPC      &none        &kp DEL
-&hrm_c LALT  DOT    &mo 3	    &kp N4  &kp N5  &kp N6  &kp TAB    &kp PAGE_UP       &kp LEFT   &kp DOWN       &kp RIGHT     &kp LCTRL    &kp RET
-&hrm_c LCTRL COMMA  &kp N0      &kp N1  &kp N2  &kp N3  &kp RET    &kp PAGE_DOWN     &kp LC(X)  &kp LC(C)      &kp LC(V)     &none        &td_b0
-                                &trans  &trans  &trans  &trans     &trans            &kp LGUI
+&kp ESC                             &kp LS(N0)  &kp N7  &kp N8  &kp N9  &kp DEL    &none             &kp RET    &kp UP         &kp BSPC      &none        &kp DEL
+&hrm_c LALT  td_dot_colon           &mo 3	    &kp N4  &kp N5  &kp N6  &kp TAB    &kp PAGE_UP       &kp LEFT   &kp DOWN       &kp RIGHT     &kp LCTRL    &kp RET
+&hrm_c LCTRL td_comma_semicolon     &kp N0      &kp N1  &kp N2  &kp N3  &kp RET    &kp PAGE_DOWN     &kp LC(X)  &kp LC(C)      &kp LC(V)     &none        &td_b0
+                                                &trans  &trans  &trans  &trans     &trans            &kp LGUI
             >;
         };
 
@@ -130,10 +130,10 @@
         ctrl_l {
             display-name = "CTRL L";
             bindings = <
-&none      &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &td_bcl0      &bt BT_SEL 3   &kp F1  &kp F4  &kp F7  &kp F10
-&none      &kp LC(A)     &kp LC(S)  &none      &kp LC(F)  &kp LS(TAB)      &bt BT_SEL 1  &bt BT_SEL 4   &kp F2  &kp F5  &kp F8  &kp F11
-&none      &none         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(LS(S))    &bt BT_SEL 2  &out OUT_TOG  &kp F3  &kp F6  &kp F9  &kp F12
-                                    &kp LC(Y)  &kp LC(Z)  &kp LC(RET)      &none         &none  &none
+&none      &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &td_bcl0      &bt BT_SEL 3   &none  &none  &none  &none
+&none      &kp LC(A)     &kp LC(S)  &none      &kp LC(F)  &kp LS(TAB)      &bt BT_SEL 1  &bt BT_SEL 4   &none  &none  &none  &none
+&none      &none         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(LS(S))    &bt BT_SEL 2  &out OUT_TOG   &none  &none  &none  &none
+                                    &kp LC(Y)  &kp LC(Z)  &kp LC(RET)      &none         &none          &none
             >;
         };
 
@@ -199,10 +199,10 @@
         games_ad_l {
             display-name = "GAMES AD";
             bindings = <
-&kp Z  &kp U  &kp N4  &kp W   &kp N5  &kp N6  &kp F1    &kp BSPC  &kp UP    &kp RET    &kp F7  &kp LA(F4)
-&kp I  &none  &kp A   &kp S   &kp D   &kp N7  &kp F2    &kp LEFT  &kp DOWN  &kp RIGHT  &kp F8  &none                         
-&kp T  &kp L  &kp N1  &kp N2  &kp N3  &kp N8  &kp F3    &kp F4    &kp F5    &kp F6     &kp F9  &none
-                      &kp H   &kp J   &lsp    &none     &none     &none
+&kp Z  &kp U  &kp N4  &kp W   &kp N5  &kp N6  &kp F1  &kp F4  &kp F7  &kp F10   &none   &kp LA(F4)
+&kp I  &none  &kp A   &kp S   &kp D   &kp N7  &kp F2  &kp F5  &kp F8  &kp F11   &none   &none                         
+&kp T  &kp L  &kp N1  &kp N2  &kp N3  &kp N8  &kp F3  &kp F6  &kp F9  &kp F12   &none   &none
+                      &kp H   &kp J   &lsp    &none   &none   &none
             >;
         };
 

@@ -42,20 +42,6 @@
             bindings = <&kp LS(N7)>;
         };
 
-        combo_doppelpunkt {
-            timeout-ms = <25>;
-	        layers = <2>;
-            key-positions = <1 2>;
-            bindings = <&kp GREATER_THAN>;
-        };
-
-        combo_strichpunkt {
-            timeout-ms = <25>;
-	        layers = <2>;
-            key-positions = <13 14>;
-            bindings = <&kp LESS_THAN>;
-        };
-
 // media
     // functional layers
         combo_l_skip {
@@ -145,42 +131,42 @@
     //games
         combo_g_skip {
             timeout-ms = <25>;
-	        layers = <9 10 11 12>;
+	        layers = <9 10>;
             key-positions = <8 9>;
             bindings = <&kp C_NEXT>;
         };
 
         combo_g_back {
             timeout-ms = <25>;
-	        layers = <9 10 11 12>;
+	        layers = <9 10>;
             key-positions = <7 8>;
             bindings = <&kp C_PREV>;
         };
 
         combo_g_pause {
             timeout-ms = <25>;
-	        layers = <9 10 11 12>;
+	        layers = <9 10>;
             key-positions = <7 8 9>;
             bindings = <&kp C_PLAY_PAUSE>;
         };
 
         combo_g_vol_up {
             timeout-ms = <25>;
-	        layers = <9 10 11 12>;
+	        layers = <9 10>;
             key-positions = <20 21>;
             bindings = <&kp C_VOLUME_UP>;
         };
 
         combo_g_vol_down {
             timeout-ms = <25>;
-	        layers = <9 10 11 12>;
+	        layers = <9 10>;
             key-positions = <19 20>;
             bindings = <&kp C_VOLUME_DOWN>;
         };
 
         combo_g_mute {
             timeout-ms = <25>;
-	        layers = <9 10 11 12>;
+	        layers = <9 10>;
             key-positions = <19 20 21>;
             bindings = <&kp C_MUTE>;
         };

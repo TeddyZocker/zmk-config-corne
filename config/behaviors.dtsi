@@ -1,46 +1,60 @@
 / {
     behaviors {
+/*
+        td1:                    window_switch_lalt_td {
+                                        compatible = "zmk,behavior-tap-dance";
+                                        #binding-cells = <0>;
+                                        tapping-term-ms = <200>;
+                                        bindings = <&kp LALT>, <&mo 7>;
+                                                };
 
-        td1:        window_switch_lalt_td {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp LALT>, <&mo 7>;
-                                };
+        td2:                    layer6_lctrl_td {
+                                        compatible = "zmk,behavior-tap-dance";
+                                        #binding-cells = <0>;
+                                        tapping-term-ms = <200>;
+                                        bindings = <&mo 6>, <&kp LCTRL>;
+                                                };
+*/
+        td_b0:                  swich_bluetooth0 {
+                                        compatible = "zmk,behavior-tap-dance";
+                                        #binding-cells = <0>;
+                                        tapping-term-ms = <200>;
+                                        bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>, <&bt BT_SEL 3>, <&bt BT_SEL 4>;
+                                                };
+        td_bcl0:                clear_or_bluetooth0 {
+                                        compatible = "zmk,behavior-tap-dance";
+                                        #binding-cells = <0>;
+                                        tapping-term-ms = <200>;
+                                        bindings = <&bt BT_SEL 0>, <&bt BT_CLR>;
+                                                };
 
-        td2:        layer6_lctrl_td {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&mo 6>, <&kp LCTRL>;
-                                }; 
-
-        td_b0:      swich_bluetooth0 {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>, <&bt BT_SEL 3>;
-                                };
-        td_bcl0:    clear_or_bluetooth0 {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&bt BT_SEL 0>, <&bt BT_CLR>;
-                                };
-
-        td_lara:    left_alt_right_alt {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp LALT>, <&kp RALT>;
-                                };
+        td_lara:                left_alt_right_alt {
+                                        compatible = "zmk,behavior-tap-dance";
+                                        #binding-cells = <0>;
+                                        tapping-term-ms = <200>;
+                                        bindings = <&kp LALT>, <&kp RALT>;
+                                                };
             
-        td_lcrc:    left_controll_right_controll {
-                        compatible = "zmk,behavior-tap-dance";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&kp LCTRL>, <&kp RCTRL>;
-                                };
+        td_lcrc:                left_controll_right_controll {
+                                        compatible = "zmk,behavior-tap-dance";
+                                        #binding-cells = <0>;
+                                        tapping-term-ms = <200>;
+                                        bindings = <&kp LCTRL>, <&kp RCTRL>;
+                                                };
+
+        td_dot_colon:           point_colon {
+                                        compatible = "zmk,behavior-tap-dance";
+                                        #binding-cells = <0>;
+                                        tapping-term-ms = <200>;
+                                        bindings = <&kp DOT>, <&kp GREATER_THAN>;
+                                                };
+
+        td_comma_semicolon:     coma_semicolon {
+                                        compatible = "zmk,behavior-tap-dance";
+                                        #binding-cells = <0>;
+                                        tapping-term-ms = <200>;
+                                        bindings = <&kp COMMA>, <&kp LESS_THAN>;
+                                                };
 
 	hrm_c: 	    homerow_mod_custom {
             		compatible = "zmk,behavior-hold-tap";
