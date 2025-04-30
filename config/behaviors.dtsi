@@ -74,7 +74,7 @@
             	        bindings = <&kp LALT>, <&td_dot_colon>;
         		        };
 
-	hrm_c3:     homerow_mod_custom2 {
+	hrm_c3:     homerow_mod_custom3 {
             		compatible = "zmk,behavior-hold-tap";
             	        label = "HOMEROW_MODS";
             		#binding-cells = <2>;
