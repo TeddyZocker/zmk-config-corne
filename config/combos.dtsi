@@ -13,7 +13,7 @@
     combos {
         compatible = "zmk,combos";
 
-symbols_timer = 50
+symbols_timer = <50>
 
 // def symbols 
         combo_plus {
