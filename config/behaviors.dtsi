@@ -1,5 +1,9 @@
 #include <dt-bindings/zmk/behaviors.h>
 
+&mt {
+    flavor = "tap-preferred";
+};
+
 / {
     behaviors {
 /*
@@ -61,15 +65,8 @@
            		flavor = "tap-preferred";
             	        bindings = <&kp>, <&kp>;
         		        };
-
-        mo_tog: behavior_mo_tog {
-                        compatible = "zmk,behavior-hold-tap";
-                        #binding-cells = <2>;
-                        flavor = "hold-preferred";
-                        tapping-term-ms = <100>;
-                        bindings = <&mo>, <&kp>;
-                                };
 */
+
         td_d_c:         point_colon {
                                 compatible = "zmk,behavior-tap-dance";
                                 #binding-cells = <0>;
@@ -88,7 +85,7 @@
                                 compatible = "zmk,behavior-tap-dance";
                                 #binding-cells = <0>;
                                 tapping-term-ms = <200>;
-                                bindings = <&lt 6 D>, <&mt LCTRL D>;
+                                bindings = <&lt 6 D>, <&kp LCTRL>;
                                         };
      	};
     };
