@@ -8,12 +8,12 @@
 */
 
 #include "macro.dtsi"
+#define combo_timeout 200
 
 / {
     combos {
         compatible = "zmk,combos";
 
-#define combo_timeout 200
 
 // def symbols 
         combo_plus {
