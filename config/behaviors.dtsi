@@ -46,7 +46,7 @@
         td_mo2mo6:        mo2mo6 {
                                 compatible = "zmk,behavior-tap-dance";
                                 #binding-cells = <0>;
-                                tapping-term-ms = <200>;
+                                tapping-term-ms = <300>;
                                 bindings = <&mo 2>, <&mo 6>;
                                         };
 
