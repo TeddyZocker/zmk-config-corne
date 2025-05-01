@@ -95,7 +95,7 @@
                                 compatible = "zmk,behavior-tap-dance";
                                 #binding-cells = <0>;
                                 tapping-term-ms = <200>;
-                                bindings = <&mo_tog 6 D>, <&hrm_c LCTRL DD>;
+                                bindings = <&mo_tog 6 D>, <&hrm_c LCTRL D>;
                                         };
      	};
     };
