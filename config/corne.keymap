@@ -67,7 +67,7 @@
             bindings = <
 &kp ESC         &kp X      &kp V              &kp L              &kp C           &kp W           &kp K     &kp H            &kp G             &kp F           &kp Q     &kp DEL
 &none           &kp U      &hrm_c LALT I      &td_l_dmo6_ctrl    &hrm_c LSHFT E  &kp O           &kp S     &hrm_c LSHFT N   &hrm_c LCTRL R    &hrm_c LALT T   &kp D     &kp RET
-&&mo_tog 7 DOT  &none      &kp Y              &kp J              &kp P           &kp Z           &kp B     &kp M            &kp SQT           &kp SEMI        &kp LBKT  &kp LGUI
+&mo_tog 7 DOT  &none      &kp Y              &kp J              &kp P           &kp Z           &kp B     &kp M            &kp SQT           &kp SEMI        &kp LBKT  &kp LGUI
                                               &trans             &td_mo2mo6      &trans          &trans    &mo 3            &kp K_CMENU
             >;
         };
