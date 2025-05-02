@@ -71,7 +71,7 @@
 &kp ESC         &kp X      &kp V              &kp L              &kp C           &kp W           &kp K     &kp H            &kp G             &kp F           &kp Q     &kp DEL
 &trans          &kp U      &mt LALT I         &lt 6 D            &mt LSHFT E     &kp O           &kp S     &mt LSHFT N      &mt LCTRL R       &mt LALT T      &kp D     &kp RET
 &trans          &none      &kp Y              &kp J              &kp P           &kp Z           &kp B     &kp M            &kp SQT           &kp SEMI        &kp LBKT  &kp LGUI
-                                              &trans             &td_mo2mo6      &trans          &trans    &mo 3            &kp K_CMENU
+                                              &trans             &trans          &trans          &trans    &trans            &trans
             >;
         };
 
@@ -84,7 +84,7 @@
 &kp ESC     &kp LS(N0)   &kp N7  &kp N8  &kp N9  &kp DEL    &none             &kp RET    &kp UP         &kp BSPC      &kp LALT        &kp DEL
 &trans      &none	     &kp N4  &kp N5  &kp N6  &kp TAB    &kp PAGE_UP       &kp LEFT   &kp DOWN       &kp RIGHT     &kp LCTRL       &kp RET
 &trans      &kp N0       &kp N1  &kp N2  &kp N3  &kp RET    &kp PAGE_DOWN     &kp LC(X)  &kp LC(C)      &kp LC(V)     &kp LGUI        &td_b0
-                                 &trans  &trans  &trans     &mt LSHFT BSPC    &trans     &kp LSHFT
+                                 &trans  &trans  &trans     &mt LSHFT BSPC    &trans     &trans
             >;
         };
 
@@ -110,7 +110,7 @@
 &kp ESC   &none  &kp BSPC  &kp UP       &kp RET    &kp DEL      &none           &kp LC(LS(TAB))  &kp TAB      &kp LC(TAB)  &none  &none      
 &none     &none  &kp LEFT  &kp DOWN     &kp RIGHT  &none        &kp PAGE_UP     &kp BSPC         &kp UP       &kp RET      &none  &none      
 &none     &none  &none     &kp K_CMENU  &none      &none        &kp PAGE_DOWN   &kp LEFT         &kp DOWN     &kp RIGHT    &none  &none      
-                          &ls2         &kp LALT   &kp LCTRL    &mkp LCLK       &kp LCTRL        &mkp RCLK
+                          &ls2         &kp LALT   &kp LCTRL    &mkp LCLK       &kp LCTRL         &mkp RCLK
             >;
         };
 
