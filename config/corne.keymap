@@ -68,10 +68,10 @@
         neo2 {
             display-name = "NEO2";
             bindings = <
-&trans          &kp X      &kp V              &kp L              &kp C           &kp W           &kp K     &kp H            &kp G             &kp F           &kp Q     &kp DEL
-&trans          &kp U      &mt LALT I         &lt 6 D            &mt LSHFT E     &kp O           &kp S     &mt LSHFT N      &mt LCTRL R       &mt LALT T      &kp D     &kp RET
-&trans          &none      &kp Y              &kp J              &kp P           &kp Z           &kp B     &kp M            &kp SQT           &kp SEMI        &kp LBKT  &kp LGUI
-                                              &trans             &trans          &trans          &trans    &trans            &trans
+&trans          &kp X      &kp V              &kp L              &kp C           &kp W           &kp K     &kp H           &kp G             &kp F           &kp Q     &kp DEL
+&trans          &kp U      &mt LALT I         &lt 6 D            &mt LSHFT E     &kp O           &kp S     &mt LSHFT N     &mt LCTRL R       &mt LALT T      &kp D     &kp RET
+&trans          &none      &kp Y              &kp J              &kp P           &kp Z           &kp B     &kp M           &kp SQT           &kp SEMI        &kp LBKT  &kp LGUI
+                                              &trans             &trans          &trans          &trans    &trans          &trans
             >;
         };
 
@@ -110,7 +110,7 @@
 &kp ESC   &none  &kp BSPC  &kp UP       &kp RET    &kp DEL      &none           &kp LC(LS(TAB))  &kp TAB      &kp LC(TAB)  &none  &none      
 &none     &none  &kp LEFT  &kp DOWN     &kp RIGHT  &none        &kp PAGE_UP     &kp BSPC         &kp UP       &kp RET      &none  &none      
 &none     &none  &none     &kp K_CMENU  &none      &none        &kp PAGE_DOWN   &kp LEFT         &kp DOWN     &kp RIGHT    &none  &none      
-                          &ls2         &kp LALT   &kp LCTRL    &mkp LCLK       &kp LCTRL         &mkp RCLK
+                           &ls2         &kp LALT   &kp LCTRL    &mkp LCLK       &kp LCTRL         &mkp RCLK
             >;
         };
 
@@ -176,9 +176,9 @@
         games_l {
             display-name = "GAMES";
             bindings = <
-&kp ESC  &kp M      &kp Q  &kp W      &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Z      &kp LGUI
-&kp TAB  &mo 11     &kp A  &kp S      &kp D      &kp G        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET
-&la      &kp RSHFT  &kp Y  &kp X      &kp C      &kp F        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
+&kp ESC  &kp M      &kp Q  &kp W      &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Y      &kp LGUI
+&kp TAB  &mo 11     &kp A  &kp S      &kp D      &kp F        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET
+&la      &kp RSHFT  &kp Z  &kp X      &kp C      &kp G        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
                            &kp LCTRL  &kp LSHFT  &kp SPACE    &kp ESC  &mkp MB1  &mkp MB2
             >;
         };
@@ -187,7 +187,7 @@
         // 10
 
         games_ar_l  {
-            display-name = "GAMES AR";
+            display-name = "G AR";
             bindings = <
 &kp ESC  &kp M      &kp Q     &kp UP    &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Z      &kp LGUI
 &kp TAB  &none      &kp LEFT  &kp DOWN  &kp RIGHT  &kp G        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET   
@@ -200,12 +200,12 @@
         // 11
 
         games_ad_l {
-            display-name = "GAMES AD";
+            display-name = "G AD";
             bindings = <
-&kp Z  &kp U  &kp N4  &kp W   &kp N5  &kp N6  &kp F1  &kp F4  &kp F7  &kp F10   &none   &kp LA(F4)
-&kp I  &none  &kp A   &kp S   &kp D   &kp N7  &kp F2  &kp F5  &kp F8  &kp F11   &none   &none                         
-&kp T  &kp L  &kp N1  &kp N2  &kp N3  &kp N8  &kp F3  &kp F6  &kp F9  &kp F12   &none   &none
-                      &kp H   &kp J   &lsp    &none   &none   &none
+&kp Z  &kp U  &kp N4  &kp W   &kp N5        &kp N6        &kp F1  &kp F4  &kp F7  &kp F10   &none   &kp LA(F4)
+&kp I  &none  &kp A   &kp S   &kp D         &kp N7        &kp F2  &kp F5  &kp F8  &kp F11   &none   &none                         
+&kp T  &kp L  &kp N1  &kp N2  &kp N3        &kp N8        &kp F3  &kp F6  &kp F9  &kp F12   &none   &none
+                      &kp H   &mt LALT B    &kp LS(SPACE) &none   &none   &none
             >;
         };
 
@@ -213,7 +213,7 @@
         // 12
 
         games_c_l {
-            display-name = "GAMES CTRL";
+            display-name = "G CTRL";
             bindings = <
 &none  &none  &none      &none      &none      &none    &none  &none  &none  &none  &none  &none
 &none  &none  &none      &kp LC(S)  &none      &none    &none  &none  &none  &none  &none  &none
