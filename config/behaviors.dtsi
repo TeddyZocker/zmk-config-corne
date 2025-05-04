@@ -88,6 +88,14 @@
                                 bindings = <&kp COMMA>, <&kp LESS_THAN>;
                                         };
 
+
+        td_b_lalt:         coma_semicolon {
+                                compatible = "zmk,behavior-tap-dance";
+                                #binding-cells = <0>;
+                                tapping-term-ms = <200>;
+                                bindings = <&kp B>, <&kp LALT>;
+                                        };
+
         td_l_dmo6_ctrl: D_mo6_D_ctrl {
                                 compatible = "zmk,behavior-tap-dance";
                                 #binding-cells = <0>;

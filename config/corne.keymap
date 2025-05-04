@@ -205,7 +205,7 @@
 &kp J  &kp U  &kp N4  &kp W   &kp N5        &kp N6        &kp F1  &kp F4  &kp F7  &kp F10   &none   &kp LA(F4)
 &kp I  &none  &kp A   &kp S   &kp D         &kp N7        &kp F2  &kp F5  &kp F8  &kp F11   &none   &none                         
 &kp T  &kp L  &kp N1  &kp N2  &kp N3        &kp N8        &kp F3  &kp F6  &kp F9  &kp F12   &none   &none
-                      &kp H   &mt LALT B    &kp LS(SPACE) &none   &none   &none
+                      &kp H   &td_b_lalt    &kp LS(SPACE) &none   &none   &none
             >;
         };
 
