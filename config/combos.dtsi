@@ -14,7 +14,7 @@
     combos {
         compatible = "zmk,combos";
 
-
+/*
 // def symbols 
         combo_plus {
             timeout-ms = <combo_timeout>;
@@ -43,6 +43,7 @@
             key-positions = <27 28>;
             bindings = <&kp LS(N7)>;
         };
+*/
 
 // media
     // functional layers

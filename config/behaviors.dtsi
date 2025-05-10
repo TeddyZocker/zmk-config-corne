@@ -88,6 +88,20 @@
                                 bindings = <&kp COMMA>, <&kp LESS_THAN>;
                                         };
 
+        td_p_m:         plus_minus {
+                                compatible = "zmk,behavior-tap-dance";
+                                #binding-cells = <0>;
+                                tapping-term-ms = <200>;
+                                bindings = <&kp RBKT>, <&kp SLASH>;
+                                        };
+
+        td_m_b:         multi_by {
+                                compatible = "zmk,behavior-tap-dance";
+                                #binding-cells = <0>;
+                                tapping-term-ms = <200>;
+                                bindings = <&kp LS(RBKT)>, <&kp LS(N7)>;
+                                        };
+
 
         td_b_lalt:         td_b_lalt {
                                 compatible = "zmk,behavior-tap-dance";
