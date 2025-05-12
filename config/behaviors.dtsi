@@ -102,12 +102,11 @@
                                 bindings = <&kp LS(RBKT)>, <&kp LS(N7)>;
                                         };
 
-
-        td_b_lalt:         td_b_lalt {
+        td_lalt_mo12:         td_latl_mo12 {
                                 compatible = "zmk,behavior-tap-dance";
                                 #binding-cells = <0>;
                                 tapping-term-ms = <200>;
-                                bindings = <&kp B>, <&kp LALT>;
+                                bindings = <&kp LALT>, <&mo 12>;
                                         };
 
         td_l_dmo6_ctrl: D_mo6_D_ctrl {

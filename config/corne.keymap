@@ -176,10 +176,10 @@
         games_l {
             display-name = "GAMES";
             bindings = <
-                &kp ESC  &kp M      &kp Q  &kp W      &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Y      &kp LGUI
-                &kp TAB  &mo 11     &kp A  &kp S      &kp D      &kp F        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET
-                &la      &kp RSHFT  &kp Z  &kp X      &kp C      &kp G        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
-                                           &kp LCTRL  &kp LSHFT  &kp SPACE    &kp ESC  &mkp MB1  &mkp MB2
+                &kp ESC           &kp M      &kp Q  &kp W      &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Y      &kp LGUI
+                &kp TAB           &mo 11     &kp A  &kp S      &kp D      &kp F        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET
+                &td_lalt_mo12     &kp RSHFT  &kp Z  &kp X      &kp C      &kp G        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
+                                                    &kp LCTRL  &kp LSHFT  &kp SPACE    &kp ESC  &mkp MB1  &mkp MB2
             >;
         };
 
@@ -202,10 +202,10 @@
         games_ad_l {
             display-name = "G AD";
             bindings = <
-                &kp J  &kp U  &kp N4  &kp W   &kp N5        &kp N6        &kp F1  &kp F4  &kp F7  &kp F10   &none   &kp LA(F4)
-                &kp I  &none  &kp A   &kp S   &kp D         &kp N7        &kp F2  &kp F5  &kp F8  &kp F11   &none   &none                         
-                &kp T  &kp L  &kp N1  &kp N2  &kp N3        &kp N8        &kp F3  &kp F6  &kp F9  &kp F12   &none   &none
-                                      &kp H   &td_b_lalt    &kp LS(SPACE) &none   &none   &none
+                &kp J  &kp U  &kp N4  &kp W   &kp N5    &kp N6        &kp F1  &kp F4  &kp F7  &kp F10   &none   &kp LA(F4)
+                &kp I  &none  &kp A   &kp S   &kp D     &kp N7        &kp F2  &kp F5  &kp F8  &kp F11   &none   &none                         
+                &kp T  &kp L  &kp N1  &kp N2  &kp N3    &kp N8        &kp F3  &kp F6  &kp F9  &kp F12   &none   &none
+                                      &kp H   &kp B     &kp LS(SPACE) &none   &none   &none
             >;
         };
 
