@@ -81,7 +81,7 @@
                                 bindings = <&lt 7 DOT>, <&kp GREATER_THAN>;
                                         };
 
-        td_c_s:         coma_semicolon {
+        td_lctrl_c_s:   coma_semicolon {
                                 compatible = "zmk,behavior-tap-dance";
                                 #binding-cells = <0>;
                                 tapping-term-ms = <200>;
