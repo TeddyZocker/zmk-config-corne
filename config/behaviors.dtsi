@@ -85,7 +85,7 @@
                                 compatible = "zmk,behavior-tap-dance";
                                 #binding-cells = <0>;
                                 tapping-term-ms = <200>;
-                                bindings = <&kp COMMA>, <&kp LESS_THAN>;
+                                bindings = <&mt LCTRL COMMA>, <&kp LESS_THAN>;
                                         };
 
         td_p_m:         plus_minus {
