@@ -131,7 +131,7 @@
             bindings = <&kp C_MUTE>;
         };
 
-// switch layers
+// switch layers hier ist größtenteils bs drinnen
     // functional layers
         combo_to1 {
             timeout-ms = <25>;
