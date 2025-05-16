@@ -56,7 +56,7 @@
             display-name = "QWERTY";
             bindings = <
                 &kp ESC         &kp Q      &kp W           &kp E            &kp R           &kp T          &kp Y        &kp U             &kp I               &kp O           &kp P     &kp DEL
-                &td_d_c         &kp A      &mt LALT S      &lt 6 D          &mt LSHFT F     &kp G          &kp H        &mt LSHFT J       &mt LCTRL K         &mt LALT L      &none     &kp RET
+                &td_d_c         &kp A      &mt LALT S      &tab_lt6d_ctrl   &mt LSHFT F     &kp G          &kp H        &mt LSHFT J       &mt RCTRL K         &mt LALT L      &none     &kp RET
                 &td_lctrl_c_s   &kp Z      &kp X           &kp C            &kp V           &kp B          &kp N        &kp M             &kp SQT             &kp SEMI        &kp LBKT  &kp LGUI
                                                            &lt 3 BSPC       &td_mo2mo5      &lt 6 SPACE    &kp BSPC     &td_mo3mo5        &kp K_CMENU
             >;
@@ -69,7 +69,7 @@
             display-name = "NEO2";
             bindings = <
                 &trans          &kp X      &kp V              &kp L              &kp C           &kp W           &kp K     &kp H           &kp G             &kp F           &kp Q     &kp DEL
-                &trans          &kp U      &mt LALT I         &lt 6 D            &mt LSHFT E     &kp O           &kp S     &mt LSHFT N     &mt LCTRL R       &mt LALT T      &kp D     &kp RET
+                &trans          &kp U      &mt LALT I         &lt 6 D            &mt LSHFT E     &kp O           &kp S     &mt LSHFT N     &mt RCTRL R       &mt LALT T      &kp D     &kp RET
                 &trans          &none      &kp Y              &kp J              &kp P           &kp Z           &kp B     &kp M           &kp SQT           &kp SEMI        &kp LBKT  &kp LGUI
                                                               &trans             &trans          &trans          &trans    &trans          &trans
             >;

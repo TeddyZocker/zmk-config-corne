@@ -115,9 +115,15 @@
                                 tapping-term-ms = <200>;
                                 bindings = <&lt 6 D>, <&kp LCTRL>;
                                         };
-
-
-// test mod morph
+                        
+//mod morph
+        tab_lt6d_ctrl: tab_lt6d_ctrl {
+                                compatible = "zmk,behavior-mod-morph";
+                                #binding-cells = <0>;
+                                bindings = <&lt 6 D>, <&kp LCTRL>;
+                                mods = <(MOD_LSFT)>;
+                                        };
+        
         tab_ctrl_morph: tab_ctrl_morph {
                                 compatible = "zmk,behavior-mod-morph";
                                 #binding-cells = <0>;
