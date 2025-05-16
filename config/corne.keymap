@@ -58,7 +58,7 @@
                 &kp ESC         &kp Q      &kp W           &kp E            &kp R           &kp T          &kp Y        &kp U             &kp I               &kp O           &kp P     &kp DEL
                 &td_d_c         &kp A      &mt LALT S      &lt 6 D          &mt LSHFT F     &kp G          &kp H        &mt LSHFT J       &mt LCTRL K         &mt LALT L      &none     &kp RET
                 &td_lctrl_c_s   &kp Z      &kp X           &kp C            &kp V           &kp B          &kp N        &kp M             &kp SQT             &kp SEMI        &kp LBKT  &kp LGUI
-                                                      &lt 3 BSPC       &td_mo2mo5      &lt 6 SPACE    &kp BSPC     &td_mo3mo5        &kp K_CMENU
+                                                           &lt 3 BSPC       &td_mo2mo5      &lt 6 SPACE    &kp BSPC     &td_mo3mo5        &kp K_CMENU
             >;
         };
 
@@ -120,10 +120,10 @@
         arr_layer {
             display-name = "ARROW L";
             bindings = <
-                &kp LC(T)      &kp LALT    &kp BSPC        &kp UP    &kp RET      &kp PAGE_UP       &kp PAGE_UP     &kp BSPC        &kp UP    &kp RET        &kp LALT      &kp LC(T)
-                &kp LC(LS(T))  &kp LCTRL   &kp LEFT        &kp DOWN  &kp RIGHT    &kp PAGE_DOWN     &kp PAGE_DOWN   &kp LEFT        &kp DOWN  &kp RIGHT      &kp LCTRL     &kp LC(LS(T))
-                &kp LC(W)      &kp LGUI    &kp LC(LS(TAB)) &kp TAB   &kp LC(TAB)  &none             &none           &kp LC(LS(TAB)) &kp TAB   &kp LC(TAB)    &kp LGUI      &kp LC(W)
-                                                           &none     &none        &trans            &trans          &none           &none
+                &kp LC(T)      &kp LALT    &kp BSPC                 &kp UP      &kp RET            &kp PAGE_UP       &kp PAGE_UP     &kp BSPC        &kp UP    &kp RET        &kp LALT      &kp LC(T)
+                &kp LC(LS(T))  &kp LCTRL   &kp LEFT                 &kp DOWN    &kp RIGHT          &kp PAGE_DOWN     &kp PAGE_DOWN   &kp LEFT        &kp DOWN  &kp RIGHT      &kp LCTRL     &kp LC(LS(T))
+                &kp LC(W)      &kp LGUI    &tab_shift_ctrl_morph    &kp LSHFT   &tab_ctrl_morph    &none             &none           &kp LC(LS(TAB)) &kp TAB   &kp LC(TAB)    &kp LGUI      &kp LC(W)
+                                                                    &none       &none              &trans            &trans          &none           &none
             >;
         };
 
