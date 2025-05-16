@@ -121,7 +121,7 @@
                                 compatible = "zmk,behavior-mod-morph";
                                 #binding-cells = <0>;
                                 bindings = <&lt 6 D>, <&kp LCTRL>;
-                                mods = <(MOD_LSFT)>;
+                                mods = <(MOD_LALT)>;
                                         };
         
         tab_ctrl_morph: tab_ctrl_morph {
