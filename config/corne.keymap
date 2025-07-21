@@ -31,10 +31,10 @@
         querty {
             display-name = "QWERTY";
             bindings = <
-                &kp ESC         &kp Q      &kp W           &kp E            &kp R           &kp T          &kp Y        &kp U             &kp I               &kp O           &kp P     &kp DEL
-                &td_d_c         &kp A      &mt LALT S      &tab_lt6d_ctrl   &mt LSHFT F     &kp G          &kp H        &mt LSHFT J       &mt RCTRL K         &mt LALT L      &none     &kp RET
-                &td_lctrl_c_s   &kp Z      &kp X           &kp C            &kp V           &kp B          &kp N        &kp M             &kp SQT             &kp SEMI        &kp LBKT  &kp LGUI
-                                                           &lt symbols BSPC       &td_mo2mo5      &lt ctrl_l SPACE    &kp BSPC     &td_mo3mo5        &kp K_CMENU
+                &kp ESC         &kp Q      &kp W           &kp E                &kp R           &kp T               &kp Y        &kp U             &kp I               &kp O           &kp P     &kp DEL
+                &td_d_c         &kp A      &mt LALT S      &tab_lt6d_ctrl       &mt LSHFT F     &kp G               &kp H        &mt LSHFT J       &mt RCTRL K         &mt LALT L      &none     &kp RET
+                &td_lctrl_c_s   &kp Z      &kp X           &kp C                &kp V           &kp B               &kp N        &kp M             &kp SQT             &kp SEMI        &kp LBKT  &kp LGUI
+                                                           &lt symbols BSPC     &td_mo2mo5      &lt ctrl_l SPACE    &kp BSPC     &td_mo3mo5        &kp K_CMENU
             >;
         };
 
@@ -42,7 +42,7 @@
             display-name = "NEO2";
             bindings = <
                 &trans          &kp X      &kp V              &kp L              &kp C           &kp W           &kp K     &kp H           &kp G             &kp F           &kp Q     &kp DEL
-                &trans          &kp U      &mt LALT I         &lt ctrl_l D            &mt LSHFT E     &kp O           &kp S     &mt LSHFT N     &mt RCTRL R       &mt LALT T      &kp D     &kp RET
+                &trans          &kp U      &mt LALT I         &lt ctrl_l D       &mt LSHFT E     &kp O           &kp S     &mt LSHFT N     &mt RCTRL R       &mt LALT T      &kp D     &kp RET
                 &trans          &none      &kp Y              &kp J              &kp P           &kp Z           &kp B     &kp M           &kp SQT           &kp SEMI        &kp LBKT  &kp LGUI
                                                               &trans             &trans          &trans          &trans    &trans          &trans
             >;
@@ -61,10 +61,10 @@
         symbols {
             display-name = "SYMBOLS";
             bindings = <
-                &trans      &none          &kp LS(BSLH)    &kp LS(N2)         &mlt        &mgt       &dm             &none      &none            &none           &none      &none
-                &none       &kp LS(SLASH)  &kp RA(N7)      &kp RA(N8)         &kp LS(N8)  &kp BSLH   &kp MINUS       &kp DLLR   &kp RA(E)        &kp RA(Q)       &none      &kp LS(N5)
-                &none       &none          &kp RA(N0)      &kp RA(N9)         &kp LS(N9)  &kp LS(N6) &kp UNDER       &kp EXCL   &none            &kp TILDE       &none      &kp RA(MINUS)
-                                                            &caps_word     &trans      &trans         &trans       &trans        &trans
+                &trans         &none          &kp LS(BSLH)    &kp LS(N2)         &kp N102    &kp LS(N102)  &dm             &none       &none            &none           &none         &none
+                &none          &kp LS(SLASH)  &kp RA(N7)      &kp RA(N8)         &kp LS(N8)  &kp BSLH      &kp MINUS       &kp UNDER   &kp RA(E)        &kp RA(Q)       &kp GRAVE     &kp LS(N5)
+                &none          &none          &kp RA(N0)      &kp RA(N9)         &kp LS(N9)  &kp LS(N6)    &none           &kp EXCL    &kp LS(N4)       &kp UNDER       &kp TILDE     &kp RA(MINUS)
+                                                              &kp CAPSLOCK       &trans      &trans        &trans          &trans      &trans
             >;
         };
 
