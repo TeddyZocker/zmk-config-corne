@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/behaviors.h>
+#include "layernames.dtsi"
 
 &mt {
     flavor = "tap-preferred";
@@ -6,136 +7,137 @@
 
 / {
     behaviors {
-/*
-        td1:            window_switch_lalt_td {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                                bindings = <&kp LALT>, <&mo 7>;
-                                        };
+        /*
+        td1: window_switch_lalt_td {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LALT>, <&mo alt_l>;
+        };
 
-        td2:            layer6_lctrl_td {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                                bindings = <&mo 6>, <&kp LCTRL>;
-                                        };
-*/
-        td_b0:          swich_bluetooth0 {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                                bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>, <&bt BT_SEL 3>, <&bt BT_SEL 4>;
-                                        };
+        td2: layer6_lctrl_td {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo ctrl_l>, <&kp LCTRL>;
+        };
+        */
 
-        td_bcl0:        clear_or_bluetooth0 {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                                bindings = <&bt BT_SEL 0>, <&bt BT_CLR>;
-                                        };
+        td_b0: swich_bluetooth0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_SEL 0>, <&bt BT_SEL 1>, <&bt BT_SEL 2>, <&bt BT_SEL 3>, <&bt BT_SEL 4>;
+        };
 
-        td_lara:        left_alt_right_alt {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                                bindings = <&kp LALT>, <&kp RALT>;
-                                        };
+        td_bcl0: clear_or_bluetooth0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_SEL 0>, <&bt BT_CLR>;
+        };
+
+        td_lara: left_alt_right_alt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LALT>, <&kp RALT>;
+        };
             
-        td_lcrc:        left_controll_right_controll {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                                bindings = <&kp LCTRL>, <&kp RCTRL>;
-                                        };
+        td_lcrc: left_controll_right_controll {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LCTRL>, <&kp RCTRL>;
+        };
 
-        td_mo2mo5:        mo2mo5 {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <300>;
-                                bindings = <&mo 2>, <&mo 5>;
-                                        };
+        td_mo2mo5: mo2mo5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&mo numb_pad>, <&mo arr_layer>;
+        };
 
-        td_mo3mo5:        mo3mo5 {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <300>;
-                                bindings = <&mo 3>, <&mo 5>;
-                                        };
+        td_mo3mo5: mo3mo5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&mo symbols>, <&mo arr_layer>;
+        };
 
-/*
-	hrm_c: 	    homerow_mod_custom {
-            		compatible = "zmk,behavior-hold-tap";
-            	        label = "HOMEROW_MODS";
-            		#binding-cells = <2>;
-            		tapping-term-ms = <200>;
-           		flavor = "tap-preferred";
-            	        bindings = <&kp>, <&kp>;
-        		        };
-*/
+        /*
+        hrm_c: homerow_mod_custom {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        */
 
-        td_d_c:         point_colon {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                                bindings = <&lt 7 DOT>, <&kp GREATER_THAN>;
-                                        };
+        td_d_c: point_colon {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt 7 DOT>, <&kp GREATER_THAN>;
+        };
 
-        td_lctrl_c_s:   coma_semicolon {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                                bindings = <&mt LCTRL COMMA>, <&kp LESS_THAN>;
-                                        };
+        td_lctrl_c_s: coma_semicolon {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt ctrl_l COMMA>, <&kp LESS_THAN>;
+        };
 
-        td_p_m:         plus_minus {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                                bindings = <&kp RBKT>, <&kp SLASH>;
-                                        };
+        td_p_m: plus_minus {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RBKT>, <&kp SLASH>;
+        };
 
-        td_m_b:         multi_by {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                                bindings = <&kp LS(RBKT)>, <&kp LS(N7)>;
-                                        };
+        td_m_b: multi_by {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LS(RBKT)>, <&kp LS(N7)>;
+        };
 
-        td_lalt_mo12:         td_latl_mo12 {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                                bindings = <&kp LALT>, <&mo 12>;
-                                        };
+        td_lalt_mo12: td_latl_mo12 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LALT>, <&mo g_c_l>;
+        };
 
         td_l_dmo6_ctrl: D_mo6_D_ctrl {
-                                compatible = "zmk,behavior-tap-dance";
-                                #binding-cells = <0>;
-                                tapping-term-ms = <200>;
-                                bindings = <&lt 6 D>, <&kp LCTRL>;
-                                        };
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt 6 D>, <&kp LCTRL>;
+        };
                         
-//mod morph
+        // mod morph
         tab_lt6d_ctrl: tab_lt6d_ctrl {
-                                compatible = "zmk,behavior-mod-morph";
-                                #binding-cells = <0>;
-                                bindings = <&lt 6 D>, <&kp LCTRL>;
-                                mods = <(MOD_LALT)>;
-                                        };
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&lt 6 D>, <&kp LCTRL>;
+            mods = <(MOD_LALT)>;
+        };
         
         tab_ctrl_morph: tab_ctrl_morph {
-                                compatible = "zmk,behavior-mod-morph";
-                                #binding-cells = <0>;
-                                bindings = <&kp LC(TAB)>, <&kp TAB>;
-                                mods = <(MOD_LSFT)>;
-                                        };
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LC(TAB)>, <&kp TAB>;
+            mods = <(MOD_LSFT)>;
+        };
         
         tab_shift_ctrl_morph: tab_shift_ctrl_morph {
-                                compatible = "zmk,behavior-mod-morph";
-                                #binding-cells = <0>;
-                                bindings = <&kp LC(LS(TAB))>, <&kp LS(TAB)>;
-                                mods = <(MOD_LSFT)>;
-                                        };
-     	};
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(TAB))>, <&kp LS(TAB)>;
+            mods = <(MOD_LSFT)>;
+        };
     };
+};

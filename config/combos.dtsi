@@ -8,6 +8,7 @@
 */
 
 #include "macro.dtsi"
+#include "layernames.dtsi"
 #define combo_timeout 250
 
 / {
@@ -18,28 +19,28 @@
 // def symbols 
         combo_plus {
             timeout-ms = <combo_timeout>;
-	        layers = <2>;
+            layers = <numb_pad>;
             key-positions = <14 15>;
             bindings = <&kp RBKT>;
         };
  
-	    combo_minus {
+        combo_minus {
             timeout-ms = <combo_timeout>;
-	        layers = <2>;
+            layers = <numb_pad>;
             key-positions = <26 27>;
             bindings = <&kp SLASH>;
         };
 
         combo_mal {
             timeout-ms = <combo_timeout>;
-	        layers = <2>;
+            layers = <numb_pad>;
             key-positions = <15 16>;
             bindings = <&kp LS(RBKT)>;
         };
 
         combo_dividiert {
             timeout-ms = <combo_timeout>;
-	        layers = <2>;
+            layers = <numb_pad>;
             key-positions = <27 28>;
             bindings = <&kp LS(N7)>;
         };
@@ -49,84 +50,84 @@
     // functional layers
         combo_l_skip {
             timeout-ms = <25>;
-	        layers = <5>;
+            layers = <arr_layer>;
             key-positions = <3 4>;
             bindings = <&kp C_NEXT>;
         };
 
         combo_l_back {
             timeout-ms = <25>;
-	        layers = <5>;
+            layers = <arr_layer>;
             key-positions = <2 3>;
             bindings = <&kp C_PREV>;
         };
 
         combo_l_pause {
             timeout-ms = <25>;
-	        layers = <5>;
+            layers = <arr_layer>;
             key-positions = <2 3 4>;
             bindings = <&kp C_PLAY_PAUSE>;
         };
 
         combo_l_vol_up {
             timeout-ms = <25>;
-	        layers = <5>;
+            layers = <arr_layer>;
             key-positions = <15 16>;
             bindings = <&kp C_VOLUME_UP>;
         };
 
         combo_l_vol_down {
             timeout-ms = <25>;
-	        layers = <5>;
+            layers = <arr_layer>;
             key-positions = <14 15>;
             bindings = <&kp C_VOLUME_DOWN>;
         };
 
         combo_l_mute {
             timeout-ms = <25>;
-	        layers = <5>;
+            layers = <arr_layer>;
             key-positions = <14 15 16>;
             bindings = <&kp C_MUTE>;
         };
 
         combo_r_skip {
             timeout-ms = <25>;
-	        layers = <2 5 9 10>;
+            layers = <numb_pad arr_layer games_l games_ar_l>;
             key-positions = <8 9>;
             bindings = <&kp C_NEXT>;
         };
 
         combo_r_back {
             timeout-ms = <25>;
-	        layers = <2 5 9 10>;
+            layers = <numb_pad arr_layer games_l games_ar_l>;
             key-positions = <7 8>;
             bindings = <&kp C_PREV>;
         };
 
         combo_r_pause {
             timeout-ms = <25>;
-	        layers = <2 5 9 10>;
+            layers = <numb_pad arr_layer games_l games_ar_l>;
             key-positions = <7 8 9>;
             bindings = <&kp C_PLAY_PAUSE>;
         };
 
         combo_r_vol_up {
             timeout-ms = <25>;
-	        layers = <2 5 9 10>;
+            layers = <numb_pad arr_layer games_l games_ar_l>;
             key-positions = <20 21>;
             bindings = <&kp C_VOLUME_UP>;
         };
 
         combo_r_vol_down {
             timeout-ms = <25>;
-	        layers = <2 5 9 10>;
+            layers = <numb_pad arr_layer games_l games_ar_l>;
             key-positions = <19 20>;
             bindings = <&kp C_VOLUME_DOWN>;
         };
 
         combo_r_mute {
             timeout-ms = <25>;
-	        layers = <2 5 9 10>;
+            layers = <numb_pad arr_layer games_l games_ar_l>;
             key-positions = <19 20 21>;
             bindings = <&kp C_MUTE>;
         };
@@ -135,14 +136,14 @@
     // functional layers
         combo_to1 {
             timeout-ms = <25>;
-            layers = <0 2>;
+            layers = <querty numb_pad>;
             key-positions = <24 37>;
-            bindings = <&to 1>;
+            bindings = <&to neo2>;
         };
 
         combo_mo8 {
             timeout-ms = <25>;
-            layers = <0 2>;
+            layers = <querty numb_pad>;
             key-positions = <13 37>;
             bindings = <&ws>;
         };
@@ -150,63 +151,63 @@
     // gaming layers
         combo_g_mo2 {
             timeout-ms = <25>;
-            layers = <9>;
+            layers = <games_l>;
             key-positions = <37 41>;
-            bindings = <&mo 2>;
+            bindings = <&mo numb_pad>;
         };
 
         //switch to gaming
             combo_l_to9 {
                 timeout-ms = <50>;
-                layers = <0 2>;
+                layers = <querty numb_pad>;
                 key-positions = <36 37>;
-                bindings = <&to 9>;
+                bindings = <&to games_l>;
             };
 
             combo_r_to9 {
                 timeout-ms = <50>;
-                layers = <0 2>;
+                layers = <querty numb_pad>;
                 key-positions = <40 41>;
-                bindings = <&to 9>;
+                bindings = <&to games_l>;
             };
 
         // switch in gaming
             combo_to9 {
                 timeout-ms = <50>;
-                layers = <10>;
+                layers = <games_ar_l>;
                 key-positions = <24 37>;
-                bindings = <&to 9>;
+                bindings = <&to games_l>;
             };
 
             combo_to10 {
                 timeout-ms = <50>;
-                layers = <9>;
+                layers = <games_l>;
                 key-positions = <24 37>;
-                bindings = <&to 10>;
+                bindings = <&to games_ar_l>;
             };
 
 // res layers
     // functional layers
         combo_res_layers {
             timeout-ms = <50>;
-            layers = <1 2 3 4 5 6 7 8>;
+            layers = <neo2 numb_pad symbols work arr_layer ctrl_l alt_l gui_l>;
             key-positions = <36 37>;
-            bindings = <&to 0>;
+            bindings = <&to querty>;
         };
 
     // gaming layers
         combo_res_l_to0 {
             timeout-ms = <50>;
-            layers = <9>;
+            layers = <games_l>;
             key-positions = <36 37>;
-            bindings = <&to 0>;
+            bindings = <&to querty>;
         };
 
         combo_res_r_to0 {
             timeout-ms = <50>;
-            layers = <9>;
+            layers = <games_l>;
             key-positions = <40 41>;
-            bindings = <&to 0>;
+            bindings = <&to querty>;
         };
     };
 };
