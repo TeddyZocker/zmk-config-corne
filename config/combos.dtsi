@@ -92,42 +92,42 @@
 
         combo_r_skip {
             timeout-ms = <25>;
-            layers = <numb_pad arr_layer games_l games_ar_l>;
+            layers = <numb_pad arr_layer g_l g_ar_l>;
             key-positions = <8 9>;
             bindings = <&kp C_NEXT>;
         };
 
         combo_r_back {
             timeout-ms = <25>;
-            layers = <numb_pad arr_layer games_l games_ar_l>;
+            layers = <numb_pad arr_layer g_l g_ar_l>;
             key-positions = <7 8>;
             bindings = <&kp C_PREV>;
         };
 
         combo_r_pause {
             timeout-ms = <25>;
-            layers = <numb_pad arr_layer games_l games_ar_l>;
+            layers = <numb_pad arr_layer g_l g_ar_l>;
             key-positions = <7 8 9>;
             bindings = <&kp C_PLAY_PAUSE>;
         };
 
         combo_r_vol_up {
             timeout-ms = <25>;
-            layers = <numb_pad arr_layer games_l games_ar_l>;
+            layers = <numb_pad arr_layer g_l g_ar_l>;
             key-positions = <20 21>;
             bindings = <&kp C_VOLUME_UP>;
         };
 
         combo_r_vol_down {
             timeout-ms = <25>;
-            layers = <numb_pad arr_layer games_l games_ar_l>;
+            layers = <numb_pad arr_layer g_l g_ar_l>;
             key-positions = <19 20>;
             bindings = <&kp C_VOLUME_DOWN>;
         };
 
         combo_r_mute {
             timeout-ms = <25>;
-            layers = <numb_pad arr_layer games_l games_ar_l>;
+            layers = <numb_pad arr_layer g_l g_ar_l>;
             key-positions = <19 20 21>;
             bindings = <&kp C_MUTE>;
         };
@@ -151,7 +151,7 @@
     // gaming layers
         combo_g_mo2 {
             timeout-ms = <25>;
-            layers = <games_l>;
+            layers = <g_l>;
             key-positions = <37 41>;
             bindings = <&mo numb_pad>;
         };
@@ -161,29 +161,29 @@
                 timeout-ms = <50>;
                 layers = <querty numb_pad>;
                 key-positions = <36 37>;
-                bindings = <&to games_l>;
+                bindings = <&to g_l>;
             };
 
             combo_r_to9 {
                 timeout-ms = <50>;
                 layers = <querty numb_pad>;
                 key-positions = <40 41>;
-                bindings = <&to games_l>;
+                bindings = <&to g_l>;
             };
 
         // switch in gaming
             combo_to9 {
                 timeout-ms = <50>;
-                layers = <games_ar_l>;
+                layers = <g_ar_l>;
                 key-positions = <24 37>;
-                bindings = <&to games_l>;
+                bindings = <&to g_l>;
             };
 
             combo_to10 {
                 timeout-ms = <50>;
-                layers = <games_l>;
+                layers = <g_l>;
                 key-positions = <24 37>;
-                bindings = <&to games_ar_l>;
+                bindings = <&to g_ar_l>;
             };
 
 // res layers
@@ -198,14 +198,14 @@
     // gaming layers
         combo_res_l_to0 {
             timeout-ms = <50>;
-            layers = <games_l>;
+            layers = <g_l>;
             key-positions = <36 37>;
             bindings = <&to querty>;
         };
 
         combo_res_r_to0 {
             timeout-ms = <50>;
-            layers = <games_l>;
+            layers = <g_l>;
             key-positions = <40 41>;
             bindings = <&to querty>;
         };
