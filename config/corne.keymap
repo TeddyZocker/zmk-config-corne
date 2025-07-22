@@ -61,7 +61,7 @@
         symbols {
             display-name = "SYMBOLS";
             bindings = <
-                &trans         &none          &kp LS(BSLH)    &kp LS(N2)         &none       &none         &dm             &none       &none            &none           &none         &none
+                &trans         &none          &kp LS(BSLH)    &kp LS(N2)         &mlt       &mgt         &dm             &none       &none            &none           &none         &none
                 &none          &kp LS(SLASH)  &kp RA(N7)      &kp RA(N8)         &kp LS(N8)  &kp BSLH      &kp MINUS       &kp UNDER   &kp RA(E)        &kp RA(Q)       &kp GRAVE     &kp LS(N5)
                 &none          &none          &kp RA(N0)      &kp RA(N9)         &kp LS(N9)  &kp LS(N6)    &none           &kp EXCL    &kp LS(N4)       &kp UNDER       &kp TILDE     &kp RA(MINUS)
                                                               &kp CAPSLOCK       &trans      &trans        &trans          &trans      &trans
