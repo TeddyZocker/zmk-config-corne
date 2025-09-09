@@ -32,7 +32,7 @@
             display-name = "QWERTY";
             bindings = <
                 &kp ESC         &kp Q      &kp W           &kp E                &kp R           &kp T               &kp Y        &kp U             &kp I               &kp O           &kp P     &kp DEL
-                &td_d_c         &kp A      &mt LALT S      &tab_lt6d_ctrl       &mt LSHFT F     &kp G               &kp H        &mt LSHFT J       &mt RCTRL K         &mt LALT L      &none     &kp RET
+                &td_d_c         &kp A      &mt LALT S      &lt 6 D              &mt LSHFT F     &kp G               &kp H        &mt LSHFT J       &mt RCTRL K         &mt LALT L      &none     &kp RET
                 &td_lctrl_c_s   &kp Z      &kp X           &kp C                &kp V           &kp B               &kp N        &kp M             &kp SQT             &kp SEMI        &kp LBKT  &kp LGUI
                                                            &lt symbols BSPC     &td_mo2mo5      &lt ctrl_l SPACE    &kp BSPC     &td_mo3mo5        &kp K_CMENU
             >;
@@ -92,7 +92,7 @@
             display-name = "CTRL L";
             bindings = <
                 &none         &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &td_bcl0      &bt BT_SEL 3   &none  &none  &none  &none
-                &td_lara      &kp LC(A)     &kp LC(S)  &none      &kp LC(F)  &kp LS(TAB)      &bt BT_SEL 1  &bt BT_SEL 4   &none  &none  &none  &none
+                &td_lara      &kp LC(A)     &kp LC(S)  &kp CTRL   &kp LC(F)  &kp LS(TAB)      &bt BT_SEL 1  &bt BT_SEL 4   &none  &none  &none  &none
                 &td_lcrc      &none         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(LS(S))    &bt BT_SEL 2  &out OUT_TOG   &none  &none  &none  &none
                                                        &kp LC(Y)  &kp LC(Z)  &kp LC(RET)      &none         &none          &none
             >;
