@@ -76,7 +76,7 @@
             bindings =
                 <&macro_press>,
                 <&kp RET &to g_querty>,
-                <&macro_release>,
+                <&macro_release>;
         };
 
         rtgl: ret_to_g_l {
@@ -86,7 +86,7 @@
             bindings =
                 <&macro_press>,
                 <&kp RET &to g_l>,
-                <&macro_release>,
+                <&macro_release>;
         };
     };
 };
