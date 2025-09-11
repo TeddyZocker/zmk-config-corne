@@ -8,10 +8,6 @@
             label = "ws";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&mo gui_l &kp LGUI &kp ESC>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
                 <&mo gui_l &kp LGUI &kp ESC>;
         };
 
@@ -20,10 +16,6 @@
             label = "la";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&mo g_c_l &kp LALT>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
                 <&mo g_c_l &kp LALT>;
         };
 
@@ -32,10 +24,6 @@
             label = "ls2";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&mo work &kp LSHFT>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
                 <&mo work &kp LSHFT>;
         };
 
@@ -44,10 +32,6 @@
             label = "mlt";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT &kp KP_N6 &kp KP_N0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
                 <&kp LALT &kp KP_N6 &kp KP_N0>;
         };
 
@@ -56,10 +40,6 @@
             label = "mgt";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT &kp KP_N6 &kp KP_N2>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
                 <&kp LALT &kp KP_N6 &kp KP_N2>;
         };
 
@@ -68,11 +48,23 @@
             label = "dm";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT &kp KP_N8 &kp KP_N9 &kp KP_N6 &kp KP_N0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
                 <&kp LALT &kp KP_N8 &kp KP_N9 &kp KP_N6 &kp KP_N0>;
+        };
+
+        ret_to_g_querty: ret_to_g_querty {
+            compatible = "zmk,behavior-macro";
+            label = "rtgq";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RET &to g_querty>;
+        };
+
+        ret_to_g_l: ret_to_g_l {
+            compatible = "zmk,behavior-macro";
+            label = "rtgl";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RET &to g_l>;
         };
     };
 };

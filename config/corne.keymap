@@ -68,16 +68,6 @@
             >;
         };
 
-        work {
-            display-name = "WORK";
-            bindings = <
-                &kp ESC   &none  &kp BSPC  &kp UP       &kp RET    &kp DEL      &none           &kp LC(LS(TAB))  &kp TAB      &kp LC(TAB)  &none  &none      
-                &none     &none  &kp LEFT  &kp DOWN     &kp RIGHT  &none        &kp PAGE_UP     &kp BSPC         &kp UP       &kp RET      &none  &none      
-                &none     &none  &none     &kp K_CMENU  &none      &none        &kp PAGE_DOWN   &kp LEFT         &kp DOWN     &kp RIGHT    &none  &none      
-                                           &ls2         &kp LALT   &kp LCTRL    &mkp LCLK       &kp LCTRL         &mkp RCLK
-            >;
-        };
-
         arr_layer {
             display-name = "ARROW L";
             bindings = <
@@ -132,7 +122,7 @@
             display-name = "G AR";
             bindings = <
                 &kp ESC  &kp M          &kp Q     &kp UP    &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Y      &kp LGUI
-                &kp TAB  &mo g_ad_l     &kp LEFT  &kp DOWN  &kp RIGHT  &kp F        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &kp RET   
+                &kp TAB  &mo g_ad_l     &kp LEFT  &kp DOWN  &kp RIGHT  &kp F        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &rtgq   
                 &la      &kp RSHFT      &kp Z     &kp X     &kp C      &kp G        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
                                                   &kp LCTRL &kp LSHFT  &kp SPACE    &kp ESC  &mkp MB1  &mkp MB2
             >;
@@ -155,6 +145,16 @@
                 &none  &none  &none      &kp LC(S)  &none      &none    &none  &none  &none  &none  &none  &none
                 &none  &none  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none    &none  &none  &none  &none  &none  &none
                                          &kp LC(Y)  &kp LC(Z)  &none    &none  &none  &none
+            >;
+        };
+
+        g_querty {
+            display-name = "g_querty";
+            bindings = <
+                &kp ESC         &kp Q      &kp W           &kp E                &kp R           &kp T               &kp Y        &kp U             &kp I               &kp O           &kp P     &kp DEL
+                &td_d_c         &kp A      &mt LALT S      &lt ctrl_l D         &mt LSHFT F     &kp G               &kp H        &mt LSHFT J       &mt RCTRL K         &mt LALT L      &none     &rtgl
+                &td_lctrl_c_s   &kp Z      &kp X           &kp C                &kp V           &kp B               &kp N        &kp M             &kp SQT             &kp SEMI        &kp LBKT  &kp LGUI
+                                                           &lt symbols BSPC     &td_mo2mo5      &lt ctrl_l SPACE    &kp BSPC     &td_mo3mo5        &kp K_CMENU
             >;
         };
     };
