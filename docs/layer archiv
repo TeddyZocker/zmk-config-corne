@@ -8,3 +8,14 @@
                           &ls2         &kp LALT   &kp LCTRL    &mkp LCLK       &kp LCTRL        &mkp RCLK
             >;
         };
+
+
+        neo2 {
+            display-name = "NEO2";
+            bindings = <
+                &trans          &kp X      &kp V              &kp L              &kp C           &kp W           &kp K     &kp H           &kp G             &kp F           &kp Q     &kp DEL
+                &trans          &kp U      &mt LALT I         &lt ctrl_l D       &mt LSHFT E     &kp O           &kp S     &mt LSHFT N     &mt RCTRL R       &mt LALT T      &kp D     &kp RET
+                &trans          &none      &kp Y              &kp J              &kp P           &kp Z           &kp B     &kp M           &kp SQT           &kp SEMI        &kp LBKT  &kp LGUI
+                                                              &trans             &trans          &trans          &trans    &trans          &trans
+            >;
+        };

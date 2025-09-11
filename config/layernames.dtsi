@@ -1,5 +1,5 @@
 #define querty		            0
-#define neo2		            1
+#define g_querty 		        1
 #define numb_pad	            2
 #define symbols	                3
 #define arr_layer               4
@@ -10,4 +10,3 @@
 #define g_ar_l	                9
 #define g_ad_l	                10
 #define g_c_l	                11
-#define g_querty 		        12
