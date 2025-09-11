@@ -19,14 +19,6 @@
                 <&mo g_c_l &kp LALT>;
         };
 
-        ls2: hockn_layer6_lshft_macro {
-            compatible = "zmk,behavior-macro";
-            label = "ls2";
-            #binding-cells = <0>;
-            bindings =
-                <&mo work &kp LSHFT>;
-        };
-
         mlt: mlesser_than {
             compatible = "zmk,behavior-macro";
             label = "mlt";
