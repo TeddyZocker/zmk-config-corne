@@ -134,12 +134,6 @@
 
 // switch layers hier ist größtenteils bs drinnen
     // functional layers
-        combo_to1 {
-            timeout-ms = <25>;
-            layers = <querty numb_pad>;
-            key-positions = <24 37>;
-            bindings = <&to neo2>;
-        };
 
         combo_mo8 {
             timeout-ms = <25>;
@@ -190,7 +184,7 @@
     // functional layers
         combo_res_layers {
             timeout-ms = <50>;
-            layers = <querty neo2 numb_pad symbols arr_layer ctrl_l alt_l gui_l>;
+            layers = <querty numb_pad symbols arr_layer ctrl_l alt_l gui_l>;
             key-positions = <36 37>;
             bindings = <&to querty>;
         };
