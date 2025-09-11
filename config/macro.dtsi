@@ -8,6 +8,9 @@
             label = "ws";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>,
+                <&mo gui_l &kp LGUI &kp ESC>,
+                <&macro_release>,
                 <&mo gui_l &kp LGUI &kp ESC>;
         };
 
@@ -16,7 +19,21 @@
             label = "la";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>,
+                <&mo g_c_l &kp LALT>,
+                <&macro_release>,
                 <&mo g_c_l &kp LALT>;
+        };
+
+        ls2: hockn_layer6_lshft_macro {
+            compatible = "zmk,behavior-macro";
+            label = "ls2";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo work &kp LSHFT>,
+                <&macro_release>,
+                <&mo work &kp LSHFT>;
         };
 
         mlt: mlesser_than {
@@ -24,6 +41,9 @@
             label = "mlt";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>,
+                <&kp LALT &kp KP_N6 &kp KP_N0>,
+                <&macro_release>,
                 <&kp LALT &kp KP_N6 &kp KP_N0>;
         };
 
@@ -32,6 +52,9 @@
             label = "mgt";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>,
+                <&kp LALT &kp KP_N6 &kp KP_N2>,
+                <&macro_release>,
                 <&kp LALT &kp KP_N6 &kp KP_N2>;
         };
 
@@ -40,6 +63,9 @@
             label = "dm";
             #binding-cells = <0>;
             bindings =
+                <&macro_press>,
+                <&kp LALT &kp KP_N8 &kp KP_N9 &kp KP_N6 &kp KP_N0>,
+                <&macro_release>,
                 <&kp LALT &kp KP_N8 &kp KP_N9 &kp KP_N6 &kp KP_N0>;
         };
 
@@ -48,7 +74,9 @@
             label = "rtgq";
             #binding-cells = <0>;
             bindings =
-                <&kp RET &to g_querty>;
+                <&macro_press>,
+                <&kp RET &to g_querty>,
+                <&macro_release>,
         };
 
         rtgl: ret_to_g_l {
@@ -56,7 +84,9 @@
             label = "rtgl";
             #binding-cells = <0>;
             bindings =
-                <&kp RET &to g_l>;
+                <&macro_press>,
+                <&kp RET &to g_l>,
+                <&macro_release>,
         };
     };
 };
