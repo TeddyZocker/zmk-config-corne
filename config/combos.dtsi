@@ -190,7 +190,11 @@
     // functional layers
         combo_res_layers {
             timeout-ms = <50>;
+<<<<<<< HEAD
             layers = <neo2 numb_pad symbols work arr_layer ctrl_l alt_l gui_l>;
+=======
+            layers = <numb_pad symbols work arr_layer ctrl_l alt_l gui_l>;
+>>>>>>> parent of 1a2f34a (feat: implemented to querty in the new g_querty layer)
             key-positions = <36 37>;
             bindings = <&to querty>;
         };
