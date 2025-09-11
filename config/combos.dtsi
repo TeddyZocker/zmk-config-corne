@@ -190,7 +190,7 @@
     // functional layers
         combo_res_layers {
             timeout-ms = <50>;
-            layers = <qerty neo2 numb_pad symbols work arr_layer ctrl_l alt_l gui_l>;
+            layers = <querty neo2 numb_pad symbols work arr_layer ctrl_l alt_l gui_l>;
             key-positions = <36 37>;
             bindings = <&to querty>;
         };
