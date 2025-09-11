@@ -122,7 +122,7 @@
             display-name = "G AR";
             bindings = <
                 &kp ESC  &kp M          &kp Q     &kp UP    &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Y      &kp LGUI
-                &kp TAB  &mo g_ad_l     &kp LEFT  &kp DOWN  &kp RIGHT  &kp F        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &rtgq   
+                &kp TAB  &mo g_ad_l     &kp LEFT  &kp DOWN  &kp RIGHT  &kp F        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &rtgq
                 &la      &kp RSHFT      &kp Z     &kp X     &kp C      &kp G        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
                                                   &kp LCTRL &kp LSHFT  &kp SPACE    &kp ESC  &mkp MB1  &mkp MB2
             >;
