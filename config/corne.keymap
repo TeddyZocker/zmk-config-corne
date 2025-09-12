@@ -28,6 +28,7 @@
     keymap {
         compatible = "zmk,keymap";
 
+        // in der layer wäre es noch gei lwenn man ein feature einbaut mit dem man das numb pad layer permanent da haben kann, also zb wenn man alt drückt und dei 37? dann soll die numb layer immer da sein (mod_morph oder so)
         qwerty {
             display-name = "QWERTY";
             bindings = <
@@ -48,6 +49,7 @@
             >;
         };
 
+        // und hier könnte man dann eigentlich noch ein mod morph einbauen die aus der homerow plus, minus, mal, durch machen kann
         numb_pad {
             display-name = "NUMB PAD";
             bindings = <
