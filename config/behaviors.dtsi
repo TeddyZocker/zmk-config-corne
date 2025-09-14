@@ -133,5 +133,12 @@
             bindings = <&kp LC(LS(TAB))>, <&kp LS(TAB)>;
             mods = <(MOD_LSFT)>;
         };
+
+        e_shift_g_querty_morph: e_shift_g_querty_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&etgq)>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 };

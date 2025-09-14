@@ -42,7 +42,7 @@
         g_querty {
             display-name = "g_querty";
             bindings = <
-                &kp ESC         &kp Q      &kp W           &kp E                &kp R           &kp T               &kp Y        &kp U             &kp I               &kp O           &kp P     &kp DEL
+                &esctgl         &kp Q      &kp W           &kp E                &kp R           &kp T               &kp Y        &kp U             &kp I               &kp O           &kp P     &kp DEL
                 &td_d_c         &kp A      &mt LALT S      &lt ctrl_l D         &mt LSHFT F     &kp G               &kp H        &mt LSHFT J       &mt RCTRL K         &mt LALT L      &none     &rtgl
                 &td_lctrl_c_s   &kp Z      &kp X           &kp C                &kp V           &kp B               &kp N        &kp M             &kp SQT             &kp SEMI        &kp LBKT  &kp LGUI
                                                            &lt symbols BSPC     &td_mo2mo5      &lt ctrl_l SPACE    &kp BSPC     &td_mo3mo5        &kp K_CMENU
@@ -112,21 +112,21 @@
 
         g_l {
             display-name = "GAMES";
-            bindings = <
-                &kp ESC           &kp M          &kp Q  &kp W      &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Y      &kp LGUI
-                &kp TAB           &mo g_ad_l     &kp A  &kp S      &kp D      &kp F        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &rtgq
-                &td_lalt_mo12     &kp RSHFT      &kp Z  &kp X      &kp C      &kp G        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
-                                                        &kp LCTRL  &kp LSHFT  &kp SPACE    &kp ESC  &mkp MB1  &mkp MB2
+            bindings = < //
+                &kp ESC           &kp M          &kp Q  &kp W      &kp e_shift_g_querty_morph   &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Y      &kp LGUI
+                &kp TAB           &mo g_ad_l     &kp A  &kp S      &kp D                        &kp F        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &rtgq
+                &td_lalt_mo12     &kp RSHFT      &kp Z  &kp X      &kp C                        &kp G        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
+                                                        &kp LCTRL  &kp LSHFT                    &kp SPACE    &kp ESC  &mkp MB1  &mkp MB2
             >;
         };
 
         g_ar_l  {
             display-name = "G AR";
             bindings = <
-                &kp ESC  &kp M          &kp Q     &kp UP    &kp E      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Y      &kp LGUI
-                &kp TAB  &mo g_ad_l     &kp LEFT  &kp DOWN  &kp RIGHT  &kp F        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &rtgq
-                &la      &kp RSHFT      &kp Z     &kp X     &kp C      &kp G        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
-                                                  &kp LCTRL &kp LSHFT  &kp SPACE    &kp ESC  &mkp MB1  &mkp MB2
+                &kp ESC             &kp M          &kp Q     &kp UP    &kp E        &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Y      &kp LGUI
+                &kp TAB             &mo g_ad_l     &kp LEFT  &kp DOWN  &kp RIGHT    &kp F        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &rtgq
+                &td_lalt_mo12       &kp RSHFT      &kp Z     &kp X     &kp C        &kp G        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
+                                                             &kp LCTRL &kp LSHFT    &kp SPACE    &kp ESC  &mkp MB1  &mkp MB2
             >;
         };
 

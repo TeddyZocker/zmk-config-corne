@@ -81,5 +81,27 @@
                 <&macro_release>,
                 <&kp RET &to g_l>;
         };
+
+        etgq: e_to_g_querty {
+            compatible = "zmk,behavior-macro";
+            label = "etgl";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp E &to g_l>,
+                <&macro_release>,
+                <&kp E &to g_l>;
+        };
+
+        esctgl: esc_to_g_l {
+            compatible = "zmk,behavior-macro";
+            label = "esctgl";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp ESC &to g_l>,
+                <&macro_release>,
+                <&kp ESC &to g_l>;
+        };
     };
 };
