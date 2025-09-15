@@ -88,9 +88,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp E &to g_l>,
+                <&kp E &to g_querty>,
                 <&macro_release>,
-                <&kp E &to g_l>;
+                <&kp E &to g_querty>;
         };
 
         esctgl: esc_to_g_l {
