@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/behaviors.h>
 #include "layernames.dtsi"
+#include "macro.dtsi"
 
 &mt {
     flavor = "tap-preferred";
