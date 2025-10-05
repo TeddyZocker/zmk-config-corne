@@ -113,7 +113,7 @@
         g_l {
             display-name = "GAMES";
             bindings = < //
-                &kp ESC           &kp M          &kp Q  &kp W      &e_shift_g_querty_morph      &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Y      &kp LGUI
+                &kp ESC           &kp M          &kp Q  &kp W      &kp E                        &kp R        &kp B    &kp BSPC  &kp UP    &kp RET    &kp Y      &kp LGUI
                 &kp TAB           &mo g_ad_l     &kp A  &kp S      &kp D                        &kp F        &kp K    &kp LEFT  &kp DOWN  &kp RIGHT  &kp V      &rtgq
                 &td_lalt_mo12     &kp RSHFT      &kp Z  &kp X      &kp C                        &kp G        &kp N    &kp O     &kp P     &kp U      &kp T      &kp ESC
                                                         &kp LCTRL  &kp LSHFT                    &kp SPACE    &kp ESC  &mkp MB1  &mkp MB2
