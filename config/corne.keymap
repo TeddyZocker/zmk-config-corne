@@ -73,9 +73,9 @@
         arr_layer {
             display-name = "ARROW L";
             bindings = <
-                &kp LC(T)      &kp LALT         &kp BSPC                 &kp UP      &kp RET            &kp PAGE_UP       &kp PAGE_UP     &kp BSPC                  &kp UP      &kp RET             &kp LALT             &kp LC(T)
-                &kp LC(LS(T))  &kp td_ctrl_gui  &kp LEFT                 &kp DOWN    &kp RIGHT          &kp PAGE_DOWN     &kp PAGE_DOWN   &kp LEFT                  &kp DOWN    &kp RIGHT           &kp td_ctrl_gui      &kp LC(LS(T))
-                &kp LC(W)      &kp LSHFT        &tab_shift_ctrl_morph    &kp LSHFT   &tab_ctrl_morph    &none             &none           &tab_shift_ctrl_morph     &kp LSHFT   &tab_ctrl_morph     &kp LSHFT            &kp LC(W)
+                &kp LC(T)      &kp LALT         &kp BSPC                 &kp UP      &kp RET            &kp PAGE_UP       &kp PAGE_UP     &kp BSPC                  &kp UP      &kp RET             &kp LALT          &kp LC(T)
+                &kp LC(LS(T))  &td_ctrl_gui     &kp LEFT                 &kp DOWN    &kp RIGHT          &kp PAGE_DOWN     &kp PAGE_DOWN   &kp LEFT                  &kp DOWN    &kp RIGHT           &td_ctrl_gui      &kp LC(LS(T))
+                &kp LC(W)      &kp LSHFT        &tab_shift_ctrl_morph    &kp LSHFT   &tab_ctrl_morph    &none             &none           &tab_shift_ctrl_morph     &kp LSHFT   &tab_ctrl_morph     &kp LSHFT         &kp LC(W)
                                                                          &kp LALT    &kp LSHFT          &trans            &trans          &kp LSHFT                 &kp LALT
             >;
         };
