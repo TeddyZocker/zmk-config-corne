@@ -119,7 +119,7 @@
             bindings = <&lt 6 D>, <&kp LCTRL>;
         };
 
-        td_ctrl_gui: D_mo6_D_ctrl {
+        td_ctrl_gui: td_ctrl_gui {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
