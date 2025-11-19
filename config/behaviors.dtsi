@@ -118,6 +118,13 @@
             tapping-term-ms = <200>;
             bindings = <&lt 6 D>, <&kp LCTRL>;
         };
+
+        td_ctrl_gui: D_mo6_D_ctrl {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LCTRL>, <&kp LGUI>;
+        };
                         
         // mod morph
         
