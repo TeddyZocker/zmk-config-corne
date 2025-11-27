@@ -53,10 +53,10 @@
         numb_pad {
             display-name = "NUMB PAD";
             bindings = <
-                &kp CARET       &kp LS(N0)  &kp N7  &kp N8   &kp N9   &kp DEL       &kp PAGE_UP       &kp BSPC   &kp UP         &kp RET       &kp LALT        &kp DEL
-                &td_p_m         &kp RET     &kp N4  &kp N5   &kp N6   &kp TAB       &kp PAGE_DOWN     &kp LEFT   &kp DOWN       &kp RIGHT     &kp LCTRL       &kp RET
-                &td_m_b         &kp N0      &kp N1  &kp N2   &kp N3   &kp K_CALC    &none             &kp LC(X)  &kp LC(C)      &kp LC(V)     &kp LGUI        &td_b0
-                                                    &trans   &trans   &trans        &mt LSHFT BSPC    &trans     &trans
+                &kp GRAVE       &kp LS(N0)  &kp N7  &kp N8   &kp N9   &kp DEL       &kp PAGE_UP       &kp BSPC      &kp UP         &kp RET       &none                 &kp DEL
+                &td_p_m         &kp RET     &kp N4  &kp N5   &kp N6   &kp TAB       &kp PAGE_DOWN     &kp LEFT      &kp DOWN       &kp RIGHT     &kp td_ctrl_gui       &kp RET
+                &td_m_b         &kp N0      &kp N1  &kp N2   &kp N3   &kp K_CALC    &none             &kp LC(X)     &kp LC(C)      &kp LC(V)     &kp LSHFT             &td_b0
+                                                    &trans   &trans   &trans        &trans            &kp LSHFT     &kp LALT
             >;
         };
 
@@ -73,7 +73,7 @@
         arr_layer {
             display-name = "ARROW L";
             bindings = <
-                &kp LC(T)      &kp LALT         &kp BSPC                 &kp UP      &kp RET            &kp PAGE_UP       &kp PAGE_UP     &kp BSPC                  &kp UP      &kp RET             &kp LALT          &kp LC(T)
+                &kp LC(T)      &kp LALT         &kp BSPC                 &kp UP      &kp RET            &kp PAGE_UP       &kp PAGE_UP     &kp BSPC                  &kp UP      &kp RET             &none             &kp LC(T)
                 &kp LC(LS(T))  &td_ctrl_gui     &kp LEFT                 &kp DOWN    &kp RIGHT          &kp PAGE_DOWN     &kp PAGE_DOWN   &kp LEFT                  &kp DOWN    &kp RIGHT           &td_ctrl_gui      &kp LC(LS(T))
                 &kp LC(W)      &kp LSHFT        &tab_shift_ctrl_morph    &kp LSHFT   &tab_ctrl_morph    &none             &none           &tab_shift_ctrl_morph     &kp LSHFT   &tab_ctrl_morph     &kp LSHFT         &kp LC(W)
                                                                          &kp LALT    &kp LSHFT          &trans            &trans          &kp LSHFT                 &kp LALT
