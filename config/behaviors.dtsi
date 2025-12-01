@@ -81,14 +81,14 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&lt 7 DOT>, <&kp GREATER_THAN>;
+            bindings = <&lt alt_l DOT>, <&kp GREATER_THAN>;
         };
 
         td_lctrl_c_s: coma_semicolon {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt ctrl_l COMMA>, <&kp LESS_THAN>;
+            bindings = <&lt ctrl_l COMMA>, <&kp LESS_THAN>;
         };
 
         td_p_m: plus_minus {
