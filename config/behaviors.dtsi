@@ -8,22 +8,7 @@
 
 / {
     behaviors {
-        /*
-        td1: window_switch_lalt_td {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LALT>, <&mo alt_l>;
-        };
-
-        td2: layer6_lctrl_td {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo ctrl_l>, <&kp LCTRL>;
-        };
-        */
-
+        // simple
         td_b0: swich_bluetooth0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -66,22 +51,11 @@
             bindings = <&mo symbols>, <&mo arr_layer>;
         };
 
-        /*
-        hrm_c: homerow_mod_custom {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-        */
-
         td_d_c: point_colon {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&lt alt_l DOT>, <&kp GREATER_THAN>;
+            bindings = <&lt mouse_l DOT>, <&kp GREATER_THAN>;
         };
 
         td_lctrl_c_s: coma_semicolon {
@@ -105,6 +79,14 @@
             bindings = <&kp LS(RBKT)>, <&kp LS(N7)>;
         };
 
+        td_ret_lca: ret_lc(a) {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LS(RBKT)>, <&kp LS(N7)>;
+        };
+
+        // extended 
         td_lalt_mo12: td_latl_mo12 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -127,7 +109,6 @@
         };
                         
         // mod morph
-        
         tab_ctrl_morph: tab_ctrl_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;

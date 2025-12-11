@@ -4,7 +4,7 @@
 #define symbols	                3
 #define arr_layer               4
 #define ctrl_l	                5
-#define alt_l	                6
+#define mouse_l	                6
 #define gui_l	                7
 #define g_l	                    8
 #define g_ar_l	                9

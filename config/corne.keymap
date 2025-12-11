@@ -33,7 +33,7 @@
             display-name = "QWERTY";
             bindings = <
                 &kp ESC         &kp Q      &kp W           &kp E                &kp R           &kp T               &kp Y        &kp U             &kp I               &kp O           &kp P     &kp DEL
-                &td_d_c         &kp A      &lt alt_l S     &lt ctrl_l D         &mt LSHFT F     &kp G               &kp H        &mt LSHFT J       &mt RCTRL K         &mt LALT L      &none     &kp RET
+                &td_d_c         &kp A      &lt mouse_l S   &lt ctrl_l D         &mt LSHFT F     &kp G               &kp H        &mt LSHFT J       &mt RCTRL K         &mt LALT L      &none     &kp RET
                 &td_lctrl_c_s   &kp Z      &kp X           &kp C                &kp V           &kp B               &kp N        &kp M             &kp SQT             &kp SEMI        &kp LBKT  &kp LGUI
                                                            &lt symbols BSPC     &td_mo2mo5      &lt ctrl_l SPACE    &kp BSPC     &td_mo3mo5        &kp K_CMENU
             >;
@@ -43,7 +43,7 @@
             display-name = "g_querty";
             bindings = <
                 &esctgl         &kp Q      &kp W           &kp E                &kp R           &kp T               &kp Y        &kp U             &kp I               &kp O           &kp P     &kp DEL
-                &td_d_c         &kp A      &lt alt_l S     &lt ctrl_l D         &mt LSHFT F     &kp G               &kp H        &mt LSHFT J       &mt RCTRL K         &mt LALT L      &none     &rtgl
+                &td_d_c         &kp A      &lt mouse_l S   &lt ctrl_l D         &mt LSHFT F     &kp G               &kp H        &mt LSHFT J       &mt RCTRL K         &mt LALT L      &none     &rtgl
                 &td_lctrl_c_s   &kp Z      &kp X           &kp C                &kp V           &kp B               &kp N        &kp M             &kp SQT             &kp SEMI        &kp LBKT  &kp LGUI
                                                            &lt symbols BSPC     &td_mo2mo5      &lt ctrl_l SPACE    &kp BSPC     &td_mo3mo5        &kp K_CMENU
             >;
@@ -83,29 +83,29 @@
         ctrl_l {
             display-name = "CTRL L";
             bindings = <
-                &none         &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &td_bcl0      &bt BT_SEL 3   &none  &none  &none  &none
-                &td_lara      &kp LC(A)     &kp LC(S)  &kp LCTRL  &kp LC(F)  &kp LS(TAB)      &bt BT_SEL 1  &bt BT_SEL 4   &none  &none  &none  &none
-                &td_lcrc      &none         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(LS(S))    &bt BT_SEL 2  &out OUT_TOG   &none  &none  &none  &none
-                                                       &kp LC(Y)  &kp LC(Z)  &kp LC(RET)      &none         &none          &none
+                &none         &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &none  &none   &none  &none  &none  &none
+                &td_lara      &kp LC(A)     &kp LC(S)  &kp LCTRL  &kp LC(F)  &kp LS(TAB)      &none  &none   &none  &none  &none  &none
+                &td_lcrc      &none         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(LS(S))    &none  &none   &none  &none  &none  &none
+                                                       &kp LC(Y)  &kp LC(Z)  &kp LC(RET)      &none  &none   &none
             >;
         };
 
-        alt_l {
-            display-name = "ALT L";
+        mouse_l {
+            display-name = "MOUSE L";
             bindings = <
-                &none  &none    &kp F7  &kp F8    &kp F9     &kp F10    &none  &none  &none  &none  &none  &none
-                &none  &none    &kp F4  &kp F5    &kp F6     &kp F11    &none  &none  &none  &none  &none  &none
-                &none  &none    &kp F1  &kp F2    &kp F3     &kp F12    &none  &none  &none  &none  &none  &none
-                                        &none     &mkp RCLK  &mkp LCLK  &none  &none  &none
+                &none  &none        &none      &none       &none      &kp DEL      &kp F7  &kp F8   &kp F9     &kp F10    &none  &none  
+                &none  &td_ret_lca  &none      &kp LCTRL   &kp LSHFT  &none        &kp F4  &kp F5   &kp F6     &kp F11    &none  &none 
+                &none  &none        &kp LC(X)  &kp LC(C)   &kp LC(V)  &none        &kp F1  &kp F2   &kp F3     &kp F12    &none  &none  
+                                               &mpk RCLK   &mkp MCLK  &mkp LCLK    &none   &none    &none
             >;
         };
 
         gui_l {
             display-name = "GUI L";
             bindings = <
-                &none  &none  &kp N7  &kp N8  &kp N9  &none    &none  &none  &none  &none  &none  &none
-                &none  &none  &kp N4  &kp N5  &kp N6  &none    &none  &none  &none  &none  &none  &none
-                &none  &none  &kp N1  &kp N2  &kp N3  &none    &none  &none  &none  &none  &none  &none
+                &none  &none  &kp N7  &kp N8  &kp N9  &none    &td_bcl0      &bt BT_SEL 3  &none  &none  &none  &none
+                &none  &none  &kp N4  &kp N5  &kp N6  &none    &bt BT_SEL 1  &bt BT_SEL 4  &none  &none  &none  &none
+                &none  &none  &kp N1  &kp N2  &kp N3  &none    &bt BT_SEL 2  &out OUT_TOG  &none  &none  &none  &none
                                       &none   &none   &none    &none  &none  &none
             >;
         };
