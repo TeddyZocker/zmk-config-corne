@@ -79,12 +79,13 @@
             bindings = <&kp LS(RBKT)>, <&kp LS(N7)>;
         };
 
-        td_ret_lca: ret_lc(a) {
+        td_ret_lca: ret_lca {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LS(RBKT)>, <&kp LS(N7)>;
         };
+
 
         // extended 
         td_lalt_mo12: td_latl_mo12 {
