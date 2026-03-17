@@ -63,17 +63,17 @@
         symbols {
             display-name = "SYMBOLS";
             bindings = <
-                &trans         &none          &kp LS(BSLH)    &kp LS(N2)         &mlt        &mgt          &dm             &none       &none            &none           &none         &none
-                &none          &kp LS(SLASH)  &kp RA(N7)      &kp RA(N8)         &kp LS(N8)  &kp BSLH      &kp MINUS       &kp UNDER   &kp RA(E)        &kp RA(Q)       &kp GRAVE     &kp LS(N5)
-                &none          &none          &kp RA(N0)      &kp RA(N9)         &kp LS(N9)  &kp LS(N6)    &none           &kp EXCL    &kp LS(N4)       &kp UNDER       &kp TILDE     &kp RA(MINUS)
-                                                              &kp CAPSLOCK       &trans      &trans        &trans          &trans      &trans
+                &trans         &none                &none           &kp LS(SLASH)      &mlt        &mgt          &dm             &none       &none            &none           &none         &none
+                &none          &kp LS(N2)           &kp RA(N7)      &kp RA(N8)         &kp LS(N8)  &kp BSLH      &kp MINUS       &kp UNDER   &kp RA(E)        &kp RA(Q)       &kp GRAVE     &kp LS(N5)
+                &none          &kp LS(BSLH)         &kp RA(N0)      &kp RA(N9)         &kp LS(N9)  &kp LS(N6)    &none           &kp EXCL    &kp LS(N4)       &kp UNDER       &kp TILDE     &kp RA(MINUS)
+                                                                    &kp CAPSLOCK       &trans      &trans        &trans          &trans      &trans
             >;
         };
 
         arr_layer {
             display-name = "ARROW L";
             bindings = <
-                &kp LC(T)      &kp LALT         &kp BSPC                 &kp UP      &kp RET            &kp PAGE_UP       &kp PAGE_UP     &kp BSPC                  &kp UP      &kp RET             &none             &kp LC(T)
+                &kp LC(T)      &none            &kp BSPC                 &kp UP      &kp RET            &kp PAGE_UP       &kp PAGE_UP     &kp BSPC                  &kp UP      &kp RET             &none             &kp LC(T)
                 &kp LC(LS(T))  &td_ctrl_gui     &kp LEFT                 &kp DOWN    &kp RIGHT          &kp PAGE_DOWN     &kp PAGE_DOWN   &kp LEFT                  &kp DOWN    &kp RIGHT           &td_ctrl_gui      &kp LC(LS(T))
                 &kp LC(W)      &kp LSHFT        &tab_shift_ctrl_morph    &kp LSHFT   &tab_ctrl_morph    &none             &none           &tab_shift_ctrl_morph     &kp LSHFT   &tab_ctrl_morph     &kp LSHFT         &kp LC(W)
                                                                          &kp LALT    &kp LSHFT          &trans            &trans          &kp LSHFT                 &kp LALT
@@ -83,10 +83,10 @@
         ctrl_l {
             display-name = "CTRL L";
             bindings = <
-                &none         &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &kp RA(PLUS)  &none   &none  &none  &none  &none
-                &td_lara      &kp LC(A)     &kp LC(S)  &kp LCTRL  &kp LC(F)  &kp LS(TAB)      &kp LS(NON_US_HASH)  &none   &none  &none  &none  &none 
-                &td_lcrc      &none         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(LS(S))    &kp RA(PIPE2)  &none   &none  &none  &none  &none
-                                                       &kp LC(Y)  &kp LC(Z)  &kp LC(RET)      &none  &none   &none
+                &none         &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &kp RA(RBKT)   &none   &none  &none  &none  &none
+                &td_lara      &kp LC(A)     &kp LC(S)  &kp LCTRL  &kp LC(F)  &kp LS(TAB)      &kp PLUS       &none   &none  &none  &none  &none 
+                &td_lcrc      &none         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(LS(S))    &kp EQUAL      &none   &none  &none  &none  &none
+                                                       &kp LC(Y)  &kp LC(Z)  &kp LC(RET)      &none          &none   &none
             >;
         };
 
