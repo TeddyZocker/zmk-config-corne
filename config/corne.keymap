@@ -83,9 +83,9 @@
         ctrl_l {
             display-name = "CTRL L";
             bindings = <
-                &none         &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &kp LS(NON_US_BACKSLASH)  &none   &none  &none  &none  &none
+                &none         &kp LC(BSLH)  &none      &kp LG(E)  &none      &none            &kp RA(PLUS)  &none   &none  &none  &none  &none
                 &td_lara      &kp LC(A)     &kp LC(S)  &kp LCTRL  &kp LC(F)  &kp LS(TAB)      &kp LS(NON_US_HASH)  &none   &none  &none  &none  &none 
-                &td_lcrc      &none         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(LS(S))    &kp TILDE2  &none   &none  &none  &none  &none
+                &td_lcrc      &none         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(LS(S))    &kp RA(PIPE2)  &none   &none  &none  &none  &none
                                                        &kp LC(Y)  &kp LC(Z)  &kp LC(RET)      &none  &none   &none
             >;
         };
