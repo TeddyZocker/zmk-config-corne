@@ -65,7 +65,7 @@
             bindings = <
                 &trans         &kp RA(RBKT)         &kp RA(NON_US_BACKSLASH)   &kp LS(SLASH)      &mlt        &mgt          &dm             &none       &none            &none           &none         &none
                 &kp LESS_THAN  &kp LS(N2)           &kp RA(N7)                 &kp RA(N8)         &kp LS(N8)  &kp BSLH      &kp MINUS       &kp UNDER   &kp RA(E)        &kp RA(Q)       &kp GRAVE     &kp LS(N5)
-                &kp PLUS      &kp LS(BSLH)         &kp RA(N0)                 &kp RA(N9)         &kp LS(N9)  &kp LS(N6)    &none           &kp EXCL    &kp LS(N4)       &kp UNDER       &kp TILDE     &kp RA(MINUS)
+                &kp PLUS       &kp LS(BSLH)         &kp RA(N0)                 &kp RA(N9)         &kp LS(N9)  &kp LS(N6)    &none           &kp EXCL    &kp LS(N4)       &kp UNDER       &kp TILDE     &kp RA(MINUS)
                                                                                &kp CAPSLOCK       &trans      &trans        &trans          &trans      &trans
             >;
         };
