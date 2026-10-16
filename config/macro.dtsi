@@ -106,7 +106,7 @@
     
         esctglmc: esc_to_g_l_mc {
             compatible = "zmk,behavior-macro";
-            label = "etgl";
+            label = "esctglmc";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
