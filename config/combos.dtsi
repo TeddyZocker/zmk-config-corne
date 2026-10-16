@@ -192,14 +192,14 @@
     // gaming layers
         combo_res_l_to0 {
             timeout-ms = <50>;
-            layers = <g_l g_querty>;
+            layers = <g_l g_l_mc>;
             key-positions = <36 37>;
             bindings = <&to querty>;
         };
 
         combo_res_r_to0 {
             timeout-ms = <50>;
-            layers = <g_l g_querty>;
+            layers = <g_l g_l_mc>;
             key-positions = <40 41>;
             bindings = <&to querty>;
         };
