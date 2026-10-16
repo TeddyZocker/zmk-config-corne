@@ -7,7 +7,7 @@
 #define mouse_l	                6
 #define gui_l	                7
 #define g_l	                    8
-#define g_l_mc	                    9
+#define g_l_mc	                9
 #define g_ar_l	                10
 #define g_ad_l	                11
 #define g_c_l	                12
